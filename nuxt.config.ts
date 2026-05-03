@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "id" },
-      title: "Jiwa Nusantara — Yogyakarta",
+      title: "JogjaKu — Pusaka Jiwa Mataram",
       meta: [
         { charset: "utf-8" },
         {
@@ -106,7 +106,7 @@ export default defineNuxtConfig({
         "/wisata",
         "/teknologi",
         "/peta",
-        "/sumbu",
+        "/filosofi",
       ],
       crawlLinks: true,
     },
