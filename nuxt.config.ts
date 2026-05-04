@@ -88,6 +88,13 @@ export default defineNuxtConfig({
         },
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       ],
+      script: [
+        {
+          src: "https://analytics.ahrefs.com/analytics.js",
+          "data-key": "QxxH32F25vSb6kZY0Fxm2w",
+          async: true,
+        },
+      ],
     },
   },
 
