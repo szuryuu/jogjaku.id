@@ -126,10 +126,12 @@ const generatePlan = async () => {
         const normalizedActivities = rawActivities.map((act: any) => {
           if (typeof act === "string") {
             const parts = act.split(/:\s*(.+)/);
-            if (parts.length > 1) {
+            const waktu = parts[0]?.trim();
+            const kegiatan = parts[1]?.trim();
+            if (waktu && kegiatan) {
               return {
-                waktu: parts[0].trim(),
-                kegiatan: parts[1].trim(),
+                waktu,
+                kegiatan,
                 deskripsi: "",
               };
             }

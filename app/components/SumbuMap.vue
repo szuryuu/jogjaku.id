@@ -120,6 +120,8 @@ const drawPath = (newIndex: number, oldIndex: number) => {
   const startCoord = coordinates[effectiveOldIndex];
   const endCoord = coordinates[newIndex];
 
+  if (!startCoord || !endCoord) return;
+
   let startTime: number | null = null;
   const duration = 1800;
 

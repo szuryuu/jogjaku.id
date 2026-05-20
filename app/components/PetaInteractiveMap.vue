@@ -110,7 +110,7 @@ const getAdjustedPoiCoords = (loc: any, index: number): [number, number] => {
   ];
 
   const patternIndex = index % spreadPattern.length;
-  const [latOffset, lngOffset] = spreadPattern[patternIndex];
+  const [latOffset, lngOffset] = spreadPattern[patternIndex] ?? [0, 0];
   return [loc.coords[0] + latOffset, loc.coords[1] + lngOffset];
 };
 
@@ -149,7 +149,7 @@ const renderMarkers = () => {
 };
 
 onMounted(async () => {
-  if (!process.client) return;
+  if (!import.meta.client) return;
 
   const mapData = await $fetch<any>("/api/data/map");
   pois.value = mapData.pois;
