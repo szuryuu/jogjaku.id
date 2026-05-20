@@ -166,5 +166,41 @@
       "id": "Cetak biru digitalisasi layanan publik dan sensor IoT mitigasi bencana.",
       "en": "Blueprint for public service digitalization and disaster mitigation IoT sensors."
     }
+  },
+  {
+    "id": "p1",
+    "url": "/pendidikan",
+    "iconType": "landmark",
+    "category": { "id": "Pendidikan", "en": "Education" },
+    "title": { "id": "Kota Pelajar", "en": "City of Students" },
+    "desc": {
+      "id": "Budaya akademik, kampus unggulan, dan kehidupan mahasiswa Yogyakarta.",
+      "en": "Academic culture, leading campuses, and student life in Yogyakarta."
+    }
+  },
+  {
+    "id": "p2",
+    "url": "/pendidikan#universities",
+    "iconType": "landmark",
+    "category": { "id": "Pendidikan", "en": "Education" },
+    "title": {
+      "id": "Universitas di Yogyakarta",
+      "en": "Universities in Yogyakarta"
+    },
+    "desc": {
+      "id": "UGM, UNY, UII, UMY, Sanata Dharma, dan Atma Jaya Yogyakarta.",
+      "en": "UGM, UNY, UII, UMY, Sanata Dharma, and Atma Jaya Yogyakarta."
+    }
+  },
+  {
+    "id": "p3",
+    "url": "/pendidikan#study-spots",
+    "iconType": "mappin",
+    "category": { "id": "Pendidikan", "en": "Education" },
+    "title": { "id": "Tempat Belajar", "en": "Study Spots" },
+    "desc": {
+      "id": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, dan Ruang JAKA.",
+      "en": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, and Ruang JAKA."
+    }
   }
 ]

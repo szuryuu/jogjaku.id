@@ -10,6 +10,7 @@ const routes = [
   "budaya",
   "kuliner",
   "wisata",
+  "pendidikan",
   "teknologi",
   "peta",
   "filosofi",

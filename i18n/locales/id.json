@@ -4,6 +4,7 @@
     "budaya": "Budaya",
     "kuliner": "Kuliner",
     "wisata": "Wisata",
+    "pendidikan": "Pendidikan",
     "teknologi": "Teknologi",
     "peta": "Peta",
     "filosofi": "Sumbu Filosofi"
@@ -101,7 +102,8 @@
       "sejarah": "Sejarah & Kraton",
       "alam": "Alam & Pantai",
       "kuliner": "Kuliner",
-      "campuran": "Campuran (Budaya, Alam, Kuliner)"
+      "pendidikan": "Pendidikan & Kota Pelajar",
+      "campuran": "Campuran (Budaya, Alam, Kuliner, Pendidikan)"
     }
   },
   "sejarah": {

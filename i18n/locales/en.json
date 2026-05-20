@@ -4,6 +4,7 @@
     "budaya": "Culture",
     "kuliner": "Culinary",
     "wisata": "Tourism",
+    "pendidikan": "Education",
     "teknologi": "Technology",
     "peta": "Map",
     "filosofi": "Philosophical Axis"
@@ -101,7 +102,8 @@
       "sejarah": "History & Palace",
       "alam": "Nature & Beaches",
       "kuliner": "Culinary",
-      "campuran": "Mixed (Culture, Nature, Culinary)"
+      "pendidikan": "Education & City of Students",
+      "campuran": "Mixed (Culture, Nature, Culinary, Education)"
     }
   },
   "sejarah": {

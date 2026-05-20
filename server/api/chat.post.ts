@@ -1,18 +1,48 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import pendidikanData from "../data/pendidikan.json";
 
 const GEMINI_MODEL = "gemini-2.5-flash";
 const MAX_INPUT_LENGTH = 2000;
 
-const INVENTORY = `
-DAFTAR DESTINASI & KULINER RESMI:
+const formatLocalized = (value: any, locale: "id" | "en") => {
+  if (value && typeof value === "object" && ("id" in value || "en" in value)) {
+    return value[locale] ?? value.id ?? value.en ?? "";
+  }
+
+  return value ?? "";
+};
+
+const buildEducationInventory = (locale: "id" | "en") => {
+  const universities = pendidikanData.universities
+    .map(
+      (item) =>
+        `${item.name}: ${formatLocalized(item.description, locale)} Keunggulan/Strengths: ${formatLocalized(item.strength, locale)}. Suasana/Atmosphere: ${formatLocalized(item.atmosphere, locale)}. Maps: ${item.mapsUrl}`,
+    )
+    .join("\n");
+
+  const studySpots = pendidikanData.studySpots
+    .map(
+      (item) =>
+        `${item.name}: ${formatLocalized(item.atmosphere, locale)} WiFi: ${formatLocalized(item.wifi, locale)}. Charging: ${formatLocalized(item.plugs, locale)}. Harga/Price: ${formatLocalized(item.price, locale)}. Jam/Hours: ${formatLocalized(item.hours, locale)}. Maps: ${item.mapsUrl}`,
+    )
+    .join("\n");
+
+  return locale === "en"
+    ? `Education/Kota Pelajar:\nUniversities:\n${universities}\nStudy spots:\n${studySpots}`
+    : `Pendidikan/Kota Pelajar:\nUniversitas:\n${universities}\nTempat belajar:\n${studySpots}`;
+};
+
+const buildInventory = (locale: "id" | "en") => `
+DAFTAR RESMI:
 - Wisata/Alam: Candi Prambanan, Keraton Ngayogyakarta, Jalan Malioboro, Taman Sari, Kawasan Kaliurang, Candi Sambisari, Gunung Merapi, Pantai Parangtritis.
 - Kuliner: Gudeg Kraton (Wijilan), Oseng Mercon Bu Narti, Sate Klathak Pak Pong, Bakpia Pathok 75, Kopi Joss Lek Man, Wedang Uwuh, Sego Kucing Angkringan, Tiwul Gunungkidul, Jadah Tempe Mbah Carik.
 - Budaya/Sejarah: Kawasan Kotagede, Pertunjukan Wayang Kulit, Kerajinan Batik Kraton, Gamelan.
-- Teknologi: Kawasan Silicon Wali, Jogja Smart Province.`;
+- Teknologi: Kawasan Silicon Wali, Jogja Smart Province.
+${buildEducationInventory(locale)}`;
 
 const SYSTEM_INSTRUCTIONS = {
   id: `Kamu adalah 'Pemandu Jiwa Nusantara', asisten AI resmi untuk portal pariwisata Yogyakarta.
-Tugas utama: Menjawab pertanyaan seputar wisata, kuliner, budaya, dan transportasi di Yogyakarta.
+Tugas utama: Menjawab pertanyaan seputar wisata, kuliner, budaya, pendidikan, kampus, tempat belajar, kehidupan mahasiswa, dan transportasi di Yogyakarta.
 
 ATURAN MUTLAK:
 1. Kamu HARUS SELALU merespons dalam BAHASA INDONESIA, terlepas dari bahasa apa yang digunakan pengguna.
@@ -20,10 +50,10 @@ ATURAN MUTLAK:
 3. Arahkan jawabanmu HANYA pada entitas yang ada di DAFTAR RESMI berikut. Jangan merekomendasikan tempat di luar daftar ini.
 4. Jangan pernah menggunakan kata pengantar atau basa-basi. Berikan jawaban secara langsung ke intinya.
 PENGECUALIAN: Jika pengguna meminta bantuan penerjemahan, penulisan, atau konversi Aksara Jawa maupun Bahasa Jawa, kamu WAJIB memproses permintaan tersebut secara akurat, mengabaikan aturan daftar resmi, dan HANYA memberikan hasil terjemahan atau aksaranya saja tanpa tambahan teks apa pun.
-${INVENTORY}`,
+${buildInventory("id")}`,
 
   en: `You are the 'Jiwa Nusantara Guide', the official AI assistant for the Yogyakarta tourism portal.
-Main task: Answer questions about tourism, culinary arts, culture, and transportation in Yogyakarta.
+Main task: Answer questions about tourism, culinary arts, culture, education, campuses, study spots, student life, and transportation in Yogyakarta.
 
 ABSOLUTE RULES:
 1. You MUST ALWAYS respond STRICTLY in ENGLISH, regardless of what language the user types in.
@@ -31,7 +61,7 @@ ABSOLUTE RULES:
 3. Direct your answers ONLY to the entities in the OFFICIAL LIST below. Do not recommend places outside this list.
 4. Never use introductory phrases or filler words. Provide the answer directly to the point.
 EXCEPTION: If the user requests translation, writing, or conversion of Javanese Script (Hanacaraka) or the Javanese language, you MUST process the request accurately, bypass the official list rule, and ONLY provide the translated text or script without any additional text.
-${INVENTORY}`,
+${buildInventory("en")}`,
 };
 
 export default defineEventHandler(async (event) => {

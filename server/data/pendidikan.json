@@ -1,0 +1,325 @@
+{
+  "universities": [
+    {
+      "name": "Universitas Gadjah Mada",
+      "image": "/images/teknologi/ugm.jpg",
+      "description": {
+        "id": "Kampus kebangsaan dengan ekosistem riset, kepemimpinan, dan lintas disiplin yang kuat.",
+        "en": "A national campus with a strong ecosystem for research, leadership, and interdisciplinary learning."
+      },
+      "strength": {
+        "id": "Kedokteran, Teknik, Sosial Humaniora",
+        "en": "Medicine, Engineering, Social Sciences and Humanities"
+      },
+      "atmosphere": {
+        "id": "Akademik, hijau, kolaboratif",
+        "en": "Academic, green, collaborative"
+      },
+      "detail": {
+        "id": "UGM dikenal sebagai salah satu pusat akademik paling berpengaruh di Indonesia, dengan lingkungan riset yang kuat, ruang hijau luas, dan komunitas mahasiswa lintas disiplin.",
+        "en": "UGM is known as one of Indonesia’s most influential academic centers, with a strong research environment, expansive green spaces, and interdisciplinary student communities."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Gadjah+Mada+Yogyakarta"
+    },
+    {
+      "name": "Universitas Negeri Yogyakarta",
+      "image": "/images/pendidikan/uny.jpg",
+      "description": {
+        "id": "Pusat pendidikan guru dan ilmu terapan yang dekat dengan denyut komunitas mahasiswa kota.",
+        "en": "A center for teacher training and applied sciences, closely connected to the city’s student communities."
+      },
+      "strength": {
+        "id": "Pendidikan, Olahraga, Seni",
+        "en": "Education, Sports, and Arts"
+      },
+      "atmosphere": {
+        "id": "Aktif, kreatif, ramah mahasiswa",
+        "en": "Active, creative, student-friendly"
+      },
+      "detail": {
+        "id": "UNY memiliki suasana kampus yang aktif dan dekat dengan dunia pendidikan, olahraga, seni, serta komunitas mahasiswa yang dinamis.",
+        "en": "UNY offers an active campus atmosphere closely tied to education, sports, arts, and dynamic student communities."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Negeri+Yogyakarta"
+    },
+    {
+      "name": "Universitas Islam Indonesia",
+      "image": "/images/pendidikan/uii.jpg",
+      "description": {
+        "id": "Universitas bersejarah dengan lingkungan belajar modern di utara Yogyakarta.",
+        "en": "A historic university with a modern learning environment in northern Yogyakarta."
+      },
+      "strength": {
+        "id": "Hukum, Bisnis, Teknik Industri",
+        "en": "Law, Business, and Industrial Engineering"
+      },
+      "atmosphere": {
+        "id": "Tenang, reflektif, berjejaring",
+        "en": "Calm, reflective, well-connected"
+      },
+      "detail": {
+        "id": "UII memadukan sejarah panjang pendidikan tinggi Islam dengan fasilitas modern dan suasana belajar yang tenang di kawasan utara Yogyakarta.",
+        "en": "UII combines a long history of Islamic higher education with modern facilities and a calm learning atmosphere in northern Yogyakarta."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Campus+UII+Main+Library"
+    },
+    {
+      "name": "Universitas Muhammadiyah Yogyakarta",
+      "image": "/images/pendidikan/umy.jpeg",
+      "description": {
+        "id": "Kampus modern dengan jejaring internasional dan kehidupan organisasi yang dinamis.",
+        "en": "A modern campus with international networks and dynamic student organizations."
+      },
+      "strength": {
+        "id": "Hubungan Internasional, Kedokteran, Agribisnis",
+        "en": "International Relations, Medicine, and Agribusiness"
+      },
+      "atmosphere": {
+        "id": "Modern, global, progresif",
+        "en": "Modern, global, progressive"
+      },
+      "detail": {
+        "id": "UMY dikenal dengan kampus modern, jaringan internasional, dan kehidupan organisasi mahasiswa yang aktif serta progresif.",
+        "en": "UMY is known for its modern campus, international networks, and active, progressive student organization life."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Muhammadiyah+Yogyakarta"
+    },
+    {
+      "name": "Universitas Sanata Dharma",
+      "image": "/images/pendidikan/sanata_dharma.jpg",
+      "description": {
+        "id": "Ruang akademik humanis yang dikenal kuat dalam pendidikan, bahasa, dan budaya.",
+        "en": "A humanistic academic environment known for education, languages, and cultural studies."
+      },
+      "strength": {
+        "id": "Pendidikan, Sastra, Psikologi",
+        "en": "Education, Literature, and Psychology"
+      },
+      "atmosphere": {
+        "id": "Humanis, hangat, literer",
+        "en": "Humanistic, warm, literary"
+      },
+      "detail": {
+        "id": "Sanata Dharma menawarkan lingkungan akademik yang humanis, kuat dalam pendidikan, bahasa, psikologi, dan kebudayaan.",
+        "en": "Sanata Dharma offers a humanistic academic environment with strengths in education, languages, psychology, and cultural studies."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Sanata+Dharma+Yogyakarta"
+    },
+    {
+      "name": "Universitas Atma Jaya Yogyakarta",
+      "image": "/images/pendidikan/atma_jaya.jpg",
+      "description": {
+        "id": "Kampus urban yang menghubungkan bisnis, teknologi, komunikasi, dan kreativitas muda.",
+        "en": "An urban campus connecting business, technology, communication, and youth creativity."
+      },
+      "strength": {
+        "id": "Arsitektur, Ekonomi, Komunikasi",
+        "en": "Architecture, Economics, and Communication"
+      },
+      "atmosphere": {
+        "id": "Urban, profesional, kreatif",
+        "en": "Urban, professional, creative"
+      },
+      "detail": {
+        "id": "Atma Jaya Yogyakarta menghadirkan nuansa kampus urban yang dekat dengan bisnis, teknologi, komunikasi, arsitektur, dan kreativitas muda.",
+        "en": "Atma Jaya Yogyakarta brings an urban campus atmosphere close to business, technology, communication, architecture, and youth creativity."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Atma+Jaya+Yogyakarta"
+    }
+  ],
+  "studySpots": [
+    {
+      "name": "Rambat Coffee & Space",
+      "category": "Study Café",
+      "image": "/images/studyspot/rambat.jpg",
+      "atmosphere": {
+        "id": "Fasilitas nugas yang ramah.",
+        "en": "Student-friendly facilities for focused study sessions."
+      },
+      "wifi": {
+        "id": "Stabil",
+        "en": "Stable"
+      },
+      "plugs": {
+        "id": "Banyak",
+        "en": "Plenty"
+      },
+      "price": "Rp25–55k",
+      "hours": "08.30–23.00",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rambat+Coffee+%26+Space+Yogyakarta"
+    },
+    {
+      "name": "Grhatama Pustaka",
+      "category": "Library",
+      "image": "/images/studyspot/grhatama.jpg",
+      "atmosphere": {
+        "id": "Hening yang produktif.",
+        "en": "A quiet and productive atmosphere."
+      },
+      "wifi": {
+        "id": "Tersedia",
+        "en": "Available"
+      },
+      "plugs": {
+        "id": "Terbatas",
+        "en": "Limited"
+      },
+      "price": {
+        "id": "Gratis",
+        "en": "Free"
+      },
+      "hours": "08.00–15.30",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Grhatama+Pustaka+Yogyakarta"
+    },
+    {
+      "name": "Internet Learning Cafe - Jakal",
+      "category": "Coworking",
+      "image": "/images/studyspot/ilc.jpg",
+      "atmosphere": {
+        "id": "Fokus, modern, ideal untuk kerja kelompok.",
+        "en": "Focused, modern, and ideal for group work."
+      },
+      "wifi": {
+        "id": "Cepat",
+        "en": "Fast"
+      },
+      "plugs": {
+        "id": "Lengkap",
+        "en": "Well-equipped"
+      },
+      "price": "Rp16–35k",
+      "hours": {
+        "id": "24 Jam",
+        "en": "Open 24 hours"
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Internet+Learning+Cafe+Jakal+Yogyakarta"
+    },
+    {
+      "name": "Ruang JAKA Coffee & Free Wifi",
+      "category": "Study Café",
+      "image": "/images/studyspot/jaka.jpg",
+      "atmosphere": {
+        "id": "Santai, hangat, cocok untuk membaca dan diskusi ringan.",
+        "en": "Relaxed, warm, and suitable for reading or light discussions."
+      },
+      "wifi": {
+        "id": "Stabil",
+        "en": "Stable"
+      },
+      "plugs": {
+        "id": "Tersedia",
+        "en": "Available"
+      },
+      "price": "Rp25–45k",
+      "hours": "08.00–23.00",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ruang+JAKA+Coffee+Free+Wifi+Yogyakarta"
+    }
+  ],
+  "lifeStats": [
+    {
+      "value": "150+",
+      "label": {
+        "id": "kampus dan sekolah tinggi",
+        "en": "campuses and higher education institutions"
+      },
+      "icon": "Landmark"
+    },
+    {
+      "value": "Rp10k",
+      "label": {
+        "id": "makanan harian terjangkau",
+        "en": "affordable daily meals"
+      },
+      "icon": "Coffee"
+    },
+    {
+      "value": "24/7",
+      "label": {
+        "id": "ritme belajar dan komunitas",
+        "en": "learning and community rhythm"
+      },
+      "icon": "BookOpen"
+    },
+    {
+      "value": "lintas",
+      "label": {
+        "id": "budaya mahasiswa Nusantara",
+        "en": "student cultures across Indonesia"
+      },
+      "icon": "Users"
+    }
+  ],
+  "creativeCulture": [
+    {
+      "title": {
+        "id": "Komunitas Seni",
+        "en": "Art Communities"
+      },
+      "desc": {
+        "id": "Ruang bertemu seniman muda, kolektif kampus, dan tradisi lokal.",
+        "en": "A meeting space for young artists, campus collectives, and local traditions."
+      },
+      "icon": "Palette"
+    },
+    {
+      "title": {
+        "id": "Workshop & Startup",
+        "en": "Workshops & Startups"
+      },
+      "desc": {
+        "id": "Kelas kecil, inkubasi ide, dan jejaring teknologi tumbuh berdampingan.",
+        "en": "Small classes, idea incubation, and technology networks grow side by side."
+      },
+      "icon": "Lightbulb"
+    },
+    {
+      "title": {
+        "id": "Musik & Festival",
+        "en": "Music & Festivals"
+      },
+      "desc": {
+        "id": "Panggung independen, festival budaya, dan agenda kampus menghidupkan malam.",
+        "en": "Independent stages, cultural festivals, and campus events bring the nights to life."
+      },
+      "icon": "Music"
+    }
+  ],
+  "historyBlocks": [
+    {
+      "period": "1940-an",
+      "title": {
+        "id": "Akar Intelektual Republik",
+        "en": "The Republic’s Intellectual Roots"
+      },
+      "text": {
+        "id": "Yogyakarta menjadi ruang penting bagi pendidikan, pergerakan, dan pembentukan gagasan kebangsaan.",
+        "en": "Yogyakarta became an important space for education, movements, and the formation of national ideas."
+      }
+    },
+    {
+      "period": "1950–1980",
+      "title": {
+        "id": "Kampus Tumbuh Bersama Kota",
+        "en": "Campuses Growing with the City"
+      },
+      "text": {
+        "id": "Universitas berkembang, kos bermunculan, dan budaya diskusi menjadi bagian dari kehidupan harian.",
+        "en": "Universities expanded, boarding houses emerged, and discussion culture became part of everyday life."
+      }
+    },
+    {
+      "period": {
+        "id": "Kini",
+        "en": "Now"
+      },
+      "title": {
+        "id": "Kota Pelajar yang Kreatif",
+        "en": "A Creative City of Students"
+      },
+      "text": {
+        "id": "Mahasiswa dari seluruh Indonesia membawa bahasa, ide, seni, dan energi baru ke lorong-lorong kota.",
+        "en": "Students from across Indonesia bring languages, ideas, art, and new energy into the city’s streets."
+      }
+    }
+  ]
+}

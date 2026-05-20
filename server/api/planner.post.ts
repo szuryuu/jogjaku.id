@@ -1,4 +1,30 @@
 import Groq from "groq-sdk";
+import pendidikanData from "../data/pendidikan.json";
+
+const formatLocalized = (value: any, locale: "id" | "en") => {
+  if (value && typeof value === "object" && ("id" in value || "en" in value)) {
+    return value[locale] ?? value.id ?? value.en ?? "";
+  }
+
+  return value ?? "";
+};
+
+const buildEducationInventory = (locale: "id" | "en") => {
+  const universities = pendidikanData.universities
+    .map((item) => `${item.name} (${formatLocalized(item.atmosphere, locale)})`)
+    .join(", ");
+
+  const studySpots = pendidikanData.studySpots
+    .map(
+      (item) =>
+        `${item.name} (${formatLocalized(item.atmosphere, locale)}, WiFi: ${formatLocalized(item.wifi, locale)}, Charging: ${formatLocalized(item.plugs, locale)}, ${formatLocalized(item.hours, locale)})`,
+    )
+    .join(", ");
+
+  return locale === "en"
+    ? `\n- Education/Student life: Universities: ${universities}. Study spots: ${studySpots}.`
+    : `\n- Pendidikan/Kehidupan mahasiswa: Universitas: ${universities}. Tempat belajar: ${studySpots}.`;
+};
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
@@ -32,7 +58,7 @@ DAFTAR DESTINASI & KULINER RESMI (WAJIB DIGUNAKAN, DILARANG MEREKOMENDASIKAN TEM
 - Wisata/Alam: Candi Prambanan, Keraton Ngayogyakarta, Jalan Malioboro, Taman Sari, Kawasan Kaliurang, Candi Sambisari, Gunung Merapi, Pantai Parangtritis.
 - Kuliner: Gudeg Kraton (Wijilan), Oseng Mercon Bu Narti, Sate Klathak Pak Pong, Bakpia Pathok 75, Kopi Joss Lek Man, Wedang Uwuh, Sego Kucing Angkringan, Tiwul Gunungkidul, Jadah Tempe Mbah Carik.
 - Budaya/Sejarah: Kawasan Kotagede, Pertunjukan Wayang Kulit, Kerajinan Batik Kraton, Gamelan.
-- Teknologi: Kawasan Silicon Wali, Jogja Smart Province.`;
+- Teknologi: Kawasan Silicon Wali, Jogja Smart Province.${buildEducationInventory(locale === "en" ? "en" : "id")}`;
 
   try {
     const groq = new Groq({ apiKey: config.groqApiKey });

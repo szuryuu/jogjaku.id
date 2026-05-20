@@ -73,6 +73,7 @@ const interests = computed(() => [
   { id: "sejarah", label: t("ai_guide.interests.sejarah") },
   { id: "alam", label: t("ai_guide.interests.alam") },
   { id: "kuliner", label: t("ai_guide.interests.kuliner") },
+  { id: "pendidikan", label: t("ai_guide.interests.pendidikan") },
   { id: "campuran", label: t("ai_guide.interests.campuran") },
 ]);
 
