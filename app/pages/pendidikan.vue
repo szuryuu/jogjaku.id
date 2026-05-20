@@ -595,8 +595,8 @@ useSeoMeta({
                   spot.displayPlugs
                 }}
               </span>
-              <span>{{ spot.displayPrice }}</span>
-              <span>{{ spot.displayHours }}</span>
+              <span class="pl-5">{{ spot.displayPrice }}</span>
+              <span class="pl-5">{{ spot.displayHours }}</span>
             </div>
             <a
               :href="spot.mapsUrl"
