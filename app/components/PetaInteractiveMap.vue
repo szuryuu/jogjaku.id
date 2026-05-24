@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, onUnmounted } from "vue";
-import { useI18n } from "#imports";
+import { useI18n, navigateTo } from "#imports";
 
 const props = defineProps<{
   mode: "poi" | "internet";
@@ -23,7 +23,7 @@ let regionsLayer: any = null;
 let internetCircles: any[] = [];
 let regionLabels: any[] = [];
 let L: any = null;
-let debounceTimer: any = null;
+let debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
 const activeRegion = ref<string | null>(null);
 const hoveredRegion = ref<string | null>(null);
@@ -83,8 +83,6 @@ const updateRegionStyles = () => {
       tooltip._container.classList.toggle("inactive", !(isActive || isHovered));
     }
   });
-
-  renderMarkers();
 };
 
 const resetDebounce = () => {
@@ -134,7 +132,7 @@ const renderMarkers = () => {
       iconAnchor: [20, 40],
     });
 
-    const popupContent = `<div class="w-64 rounded-xl bg-warm-white overflow-hidden shadow-2xl border border-line"><img src="${loc.image}" class="h-32 w-full object-cover grayscale" /><div class="p-4"><div class="text-[9px] uppercase tracking-widest text-terra font-bold mb-1">${loc.category}</div><h4 class="text-ink font-libre font-bold text-[16px] mb-2">${locale.value === "en" ? loc.name.en : loc.name.id}</h4><a href="/${loc.category}" class="block w-full bg-ink text-warm-white py-2 font-josefin text-[10px] text-center uppercase tracking-widest hover:bg-terra transition-colors decoration-none">${locale.value === "en" ? "Explore Details" : "Lihat Detail"}</a></div></div>`;
+    const popupContent = `<div class="w-64 rounded-xl bg-warm-white overflow-hidden shadow-2xl border border-line"><img src="${loc.image}" class="h-32 w-full object-cover grayscale" /><div class="p-4"><div class="text-[9px] uppercase tracking-widest text-terra font-bold mb-1">${loc.category}</div><h4 class="text-ink font-libre font-bold text-[16px] mb-2">${locale.value === "en" ? loc.name.en : loc.name.id}</h4><a href="/${loc.category}" data-nuxt-link="true" class="block w-full bg-ink text-warm-white py-2 font-josefin text-[10px] text-center uppercase tracking-widest hover:bg-terra transition-colors decoration-none cursor-pointer">${locale.value === "en" ? "Explore Details" : "Lihat Detail"}</a></div></div>`;
 
     const markerCoords = getAdjustedPoiCoords(loc, index);
 
@@ -146,6 +144,16 @@ const renderMarkers = () => {
       }),
     );
   });
+};
+
+const handleMapClick = (e: MouseEvent) => {
+  const target = e.target as HTMLElement;
+  const link = target.closest("a[data-nuxt-link='true']");
+  if (link) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href) navigateTo(href);
+  }
 };
 
 onMounted(async () => {
@@ -292,6 +300,7 @@ onMounted(async () => {
     regionsLayer.addTo(mapInstance);
     axisLayer.addTo(mapInstance);
     mapInstance.addLayer(markersGroup);
+    renderMarkers();
     updateRegionStyles();
   } else {
     regionsLayer.addTo(mapInstance);
@@ -299,6 +308,14 @@ onMounted(async () => {
     regionLabels.forEach((l) => l.addTo(mapInstance));
     updateRegionStyles();
   }
+
+  if (mapContainer.value) {
+    mapContainer.value.addEventListener("click", handleMapClick);
+  }
+});
+
+watch([() => props.category, activeRegion], () => {
+  if (props.mode === "poi") renderMarkers();
 });
 
 watch(
@@ -317,6 +334,7 @@ watch(
       mapInstance.addLayer(regionsLayer);
       mapInstance.addLayer(axisLayer);
       mapInstance.addLayer(markersGroup);
+      renderMarkers();
     } else {
       mapInstance.removeLayer(markersGroup);
       mapInstance.removeLayer(axisLayer);
@@ -325,13 +343,6 @@ watch(
       regionLabels.forEach((l) => l.addTo(mapInstance));
     }
     updateRegionStyles();
-  },
-);
-
-watch(
-  () => props.category,
-  () => {
-    if (props.mode === "poi") renderMarkers();
   },
 );
 
@@ -376,6 +387,9 @@ watch(
 
 onUnmounted(() => {
   if (debounceTimer) clearTimeout(debounceTimer);
+  if (mapContainer.value) {
+    mapContainer.value.removeEventListener("click", handleMapClick);
+  }
 });
 </script>
 
