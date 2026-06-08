@@ -6,12 +6,12 @@
     "lng": 110.4915,
     "title": "Candi Prambanan",
     "desc": {
-      "id": "Trilogi candi Trimurti setinggi 47 meter. Dibangun 856 Masehi oleh wangsa Sanjaya.",
-      "en": "A 47-meter tall Trimurti temple trilogy. Built in 856 AD by the Sanjaya dynasty."
+      "id": "Tiga menara setinggi 47 meter berdiri seperti tanda seru di langit. Dibangun tanpa semen — hanya gravitasi dan perhitungan yang kita belum sepenuhnya pahami — Prambanan masih berdiri lebih dari seribu tahun kemudian. Datanglah saat matahari terbenam: bayangan panjang menggambar kembali siluet yang sama persis seperti pada tahun 856 Masehi.",
+      "en": "Three towers standing 47 meters high like exclamation marks against the sky. Built without cement — only gravity and calculations we still do not fully understand — Prambanan stands more than a thousand years later. Come at sunset: long shadows redraw the exact same silhouette as in 856 AD."
     },
-    "hours": "06.00 - 17.00 WIB",
+    "hours": "06.00 – 17.00 WIB",
     "price": "Rp 75.000",
-    "transport": "Trans Jogja Jalur 1A",
+    "transport": "Trans Jogja Jalur 1A dari Malioboro (±45 menit)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.489,-7.753,110.493,-7.749&layer=mapnik",
     "image": "/images/wisata/prambanan.jpg"
   },
@@ -22,12 +22,12 @@
     "lng": 110.3642,
     "title": "Keraton Ngayogyakarta",
     "desc": {
-      "id": "Istana yang masih berdenyut sebagai pusat pemerintahan monarki aktif. Dibangun 1755 oleh HB I.",
-      "en": "A beating palace serving as the center of an active monarchical government. Built in 1755 by HB I."
+      "id": "Satu-satunya istana aktif di Indonesia yang masih menjadi pusat pemerintahan resmi. Bukan museum — Sultan masih tinggal di sini, upacara masih dilaksanakan, dan abdi dalem masih berjalan dalam formasi yang sama sejak 1755. Kunjungan ke Keraton bukan wisata sejarah. Ini adalah bukti bahwa beberapa tradisi bertahan karena mereka memang layak untuk bertahan.",
+      "en": "The only active palace in Indonesia that still functions as an official seat of government. Not a museum — the Sultan still resides here, ceremonies are still performed, and palace servants still walk in the same formation as in 1755. A visit to the Keraton is not a history tour. It is proof that some traditions endure because they genuinely deserve to."
     },
-    "hours": "08.30 - 14.30 WIB",
+    "hours": "08.30 – 14.30 WIB (Senin–Minggu, tutup hari besar tertentu)",
     "price": "Rp 15.000",
-    "transport": "Berjalan kaki dari Malioboro",
+    "transport": "Berjalan kaki dari Malioboro (10 menit selatan)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.361,-7.807,110.365,-7.804&layer=mapnik",
     "image": "/images/wisata/keraton.jpg"
   },
@@ -38,12 +38,12 @@
     "lng": 110.3657,
     "title": "Jalan Malioboro",
     "desc": {
-      "id": "Koridor 2 kilometer dari Tugu ke Keraton yang merupakan sumbu filosofis kota.",
-      "en": "A 2-kilometer corridor from the Monument to the Palace, forming the city's philosophical axis."
+      "id": "Dua kilometer yang menyimpan semuanya: batik dari maestro pedalaman, pedagang kaki lima yang sudah dua generasi, dan di ujung utaranya, Tugu yang mengingatkan bahwa jalan ini bukan hanya pasar — melainkan garis kosmologis yang menghubungkan api gunung berapi ke selatan laut. Berjalanlah pelan. Ini bukan jalan yang terburu-buru.",
+      "en": "Two kilometers containing everything: batik from inland masters, two-generation street vendors, and at its northern end, the Tugu Monument reminding you this is not merely a market street — but a cosmological line connecting volcanic fire to southern sea. Walk slowly. This is not a street in a hurry."
     },
     "hours": "24 Jam",
     "price": "Gratis",
-    "transport": "Stasiun Tugu / Trans Jogja 1A, 2A, 3A",
+    "transport": "Stasiun Tugu berjarak 300 meter / Trans Jogja 1A, 2A, 3A",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.364,-7.794,110.367,-7.791&layer=mapnik",
     "image": "/images/wisata/malioboro.jpg"
   },
@@ -54,12 +54,12 @@
     "lng": 110.3585,
     "title": "Taman Sari",
     "desc": {
-      "id": "Istana air dan kompleks pemandian keraton peninggalan abad ke-18. Area pertahanan dan rekreasi Sultan.",
-      "en": "An 18th-century water palace and royal bathing complex. The Sultan's defense and recreation area."
+      "id": "Istana air yang dirancang sekaligus sebagai tempat rekreasi, meditasi, dan benteng pertahanan. Terowongan bawah tanah yang menghubungkan ke Keraton masih bisa dijelajahi. Taman Sari bukan reruntuhan — ia adalah labirin yang masih menyimpan rahasia, dan setiap sudutnya menceritakan tentang Sultan yang merancang kehidupan pribadi dengan teliti seperti ia merancang politik.",
+      "en": "A water palace designed simultaneously as a recreation space, meditation retreat, and defensive fortress. Underground tunnels connecting to the Keraton can still be explored. Taman Sari is not ruins — it is a labyrinth still holding secrets, every corner telling of a Sultan who designed his private life as carefully as he designed his politics."
     },
-    "hours": "09.00 - 15.00 WIB",
+    "hours": "09.00 – 15.00 WIB",
     "price": "Rp 15.000",
-    "transport": "Becak dari Alun-Alun Selatan",
+    "transport": "Becak atau berjalan kaki dari Alun-Alun Selatan (10 menit)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.357,-7.811,110.361,-7.808&layer=mapnik",
     "image": "/images/wisata/tamansari.jpg"
   },
@@ -70,12 +70,12 @@
     "lng": 110.4253,
     "title": "Kawasan Kaliurang",
     "desc": {
-      "id": "Resor pegunungan bersejarah di lereng selatan Merapi. Tempat perundingan KTN masa revolusi.",
-      "en": "A historic mountain resort on the southern slopes of Merapi. Site of KTN negotiations during the revolution."
+      "id": "Resor pegunungan bersejarah di lereng selatan Merapi — tempat perundingan Komisi Tiga Negara di masa revolusi. Hari ini, Kaliurang adalah titik start pendakian Merapi, rumah bagi Jadah Tempe Mbah Carik yang legendaris, dan kawasan yang cukup tinggi untuk merasakan perbedaan suhu yang signifikan dari pusat kota Jogja di bawahnya.",
+      "en": "A historic mountain resort on Merapi's southern slopes — site of the Three Nations Commission negotiations during the revolution. Today, Kaliurang is the starting point for Merapi hikes, home of the legendary Jadah Tempe Mbah Carik, and high enough to feel a significant temperature difference from Yogyakarta city below."
     },
     "hours": "24 Jam",
-    "price": "Rp 5.000 (Retribusi)",
-    "transport": "Bus DAMRI / Jeep Wisata",
+    "price": "Rp 5.000 (Retribusi Kawasan)",
+    "transport": "Bus DAMRI / Jeep Wisata dari Jogja (±45 menit)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.42,-7.6,110.43,-7.59&layer=mapnik",
     "image": "/images/wisata/kaliurang.jpg"
   },
@@ -86,12 +86,12 @@
     "lng": 110.4468,
     "title": "Candi Sambisari",
     "desc": {
-      "id": "Candi Hindu abad ke-9 yang terkubur lahar dingin Merapi setinggi 6,5 meter selama berabad-abad.",
-      "en": "A 9th-century Hindu temple buried under 6.5 meters of cold Merapi lahar for centuries."
+      "id": "Candi Hindu abad ke-9 yang terkubur lahar dingin Merapi sedalam 6,5 meter selama berabad-abad, baru ditemukan kembali tahun 1966 oleh seorang petani yang sedang mencangkul. Sambisari kini berada di bawah permukaan tanah — Anda menuruni tangga untuk mencapainya. Sensasi memasuki candi ini tidak bisa disimulasikan: seperti menemukan sesuatu yang seharusnya hilang.",
+      "en": "A 9th-century Hindu temple buried under 6.5 meters of Merapi cold lava for centuries, rediscovered in 1966 by a farmer hoeing his field. Sambisari now sits below ground level — you descend a staircase to reach it. The sensation of entering cannot be simulated: it feels like finding something that should have been lost."
     },
-    "hours": "07.00 - 17.00 WIB",
+    "hours": "07.00 – 17.00 WIB",
     "price": "Rp 10.000",
-    "transport": "10 menit dari Bandara Adisutjipto",
+    "transport": "10 menit dari Bandara Adisutjipto / Jl. Candi Sambisari",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.445,-7.763,110.448,-7.761&layer=mapnik",
     "image": "/images/wisata/sambisari.jpg"
   },
@@ -102,12 +102,12 @@
     "lng": 110.4457,
     "title": "Gunung Merapi",
     "desc": {
-      "id": "Stratovolcano paling aktif di Indonesia. Bagi warga Yogyakarta, Merapi adalah leluhur.",
-      "en": "The most active stratovolcano in Indonesia. For the people of Yogyakarta, Merapi is an ancestor."
+      "id": "Stratovolcano paling aktif di Indonesia — dan bagi warga Yogyakarta, Merapi bukan ancaman yang ditakuti, melainkan leluhur yang dihormati. Ini adalah perbedaan filosofis yang fundamental. Jeep wisata membawa Anda melewati sisa-sisa desa yang terkubur lahar 2010, museum sisa erupsi, dan lereng yang sudah kembali hijau dalam 15 tahun — ketahanan alam yang luar biasa.",
+      "en": "Indonesia's most active stratovolcano — and for Yogyakarta's people, Merapi is not a threat to fear, but an ancestor to respect. This is a fundamental philosophical difference. Jeep tours pass through remnants of villages buried by the 2010 lahar, an eruption museum, and slopes already green again within 15 years — a remarkable natural resilience."
     },
-    "hours": "06.00 - 16.00 WIB",
-    "price": "Mulai Rp 350.000",
-    "transport": "Jeep dari Basecamp Kaliurang",
+    "hours": "06.00 – 16.00 WIB (jeep tours)",
+    "price": "Mulai Rp 350.000 / Jeep (isi 4-5 orang)",
+    "transport": "Jeep dari Basecamp Kaliurang atau Selo (Boyolali)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.44,-7.545,110.45,-7.535&layer=mapnik",
     "image": "/images/wisata/merapi.jpg"
   },
@@ -118,13 +118,77 @@
     "lng": 110.332,
     "title": "Pantai Parangtritis",
     "desc": {
-      "id": "Garis pantai pasir hitam vulkanik yang menjadi kutub selatan sumbu kosmologis.",
-      "en": "A black volcanic sand coastline serving as the southern pole of the cosmological axis."
+      "id": "Garis pantai pasir hitam vulkanik yang menjadi kutub selatan sumbu kosmologis Yogyakarta. Ini adalah pantai yang memiliki makna jauh lebih dalam dari panoramanya: di sinilah sumbu filosofis yang dimulai dari puncak Merapi berakhir, di tepi Samudera Hindia yang dalam kepercayaan Jawa diperintah oleh Kanjeng Ratu Kidul. Datanglah sore hari untuk menyaksikan langit dan laut bertemu.",
+      "en": "A black volcanic sand coastline serving as the southern pole of Yogyakarta's cosmological axis. This is a beach with far deeper meaning than its scenery: here is where the philosophical axis beginning at Merapi's summit ends, at the edge of the Indian Ocean which in Javanese belief is governed by Kanjeng Ratu Kidul. Come in the late afternoon to watch sky and sea converge."
     },
     "hours": "24 Jam",
     "price": "Rp 10.000",
-    "transport": "Bus DAMRI dari Terminal Giwangan",
+    "transport": "Bus DAMRI dari Terminal Giwangan (±1 jam)",
     "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.31,-8.03,110.33,-8.01&layer=mapnik",
     "image": "/images/wisata/parangtritis.jpg"
+  },
+  {
+    "id": "kotagede",
+    "area": "Kota Yogyakarta",
+    "lat": -7.8286,
+    "lng": 110.3956,
+    "title": "Kotagede Heritage District",
+    "desc": {
+      "id": "Di gang-gang sempit yang menolak diaspal, Kotagede menyimpan Masjid Gedhe Mataram (1640) dan makam Panembahan Senopati, pendiri Mataram Islam. Di tangan pengrajin perak yang sudah empat generasi, perhiasan masih dibuat dengan pahat tangan — bukan untuk pembeli yang menginginkan barang cepat, tapi untuk mereka yang mengerti bahwa perak yang dibentuk perlahan memiliki karakter yang berbeda.",
+      "en": "In narrow lanes that refuse to be paved, Kotagede holds the Mataram Grand Mosque (1640) and the tomb of Panembahan Senopati, founder of Islamic Mataram. In the hands of four-generation silver craftsmen, jewelry is still made with hand chisels — not for buyers who want quick goods, but for those who understand that slowly-shaped silver has a different character."
+    },
+    "hours": "Kawasan bebas 24 jam. Masjid & Makam: 09.00–17.00 WIB",
+    "price": "Gratis (kawasan) / Rp 3.000 (makam)",
+    "transport": "TransJogja jalur 4B atau ojek dari pusat kota (±20 menit)",
+    "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.414,-7.831,110.418,-7.827&layer=mapnik",
+    "image": "/images/sejarah/kotagede.jpg"
+  },
+  {
+    "id": "ullen-sentalu",
+    "area": "Sleman (Kaliurang)",
+    "lat": -7.5897,
+    "lng": 110.4255,
+    "title": "Museum Ullen Sentalu",
+    "desc": {
+      "id": "Museum ini dirancang untuk tidak memberitahu segalanya sekaligus. Dibangun di dalam tebing berbatu Kaliurang, Ullen Sentalu menyimpan koleksi batik, lukisan, dan surat-menyurat dari perempuan bangsawan Mataram yang nama-namanya tidak pernah masuk buku sejarah. Ini adalah sejarah yang diceritakan dari dalam — bukan dari sudut pandang kekuasaan, tapi dari sudut pandang mereka yang merawat budaya dalam diam.",
+      "en": "This museum is designed not to reveal everything at once. Built into the rocky hillside of Kaliurang, Ullen Sentalu holds batik collections, paintings, and correspondence from Mataram royal women whose names never made it into history books. This is history told from the inside — not from the perspective of power, but from those who quietly sustained the culture."
+    },
+    "hours": "09.00 – 16.00 WIB (Tutup Senin, reservasi disarankan)",
+    "price": "Rp 50.000 (dengan pemandu wajib)",
+    "transport": "Taksi / ojek online dari Kaliurang (±10 menit)",
+    "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.423,-7.592,110.427,-7.588&layer=mapnik",
+    "image": "/images/wisata/ullen-sentalu.jpg"
+  },
+  {
+    "id": "tebing-breksi",
+    "area": "Sleman",
+    "lat": -7.7589,
+    "lng": 110.5016,
+    "title": "Tebing Breksi",
+    "desc": {
+      "id": "Batu putih yang pernah ditambang kini menjadi panggung. Tebing setinggi tiga puluh meter dipahat dengan relief mitologi Jawa oleh seniman lokal antara 2015 dan 2020 — transformasi dari situs industri menjadi destinasi budaya. Malam hari, saat lampu menyala dan pedagang kecil membuka gerai di bawah relief yang bersinar, Tebing Breksi menjadi sesuatu yang tidak ada duanya.",
+      "en": "White stone that was once quarried has become a stage. A thirty-meter cliff carved with Javanese mythological reliefs by local artists between 2015 and 2020 — a transformation from industrial site to cultural destination. At night, when lights glow and small vendors open stalls beneath illuminated carvings, Tebing Breksi becomes something that exists nowhere else."
+    },
+    "hours": "06.00 – 21.00 WIB",
+    "price": "Rp 10.000",
+    "transport": "10 menit dari Prambanan / ojek dari pusat Sleman",
+    "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.499,-7.761,110.503,-7.757&layer=mapnik",
+    "image": "/images/wisata/tebing-breksi.jpg"
+  },
+  {
+    "id": "beringharjo",
+    "area": "Kota Yogyakarta",
+    "lat": -7.7985,
+    "lng": 110.3643,
+    "title": "Pasar Beringharjo",
+    "desc": {
+      "id": "Pasar yang berdiri sejak Mataram pertama kali dibangun. Di balik deretan batik dan rempah-rempah yang menumpuk, Beringharjo menyimpan ritme kota yang sesungguhnya — transaksi tawar-menawar dalam Bahasa Jawa halus, perempuan berjarit membawa keranjang anyaman, aroma kemiri dan kunyit yang menempel hingga sore. Ini bukan objek wisata. Ini adalah kota yang sedang bekerja.",
+      "en": "A market standing since Mataram was first built. Behind rows of batik and stacked spices, Beringharjo holds the city's true rhythm — negotiations in polished Javanese, women in jarik carrying woven baskets, the scent of kemiri and turmeric that clings to your clothes until afternoon. This is not a tourist attraction. This is a city at work."
+    },
+    "hours": "07.00 – 17.00 WIB",
+    "price": "Gratis (masuk)",
+    "transport": "Ujung selatan Jalan Malioboro — berjalan kaki",
+    "mapUrl": "https://www.openstreetmap.org/export/embed.html?bbox=110.362,-7.800,110.366,-7.797&layer=mapnik",
+    "image": "/images/wisata/beringharjo.jpg"
   }
 ]

@@ -1,80 +1,122 @@
 [
   {
     "id": "ugm-dteti",
-    "meta": { "id": "Pusat Riset & Talent", "en": "Research & Talent Hub" },
+    "meta": {
+      "id": "Mesin Talent Digital Nasional",
+      "en": "The Nation's Digital Talent Engine"
+    },
     "title": {
-      "id": "Konsorsium Riset Pendidikan Tinggi",
-      "en": "Higher Education Research Consortium"
+      "id": "21 Kampus, Satu Ekosistem Inovasi",
+      "en": "21 Campuses, One Innovation Ecosystem"
     },
     "desc": {
-      "id": "21 perguruan tinggi Yogyakarta berkolaborasi menghasilkan puluhan ribu lulusan per tahun. Penyuplai utama talenta engineer untuk industri teknologi nasional.",
-      "en": "21 Yogyakarta universities collaborate to produce tens of thousands of graduates annually. The main supplier of engineering talent for the national tech industry."
+      "id": "Lebih dari 21 perguruan tinggi di Yogyakarta menghasilkan puluhan ribu lulusan STEM setiap tahun — termasuk UGM yang secara konsisten masuk peringkat 300 universitas terbaik dunia. Laboratorium riset yang berkolaborasi langsung dengan industri dan pemerintah menjadikan Yogyakarta sebagai inkubator talenta teknologi terbesar di Indonesia di luar Jakarta. Ketika sebuah kota bisa menghasilkan lebih banyak engineer berkualitas daripada yang bisa diserap industri lokalnya, kelebihan itu mengalir keluar sebagai ekspor tak kasat mata yang menggerakkan perekonomian digital nasional.",
+      "en": "Over 21 higher education institutions produce tens of thousands of STEM graduates annually — including UGM, consistently ranked among the world's top 300 universities. Research labs collaborating directly with industry and government make Yogyakarta Indonesia's largest technology talent incubator outside Jakarta. When a city produces more quality engineers than local industry can absorb, the surplus flows outward as an invisible export driving the national digital economy."
     }
   },
   {
     "id": "silicon-wali",
     "meta": {
-      "id": "Klaster Industri Digital",
-      "en": "Digital Industry Cluster"
+      "id": "Klaster Startup Digital",
+      "en": "Digital Startup Cluster"
     },
     "title": {
-      "id": "Silicon Wali — Koridor Ringroad Utara",
-      "en": "Silicon Wali — North Ringroad Corridor"
+      "id": "Silicon Wali — Lebih dari 300 Startup Aktif",
+      "en": "Silicon Wali — More Than 300 Active Startups"
     },
     "desc": {
-      "id": "Jalur ekosistem yang menampung ratusan startup aktif, membentang dari studio game indie kelas dunia hingga perusahaan SaaS B2B berskala enterprise.",
-      "en": "An ecosystem corridor hosting hundreds of active startups, ranging from world-class indie game studios to enterprise-scale B2B SaaS companies."
+      "id": "Sepanjang koridor Ringroad Utara Yogyakarta, lebih dari 300 startup beroperasi — dari studio game indie yang mengekspor produk ke pasar global, hingga perusahaan SaaS B2B yang melayani korporasi multinasional. Ekosistem ini tumbuh organik dari satu keunggulan struktural: biaya hidup yang memungkinkan founder muda bertahan dua hingga tiga kali lebih lama daripada di Jakarta sebelum modal pertama habis. Bukan Silicon Valley dengan uang besar — melainkan Silicon Wali dengan efisiensi yang sulit ditandingi.",
+      "en": "Along Yogyakarta's North Ringroad corridor, over 300 startups operate — from indie game studios exporting to global markets to B2B SaaS companies serving multinationals. This ecosystem grew organically from one structural advantage: a cost of living that lets young founders survive two to three times longer than in Jakarta before their first funding runs dry. Not Silicon Valley with big money — but Silicon Wali with efficiency that is hard to match."
     }
   },
   {
     "id": "block71",
     "meta": {
-      "id": "Inkubator & Akselerator",
-      "en": "Incubator & Accelerator"
+      "id": "Inkubator & Komunitas Global",
+      "en": "Global Incubator & Community"
     },
     "title": {
-      "id": "Block71 & Ekosistem Komunitas",
-      "en": "Block71 & Community Ecosystem"
+      "id": "Block71 & 200+ Event Teknologi per Tahun",
+      "en": "Block71 & 200+ Annual Tech Events"
     },
     "desc": {
-      "id": "Pusat inkubasi kolaborasi NUS Enterprise yang menghubungkan inovator lokal dengan pasar global. Didukung lebih dari 200 event tech komunitas per tahun.",
-      "en": "An incubation hub collaborating with NUS Enterprise, connecting local innovators with global markets. Supported by over 200 tech community events per year."
+      "id": "Pusat inkubasi hasil kolaborasi NUS Enterprise Singapura ini menghubungkan inovator lokal dengan jaringan Asia Tenggara. Di luar Block71, lebih dari 200 event komunitas teknologi berlangsung setiap tahun di Yogyakarta — hackathon, workshop AI, design sprint, dan pertemuan komunitas open-source. Ini bukan angka yang dibuat-buat: Yogyakarta adalah salah satu kota dengan kepadatan event teknologi tertinggi per kapita di Indonesia, bukti bahwa ekosistem ini bergerak dari bawah, bukan dari atas.",
+      "en": "This incubation hub, born from collaboration with Singapore's NUS Enterprise, connects local innovators to Southeast Asian networks. Beyond Block71, over 200 technology community events occur annually in Yogyakarta — hackathons, AI workshops, design sprints, and open-source meetups. This is not a fabricated statistic: Yogyakarta has one of the highest densities of tech events per capita in Indonesia, proof that this ecosystem moves from the ground up, not the top down."
     }
   },
   {
     "id": "jogja-smart-province",
-    "meta": { "id": "Infrastruktur Kota", "en": "City Infrastructure" },
+    "meta": {
+      "id": "Infrastruktur Kota Cerdas",
+      "en": "Smart City Infrastructure"
+    },
     "title": {
-      "id": "Jogja Smart Province (JSP)",
-      "en": "Jogja Smart Province (JSP)"
+      "id": "Jogja Smart Province — 200+ Layanan Publik Digital",
+      "en": "Jogja Smart Province — 200+ Digitized Public Services"
     },
     "desc": {
-      "id": "Cetak biru digitalisasi layanan publik, integrasi sensor IoT mitigasi bencana Merapi, dan manajemen data presisi untuk tata kelola wilayah.",
-      "en": "A blueprint for public service digitalization, integration of Merapi disaster mitigation IoT sensors, and precision data management for regional governance."
+      "id": "Program Jogja Smart Province (JSP) mengintegrasikan ribuan sensor IoT untuk memantau aktivitas Gunung Merapi secara real-time, mengelola data bencana alam, dan mengotomasi layanan publik. Lebih dari 200 layanan pemerintah kini dapat diakses warga melalui satu platform digital — dari perizinan usaha hingga pemantauan kualitas udara. DIY adalah salah satu provinsi pertama di Indonesia yang menjadikan transformasi digital sebagai bagian resmi dari agenda tata kelola daerah, bukan hanya proyek percontohan.",
+      "en": "The Jogja Smart Province (JSP) program integrates thousands of IoT sensors to monitor Mount Merapi in real time, manage disaster data, and automate public services. Over 200 government services are now accessible to citizens through a single digital platform — from business licensing to air quality monitoring. DIY is among the first provinces in Indonesia to make digital transformation an official part of regional governance, not merely a pilot project."
     }
   },
   {
-    "id": "jogjamark",
-    "meta": { "id": "Ekosistem Kreatif", "en": "Creative Ecosystem" },
+    "id": "jogja-creative-district",
+    "meta": {
+      "id": "Distrik Kreatif Hybrid",
+      "en": "Hybrid Creative District"
+    },
     "title": {
-      "id": "Jogja Creative District",
-      "en": "Jogja Creative District"
+      "id": "Distrik Kreatif — Tradisi dan Teknologi Saling Memperkuat",
+      "en": "Creative District — Where Tradition and Technology Reinforce Each Other"
     },
     "desc": {
-      "id": "Transformasi spasial kawasan selatan menjadi distrik hybrid: butik desainer lokal, studio animasi internasional, dan co-working space 24 jam.",
-      "en": "Spatial transformation of the southern area into a hybrid district: local designer boutiques, international animation studios, and 24-hour co-working spaces."
+      "id": "Kawasan selatan kota mengalami transformasi spasial yang unik: workshop batik tulis bersebelahan dengan studio desain digital, pengrajin perak Kotagede menjual ke marketplace global, dan pengusaha kuliner lokal menggunakan analitik data untuk mengoptimalkan menu. Ini bukan gentrifikasi — ini evolusi organik di mana identitas lokal tidak dihapus oleh teknologi, melainkan diperkuat dan diperluas jangkauannya ke pasar yang sebelumnya tidak terbayangkan.",
+      "en": "The southern urban district is undergoing a unique spatial transformation: hand-drawn batik workshops sit beside digital design studios, Kotagede silver craftsmen sell through global marketplaces, and local culinary entrepreneurs use data analytics to optimize their menus. This is not gentrification — it is organic evolution where local identity is not erased by technology, but strengthened and extended to markets previously unimaginable."
     }
   },
   {
     "id": "gamedev-animation",
-    "meta": { "id": "Kreatif & Hiburan", "en": "Creative & Entertainment" },
+    "meta": {
+      "id": "Industri Kreatif Digital",
+      "en": "Digital Creative Industry"
+    },
     "title": {
-      "id": "Pusat Game Dev & Animasi",
-      "en": "Game Dev & Animation Hub"
+      "id": "Ekosistem Game Dev & Animasi Kelas Regional",
+      "en": "Regional-Class Game Dev & Animation Ecosystem"
     },
     "desc": {
-      "id": "Markas bagi raksasa industri seperti Gameloft dan ratusan studio indie. Memproduksi IP global, dari game mobile hingga film animasi pemenang penghargaan.",
-      "en": "Headquarters for industry giants like Gameloft and hundreds of indie studios. Producing global IPs, from mobile games to award-winning animated films."
+      "id": "Yogyakarta adalah salah satu kota game development paling aktif di Asia Tenggara. Studio-studio yang lahir dari komunitas kampus UGM dan UNY kini memproduksi IP yang dimainkan di puluhan negara. Ditopang oleh kurikulum universitas yang responsif terhadap industri dan komunitas developer yang terbuka untuk berbagi ilmu, ekosistem ini tidak hanya menghasilkan game — tapi pipeline kreatif yang mengalir ke industri film animasi, konten digital, dan pengembangan aplikasi.",
+      "en": "Yogyakarta is one of Southeast Asia's most active game development cities. Studios born from UGM and UNY campus communities now produce IPs played across dozens of countries. Supported by industry-responsive university curricula and developer communities open to knowledge-sharing, this ecosystem generates not just games — but a creative pipeline flowing into animation, digital content, and application development industries."
+    }
+  },
+  {
+    "id": "digitalisasi-umkm",
+    "meta": {
+      "id": "Transformasi Digital UMKM",
+      "en": "SME Digital Transformation"
+    },
+    "title": {
+      "id": "60% UMKM Jogja Kini Hadir di Platform Digital",
+      "en": "60% of Jogja SMEs Now on Digital Platforms"
+    },
+    "desc": {
+      "id": "Lebih dari 60% UMKM Yogyakarta kini terdaftar di platform e-commerce. Pengrajin batik Bantul, perajin perak Kotagede, dan pedagang gudeg Wijilan yang sebelumnya hanya bergantung pada pelanggan jalan, kini menjangkau pembeli di Singapura, Malaysia, dan Eropa. Program Dinas Koperasi DIY dan kolaborasi dengan platform teknologi nasional telah mengakselerasi inklusi digital yang tidak menghapus identitas lokal — melainkan memberinya panggung yang lebih luas.",
+      "en": "Over 60% of Yogyakarta's micro and small businesses are now registered on e-commerce platforms. Batik craftspeople from Bantul, Kotagede silver artisans, and Wijilan gudeg vendors who once depended solely on foot traffic now reach buyers in Singapore, Malaysia, and Europe. DIY cooperative programs and collaborations with national tech platforms have accelerated digital inclusion without erasing local identity — instead, giving it a wider stage."
+    }
+  },
+  {
+    "id": "digital-heritage",
+    "meta": {
+      "id": "Preservasi Warisan Budaya Digital",
+      "en": "Digital Cultural Heritage Preservation"
+    },
+    "title": {
+      "id": "Digitalisasi Warisan — 3D Scanning, AR, dan Arsip Digital",
+      "en": "Heritage Digitization — 3D Scanning, AR & Digital Archives"
+    },
+    "desc": {
+      "id": "Proyek digitalisasi warisan budaya Yogyakarta mencakup pemindaian 3D candi-candi untuk preservasi virtual, pengarsipan digital manuskrip Keraton yang berusia ratusan tahun, dan pengembangan aplikasi augmented reality yang memungkinkan pengunjung melihat rekonstruksi bangunan bersejarah. Ini bukan sekadar teknologi — ini adalah strategi memastikan bahwa identitas budaya Mataram tidak hanya bertahan di museum, tapi hidup di layar ponsel generasi berikutnya.",
+      "en": "Yogyakarta's cultural heritage digitization projects include 3D scanning of temples for virtual preservation, digital archiving of centuries-old Keraton manuscripts, and augmented reality applications that let visitors view historical site reconstructions. This is not merely technology — it is a strategy to ensure Mataram's cultural identity does not only survive in museums, but lives on the smartphone screens of the next generation."
     }
   }
 ]

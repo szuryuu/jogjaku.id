@@ -6,17 +6,17 @@
     "image": "/images/kuliner/gudeg.jpg",
     "lat": -7.8046,
     "lng": 110.3664,
-    "title": { "id": "Gudeg Kraton", "en": "Royal Gudeg" },
+    "title": { "id": "Gudeg Kraton", "en": "Kraton Gudeg" },
     "story": {
-      "id": "Nangka muda direbus 12 jam dengan santan dan gula aren. Resep dapur abdi dalem yang tak berubah sejak abad ke-18.",
-      "en": "Young jackfruit boiled for 12 hours with coconut milk and palm sugar. A royal kitchen recipe unchanged since the 18th century."
+      "id": "Dipanaskan di atas bara selama dua belas jam, nangka muda perlahan menyerap gula aren dan santan hingga serat terakhirnya menyerah. Di Wijilan, dapur menyala sebelum fajar — dan ketika kota terbangun, Gudeg sudah matang sejak tengah malam. Ini bukan sekadar masakan; ini adalah latihan sabar yang dapat dimakan. Resepnya dijaga oleh trah abdi dalem yang tidak berubah sejak dapur Keraton 1755.",
+      "en": "Simmered over embers for twelve hours, young jackfruit slowly absorbs palm sugar and coconut milk until the last fiber surrenders. In Wijilan, kitchens ignite before dawn — when the city wakes, the Gudeg has been ready since midnight. Not merely a dish; this is edible patience. A recipe guarded by royal palace servant descendants, unchanged since 1755."
     },
-    "meta": { "id": "Warisan Dapur Kerajaan", "en": "Royal Kitchen Heritage" },
+    "meta": { "id": "Warisan Dapur Keraton", "en": "Royal Kitchen Heritage" },
     "address": {
       "id": "Jl. Wijilan, Panembahan",
       "en": "Wijilan St., Panembahan"
     },
-    "price": { "id": "Rp 25.000 - 50.000", "en": "IDR 25,000 - 50,000" }
+    "price": { "id": "Rp 25.000 – 50.000", "en": "IDR 25,000 – 50,000" }
   },
   {
     "id": "oseng",
@@ -27,14 +27,20 @@
     "lng": 110.3593,
     "title": {
       "id": "Oseng Mercon Bu Narti",
-      "en": "Bu Narti's Firecracker Stir-fry"
+      "en": "Bu Narti's Firecracker Stir-Fry"
     },
     "story": {
-      "id": "Kikil dan kulit sapi ditumis dengan cabai rawit dalam jumlah industrial. Provokasi terhadap rasa manis-gurih.",
-      "en": "Beef tendon and skin stir-fried with an industrial amount of bird's eye chili. A provocation against the sweet-savory norm."
+      "id": "Kikil dan kulit sapi yang kenyal, ditumis dalam minyak mendidih bersama dua genggam penuh cabai rawit segar yang baru dipetik pagi hari. Namanya 'mercon' — kembang api — bukan hiperbola, melainkan peringatan jujur. Ini adalah makanan yang membuat orang berpeluh di malam Desember. Pedasnya tidak menghancurkan rasa; ia membuka lapisan rasa yang selama ini tersembunyi.",
+      "en": "Chewy beef tendon and skin stir-fried in smoking oil with two fistfuls of bird's-eye chili picked that morning. The name 'mercon' — firecracker — is not hyperbole; it is an honest warning. This is food that draws sweat in December. The heat does not destroy flavor; it unlocks the hidden layers."
     },
-    "meta": { "id": "Perlawanan Pedas", "en": "Spicy Resistance" },
-    "address": { "id": "Jl. KH. Ahmad Dahlan", "en": "KH. Ahmad Dahlan St." },
+    "meta": {
+      "id": "Perlawanan Cabai Khas Jogja",
+      "en": "Jogja's Chili Counterculture"
+    },
+    "address": {
+      "id": "Jl. KH. Ahmad Dahlan, Ngampilan",
+      "en": "KH. Ahmad Dahlan St., Ngampilan"
+    },
     "price": { "id": "Rp 30.000 / Porsi", "en": "IDR 30,000 / Portion" }
   },
   {
@@ -44,17 +50,23 @@
     "image": "/images/kuliner/klathak.jpg",
     "lat": -7.8732,
     "lng": 110.3808,
-    "title": { "id": "Sate Klathak", "en": "Klathak Satay" },
+    "title": {
+      "id": "Sate Klathak Pak Pong",
+      "en": "Pak Pong's Klathak Satay"
+    },
     "story": {
-      "id": "Dua tusuk jeruji sepeda memastikan daging kambing matang merata. Hanya dibumbui garam kasar.",
-      "en": "Two bicycle spokes skewers ensure the mutton is cooked evenly. Seasoned only with coarse sea salt."
+      "id": "Dua jeruji sepeda besi. Daging kambing muda dari hewan tertentu dipilih tiap pagi, ditusuk, dicelup air garam kasar, dibakar di atas arang tebu yang membara. Tidak ada saus kacang untuk bersembunyi. Tidak ada bumbu untuk menutupi kualitas. Hanya daging, api, dan pertanyaan: apakah Anda cukup percaya pada bahan baku untuk membiarkan rasa berbicara sendiri?",
+      "en": "Two iron bicycle spokes. Young mutton from select animals chosen each morning, skewered, brined in coarse salt water, grilled over glowing sugarcane charcoal. No peanut sauce to hide behind. No marinade to compensate for quality. Just meat, fire, and a question: are you confident enough in your ingredients to let flavor speak for itself?"
     },
-    "meta": { "id": "Minimalis Ekstrem", "en": "Extreme Minimalism" },
+    "meta": {
+      "id": "Minimalis Ekstrem Bantul",
+      "en": "Bantul's Extreme Minimalism"
+    },
     "address": {
-      "id": "Jl. Imogiri Timur, Bantul",
-      "en": "East Imogiri St., Bantul"
+      "id": "Jl. Imogiri Timur, Jejeran, Bantul",
+      "en": "East Imogiri Rd., Jejeran, Bantul"
     },
-    "price": { "id": "Rp 35.000 - 50.000", "en": "IDR 35,000 - 50,000" }
+    "price": { "id": "Rp 35.000 – 50.000", "en": "IDR 35,000 – 50,000" }
   },
   {
     "id": "bakpia",
@@ -63,14 +75,23 @@
     "image": "/images/kuliner/bakpia.jpg",
     "lat": -7.798,
     "lng": 110.3618,
-    "title": { "id": "Bakpia Pathok 75", "en": "Bakpia Pathok 75" },
+    "title": { "id": "Bakpia Pathok 75", "en": "Bakpia Pathok No. 75" },
     "story": {
-      "id": "Akulturasi kuliner Tionghoa-Jawa abad 20. Kulit tipis berlapis isi pasta kacang hijau kukus tradisional.",
-      "en": "20th-century Chinese-Javanese culinary acculturation. Thin layered skin filled with traditional steamed mung bean paste."
+      "id": "Tahun 1930-an, pedagang Tionghoa bernama Kwik Sun Kwok mulai menjual kue isi pasta kacang hijau di Jalan Pathuk. Ia tidak tahu bahwa ia sedang menciptakan identitas oleh-oleh sebuah kota. Kulit tipisnya berlapis seperti kertas origami yang bisa dimakan — tekstur yang tidak bisa ditiru mesin pabrik. Angka '75' bukan nomor seri; itu adalah nomor rumah toko pertama, yang kini menjadi nama sebuah dinasti kuliner.",
+      "en": "In the 1930s, a Chinese merchant named Kwik Sun Kwok began selling mung bean pastries on Pathuk Street. He didn't know he was inventing a city's signature souvenir. The thin, layered crust folds like edible origami — a texture no factory machine can replicate. The number '75' is not a product code; it is the original shop's house number, now the name of a culinary dynasty."
     },
-    "meta": { "id": "Akulturasi Budaya", "en": "Cultural Acculturation" },
-    "address": { "id": "Kawasan Pathuk", "en": "Pathuk Area" },
-    "price": { "id": "Rp 45.000 / Kotak", "en": "IDR 45,000 / Box" }
+    "meta": {
+      "id": "Akulturasi Tionghoa–Jawa",
+      "en": "Chinese–Javanese Acculturation"
+    },
+    "address": {
+      "id": "Kawasan Pathuk, Ngampilan",
+      "en": "Pathuk Quarter, Ngampilan"
+    },
+    "price": {
+      "id": "Rp 45.000 – 75.000 / Kotak",
+      "en": "IDR 45,000 – 75,000 / Box"
+    }
   },
   {
     "id": "kopijos",
@@ -81,11 +102,17 @@
     "lng": 110.3667,
     "title": { "id": "Kopi Joss Lek Man", "en": "Lek Man's Joss Coffee" },
     "story": {
-      "id": "Arang membara yang diceburkan memunculkan karbon aktif yang menetralkan asam lambung.",
-      "en": "Plunging burning charcoal releases activated carbon that neutralizes stomach acid."
+      "id": "Barista di balik gerobak kayu ini mengambil arang membara dari tungku dengan tang besi. Dengan gerakan yang sudah ribuan kali diulang tanpa lelah, ia menceburkannya ke dalam kopi hitam panas. Bunyi 'joss' bukan pertunjukan — itu reaksi kimia nyata: karbon aktif menetralisir asam lambung sambil memperdalam rasa. Diciptakan Mbah Man di tahun 1960-an, kini diwariskan tiga generasi.",
+      "en": "The barista behind this wooden cart lifts a glowing coal with iron tongs. With a motion practiced thousands of times without fatigue, he plunges it into a glass of hot black coffee. The sizzling 'joss' is not theater — it is a real chemical reaction: activated carbon neutralizing stomach acid while deepening the flavor. Created by Mbah Man in the 1960s, now passed down through three generations."
     },
-    "meta": { "id": "Kimia Warung Angkringan", "en": "Angkringan Chemistry" },
-    "address": { "id": "Utara Stasiun Tugu", "en": "North of Tugu Station" },
+    "meta": {
+      "id": "Kimia Angkringan Tugu",
+      "en": "Tugu Angkringan Chemistry"
+    },
+    "address": {
+      "id": "Jl. Mangkuyudan, Utara Stasiun Tugu",
+      "en": "Mangkuyudan St., North of Tugu Station"
+    },
     "price": { "id": "Rp 8.000 / Gelas", "en": "IDR 8,000 / Glass" }
   },
   {
@@ -95,13 +122,166 @@
     "image": "/images/kuliner/wedang.jpg",
     "lat": -7.946,
     "lng": 110.3617,
-    "title": { "id": "Wedang Uwuh", "en": "Trash Ginger Drink" },
+    "title": { "id": "Wedang Uwuh Imogiri", "en": "Imogiri Uwuh Brew" },
     "story": {
-      "id": "Campuran jahe bakar, kayu secang, cengkeh, dan pala yang tampak seperti reruntuhan dedaunan.",
-      "en": "A blend of roasted ginger, sappan wood, cloves, and nutmeg that looks like leaf debris."
+      "id": "Kata 'uwuh' berarti sampah dalam Bahasa Jawa — nama yang jujur untuk tampilannya yang kacau di dalam cangkir. Di balik tumpukan jahe bakar, serpihan kayu secang merah, cengkeh, kapulaga, dan pala, tersembunyi resep medicinal yang diwariskan para peziarah Makam Raja Imogiri selama berabad-abad. Seteguk pertama selalu mengejutkan. Seteguk terakhir selalu diinginkan kembali.",
+      "en": "The word 'uwuh' means rubbish in Javanese — an honest name for the chaotic tangle inside the cup. Behind the charred ginger slices, red sappan wood chips, cloves, cardamom, and nutmeg lies a medicinal recipe inherited from pilgrims to the Royal Tomb at Imogiri over centuries. The first sip always surprises. The last always leaves you wanting more."
     },
-    "meta": { "id": "Jamu dalam Cangkir", "en": "Herbal Medicine in a Cup" },
-    "address": { "id": "Makam Raja Imogiri", "en": "Imogiri Royal Cemetery" },
+    "meta": {
+      "id": "Jamu Warisan Makam Raja",
+      "en": "Royal Tomb Medicinal Brew"
+    },
+    "address": {
+      "id": "Kawasan Makam Raja, Imogiri, Bantul",
+      "en": "Royal Cemetery Area, Imogiri, Bantul"
+    },
     "price": { "id": "Rp 10.000 / Gelas", "en": "IDR 10,000 / Glass" }
+  },
+  {
+    "id": "bakmi-jawa",
+    "categoryId": "main_course",
+    "featured": false,
+    "image": "/images/kuliner/bakmi-jawa.jpg",
+    "lat": -7.794,
+    "lng": 110.3651,
+    "title": { "id": "Bakmi Jawa Arang", "en": "Javanese Charcoal Noodles" },
+    "story": {
+      "id": "Di warung kayu yang menolak memasang papan nama, satu porsi dimasak dalam satu wajan kecil di atas arang. Ini bukan soal efisiensi — ini soal asap yang hanya lahir dari panas arang, bukan kompor gas. Bakmi Jawa asli tidak bisa terburu-buru: satu wajan, satu sajian, satu momen. Warung buka setelah pukul delapan malam, tutup saat bumbu habis.",
+      "en": "At a wooden warung that refuses a signboard, one portion is cooked in one small wok over charcoal. This is not about efficiency — it is about smokiness born only from coal heat, not a gas flame. Authentic Javanese Noodles cannot be rushed: one wok, one serving, one moment. The warung opens after eight in the evening and closes when the spices run out."
+    },
+    "meta": { "id": "Satu Wajan, Satu Momen", "en": "One Wok, One Moment" },
+    "address": {
+      "id": "Tersebar di Kota Yogyakarta, buka malam hari",
+      "en": "Scattered across the city, evenings only"
+    },
+    "price": {
+      "id": "Rp 20.000 – 35.000 / Porsi",
+      "en": "IDR 20,000 – 35,000 / Portion"
+    }
+  },
+  {
+    "id": "nasi-kucing",
+    "categoryId": "main_course",
+    "featured": false,
+    "image": "/images/kuliner/angkringan.jpg",
+    "lat": -7.7826,
+    "lng": 110.3661,
+    "title": { "id": "Nasi Kucing Angkringan", "en": "Angkringan Night Cart" },
+    "story": {
+      "id": "Sepiring nasi seukuran kepalan tangan, dibungkus daun pisang, berisi sesendok nasi dan sedikit sambal atau tempe orek. Harganya tidak lebih dari seribu perak. Di bangku panjang angkringan yang sama, duduk berdampingan: mahasiswa S3 UGM, tukang becak, dan seniman yang baru pulang pameran. Inilah yang orang Jogja sebut keistimewaan — bukan tentang gelar atau monarki, tapi tentang ruang makan di mana semua orang duduk setara.",
+      "en": "A plate of rice the size of a fist, wrapped in banana leaf, holding one spoon of rice and a mound of sambal or spiced tempeh. Price: around seven cents. On the same long wooden bench sit a UGM PhD candidate, a pedicab driver, and an artist fresh from a gallery opening. This is what Yogyanese call 'keistimewaan' — not about titles or monarchy, but about a dining space where everyone is equal."
+    },
+    "meta": {
+      "id": "Demokrasi Meja Makan Jogja",
+      "en": "Jogja's Dining Democracy"
+    },
+    "address": {
+      "id": "Seluruh pelosok kota, ramai mulai pukul 21.00",
+      "en": "Throughout the city, busy from 9 PM onward"
+    },
+    "price": {
+      "id": "Rp 1.000 – 3.000 / Bungkus",
+      "en": "IDR 1,000 – 3,000 / Wrap"
+    }
+  },
+  {
+    "id": "jadah-tempe",
+    "categoryId": "snacks",
+    "featured": false,
+    "image": "/images/kuliner/jadah-tempe.jpg",
+    "lat": -7.5982,
+    "lng": 110.4255,
+    "title": {
+      "id": "Jadah Tempe Mbah Carik",
+      "en": "Mbah Carik's Jadah Tempe"
+    },
+    "story": {
+      "id": "Di ketinggian 700 meter di kaki Merapi, Mbah Carik menggiling ketan tiap pagi, membungkusnya dalam daun pisang, dan membakarnya di atas arang — seperti yang ia lakukan selama empat dekade. Pasangannya: tempe yang difermentasi lebih lama dari biasanya, dimasak dengan bumbu rempah pekat. Dimakan panas sebelum mendaki, dengan udara sejuk Kaliurang dan siluet Merapi sebagai latar.",
+      "en": "At 700 meters elevation on Merapi's foothills, Mbah Carik grinds glutinous rice each morning, wraps it in banana leaves, and grills it over charcoal — as she has done for four decades. The pairing: tempeh fermented longer than standard, cooked with dense spices. Eaten hot before a morning hike, with Kaliurang's cool air and Merapi's silhouette as backdrop."
+    },
+    "meta": {
+      "id": "Sarapan Kaki Merapi",
+      "en": "Breakfast at Merapi's Foothills"
+    },
+    "address": {
+      "id": "Jl. Kaliurang Km. 22, Pakem, Sleman",
+      "en": "Kaliurang Rd. Km. 22, Pakem, Sleman"
+    },
+    "price": {
+      "id": "Rp 3.000 – 5.000 / Biji",
+      "en": "IDR 3,000 – 5,000 / Piece"
+    }
+  },
+  {
+    "id": "mie-lethek",
+    "categoryId": "main_course",
+    "featured": false,
+    "image": "/images/kuliner/mie-lethek.jpg",
+    "lat": -7.9017,
+    "lng": 110.3245,
+    "title": { "id": "Mie Lethek Bantul", "en": "Bantul Lethek Noodles" },
+    "story": {
+      "id": "Di pabrik kecil Bantul tanpa papan nama, mie dibuat dari singkong lokal dan tepung terigu, digulung dengan mesin berusia enam puluh tahun, digantung kering di udara terbuka. 'Lethek' berarti kusam dalam Bahasa Jawa — warna kecokelatan yang dianggap cacat oleh pasar modern, tapi justru bukti bahwa tidak ada bahan pemutih yang tersembunyi. Teksturnya lebih tebal, lebih kenyal, lebih jujur dari mie pabrik manapun.",
+      "en": "At a small factory in Bantul with no sign, noodles are made from local cassava and wheat, rolled through a sixty-year-old machine, and hung to dry in open air. 'Lethek' means dull in Javanese — the brownish color dismissed as a defect by modern markets, but proof that no bleaching agents are hidden inside. The texture is thicker, chewier, more honest than any factory noodle."
+    },
+    "meta": { "id": "Kejujuran Rasa Bantul", "en": "Bantul's Honest Flavor" },
+    "address": {
+      "id": "Kawasan Srandakan, Bantul",
+      "en": "Srandakan Area, Bantul"
+    },
+    "price": {
+      "id": "Rp 18.000 – 30.000 / Porsi",
+      "en": "IDR 18,000 – 30,000 / Portion"
+    }
+  },
+  {
+    "id": "soto-kadipiro",
+    "categoryId": "main_course",
+    "featured": false,
+    "image": "/images/kuliner/soto-kadipiro.jpg",
+    "lat": -7.8013,
+    "lng": 110.3422,
+    "title": { "id": "Soto Kadipiro", "en": "Soto Kadipiro" },
+    "story": {
+      "id": "Berdiri sejak 1921, Soto Kadipiro adalah satu-satunya restoran di Yogyakarta yang tidak pernah perlu mengubah resep untuk bertahan. Kaldu bening dari ayam kampung yang direbus semalam tanpa MSG menghasilkan rasa yang membuat semua soto modern di sekitarnya tampak terburu-buru. Di Kadipiro, waktu adalah bahan baku paling penting — dan tidak bisa dipangkas.",
+      "en": "Open since 1921, Soto Kadipiro is the only restaurant in Yogyakarta that has never needed to change its recipe to survive. Clear broth from free-range chicken simmered overnight without MSG produces a flavor that makes every modern soto around it seem rushed. At Kadipiro, time is the most important ingredient — and it cannot be shortened."
+    },
+    "meta": {
+      "id": "Seratus Tahun Tanpa Kompromi",
+      "en": "A Century Without Compromise"
+    },
+    "address": {
+      "id": "Jl. Wates No. 33, Kadipiro, Yogyakarta",
+      "en": "Wates St. No. 33, Kadipiro, Yogyakarta"
+    },
+    "price": {
+      "id": "Rp 25.000 – 40.000 / Mangkuk",
+      "en": "IDR 25,000 – 40,000 / Bowl"
+    }
+  },
+  {
+    "id": "tiwul",
+    "categoryId": "main_course",
+    "featured": false,
+    "image": "/images/kuliner/tiwul.jpg",
+    "lat": -7.9888,
+    "lng": 110.5972,
+    "title": { "id": "Tiwul Gunungkidul", "en": "Gunungkidul Tiwul" },
+    "story": {
+      "id": "Tanah berbatu Gunungkidul tidak bisa ditanami padi. Maka selama berabad-abad, masyarakat mengandalkan singkong — dijemur, digiling menjadi tepung gaplek, lalu dikukus menjadi nasi pengganti. Tiwul bukan makanan kemiskinan; ia adalah kecerdasan adaptasi manusia terhadap geografi yang keras. Dimakan dengan ikan asin dan sayur lombok, rasanya lebih berlapis dari yang bisa dijelaskan kata-kata.",
+      "en": "Gunungkidul's rocky soil cannot grow rice. For centuries, communities relied on cassava — sun-dried, ground into flour, then steamed into a rice substitute. Tiwul is not poverty food; it is the intelligent adaptation of a people to an unforgiving geography. Eaten with salted fish and chili greens, its layered flavor exceeds what words can describe."
+    },
+    "meta": {
+      "id": "Adaptasi Jenius Gunungkidul",
+      "en": "Gunungkidul's Ingenious Adaptation"
+    },
+    "address": {
+      "id": "Kawasan Wonosari, Gunungkidul",
+      "en": "Wonosari Area, Gunungkidul"
+    },
+    "price": {
+      "id": "Rp 10.000 – 20.000 / Porsi",
+      "en": "IDR 10,000 – 20,000 / Portion"
+    }
   }
 ]
