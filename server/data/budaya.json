@@ -10,22 +10,22 @@
       },
       "subtitle": {
         "id": "Doa yang Digoreskan di Atas Lembaran Kain",
-        "en": "Prayers Etched on Fabric"
+        "en": "Prayers Etched onto Cloth"
       },
       "description": {
-        "id": "Bukan sekadar motif — setiap goresan canting membawa muatan kosmologi Jawa. Motif Parang Rusak dilarang dikenakan rakyat biasa di era Mataram.",
-        "en": "Not just a motif — every stroke of the canting carries Javanese cosmology. The Parang Rusak motif was forbidden for commoners in the Mataram era."
+        "id": "Setiap goresan canting membawa muatan kosmologi Jawa yang tidak boleh sembarangan. Motif Parang Rusak — garis diagonal yang membelah bidang dalam ritme tak terputus — dilarang dikenakan rakyat biasa di era Mataram karena ia melambangkan kekuatan penguasa yang tidak boleh diklaim sembarang orang. Batik bukan kain bermotif; ia adalah teks yang hanya bisa dibaca oleh mereka yang tahu bahasanya.",
+        "en": "Every stroke of the canting carries Javanese cosmological weight that cannot be taken lightly. The Parang Rusak motif — diagonal lines dividing the field in unbroken rhythm — was forbidden for commoners in the Mataram era because it symbolized a ruler's power that no one else may claim. Batik is not patterned cloth; it is a text readable only by those who know its language."
       },
       "highlights": {
         "id": [
-          "Motif Larangan Keraton",
-          "Teknik Tulis vs Cap",
-          "Pewarna Soga Alami"
+          "Motif Larangan Keraton (Parang, Kawung, Udan Liris)",
+          "Teknik Tulis vs Cap: Waktu sebagai Bahan Baku",
+          "Pewarna Soga Alami dari Kulit Kayu Soga"
         ],
         "en": [
-          "Royal Forbidden Motifs",
-          "Hand-Drawn vs Stamped",
-          "Natural Soga Dye"
+          "Royal Forbidden Motifs (Parang, Kawung, Udan Liris)",
+          "Hand-Drawn vs Stamped: Time as an Ingredient",
+          "Natural Soga Dye from Soga Bark"
         ]
       },
       "reverse": false
@@ -40,19 +40,19 @@
         "en": "Shadows More Real Than Reality"
       },
       "description": {
-        "id": "Lakon berlangsung 8 jam tanpa jeda, dari senja hingga fajar. Dalang adalah satu-satunya seniman dunia yang sekaligus menjadi sutradara, aktor 200 karakter, komposer, dan filsuf.",
-        "en": "The play lasts 8 hours without a break, from dusk till dawn. The Dalang is the only artist in the world who simultaneously acts as director, actor of 200 characters, composer, and philosopher."
+        "id": "Pakeliran berlangsung delapan jam tanpa jeda, dari senja hingga fajar. Dalang adalah satu-satunya seniman dunia yang sekaligus menjadi sutradara, aktor 200 karakter, komposer, dan filsuf dalam satu pertunjukan. Layar putih di antara dalang dan penonton bukan pemisah — ia adalah metafora: dunia yang kita lihat adalah bayangan dari kenyataan yang lebih dalam, dan hanya mereka yang mau duduk sepanjang malam yang mulai memahaminya.",
+        "en": "The full performance runs eight hours without intermission, dusk to dawn. The Dalang is the only artist in the world who simultaneously acts as director, performer of 200 characters, composer, and philosopher in a single show. The white screen between Dalang and audience is not a separator — it is a metaphor: the world we see is a shadow of a deeper reality, and only those willing to sit through the night begin to understand it."
       },
       "highlights": {
         "id": [
-          "Pakeliran Semalam Suntuk",
-          "Gunungan sebagai Aksis Kosmis",
-          "Sulukan & Antawecana"
+          "Pakeliran Semalam Suntuk: Delapan Jam Tanpa Jeda",
+          "Gunungan sebagai Aksis Kosmis yang Membuka & Menutup Dunia",
+          "Sulukan & Antawecana: Bahasa yang Lahir dari Dalam Panggung"
         ],
         "en": [
-          "All-Night Performance",
-          "Gunungan as Cosmic Axis",
-          "Vocal Chants & Dialogues"
+          "All-Night Performance: Eight Hours Without Break",
+          "Gunungan as Cosmic Axis Opening and Closing the World",
+          "Sulukan & Antawecana: Language Born from Inside the Stage"
         ]
       },
       "reverse": true
@@ -62,27 +62,27 @@
       "image": "/images/budaya/gamelan.jpg",
       "category": "Pusaka Bunyi · UNESCO 2021",
       "title": {
-        "id": "Gamelan Kraton Yogyakarta",
-        "en": "Yogyakarta Kraton Gamelan"
+        "id": "Gamelan Keraton Yogyakarta",
+        "en": "Yogyakarta Keraton Gamelan"
       },
       "subtitle": {
         "id": "Demokrasi Suara yang Berusia Sepuluh Abad",
-        "en": "A Ten-Century-Old Democracy of Sound"
+        "en": "A Ten-Century Democracy of Sound"
       },
       "description": {
-        "id": "Tidak ada instrumen prima donna dalam gamelan. Dua perangkat gamelan pusaka Kraton, Kyai Gunturmadu dan Kyai Nagawilaga, hanya dimainkan pada upacara Sekaten setiap Maulid Nabi.",
-        "en": "There is no prima donna instrument in gamelan. The Kraton's two heirloom gamelan sets, Kyai Gunturmadu and Kyai Nagawilaga, are only played during the Sekaten ceremony every Mawlid."
+        "id": "Tidak ada instrumen prima donna dalam gamelan — setiap bagian adalah bagian dari keseluruhan, dan keseluruhan tidak bisa ada tanpa setiap bagian. Dua perangkat gamelan pusaka Keraton, Kyai Gunturmadu dan Kyai Nagawilaga, hanya dimainkan pada upacara Sekaten setiap Maulid Nabi. Di luar upacara, mereka diam. Dan dalam diam itulah nilai mereka tersimpan.",
+        "en": "There is no prima donna instrument in gamelan — every part is part of the whole, and the whole cannot exist without every part. The Keraton's two heirloom gamelan sets, Kyai Gunturmadu and Kyai Nagawilaga, are only played during the Sekaten ceremony each Mawlid. Outside ceremony, they are silent. And in that silence, their value is held."
       },
       "highlights": {
         "id": [
-          "Laras Pélog & Sléndro",
-          "Kyai Gunturmadu (Pusaka)",
-          "Irama Lancaran hingga Ketawang"
+          "Laras Pélog & Sléndro: Dua Sistem Nada yang Berbeda Semesta",
+          "Kyai Gunturmadu: Pusaka yang Hanya Berbunyi Setahun Sekali",
+          "Dari Lancaran hingga Ketawang: Bahasa Irama Jawa"
         ],
         "en": [
-          "Pélog & Sléndro Scales",
-          "Kyai Gunturmadu (Heirloom)",
-          "Rhythms from Lancaran to Ketawang"
+          "Pélog & Sléndro Scales: Two Tonal Systems from Different Universes",
+          "Kyai Gunturmadu: The Heirloom That Sounds Only Once a Year",
+          "From Lancaran to Ketawang: The Language of Javanese Rhythm"
         ]
       },
       "reverse": false
@@ -100,19 +100,19 @@
         "en": "A City Within a City Designed with the Universe"
       },
       "description": {
-        "id": "Sumbu filosofi Yogyakarta — Gunung Merapi, Tugu, Keraton, Panggung Krapyak, Pantai Parangtritis — bukan kebetulan geografis. Ini adalah mandala kosmologis yang direncanakan Sultan HB I.",
-        "en": "Yogyakarta's philosophical axis — Mount Merapi, Tugu, Kraton, Panggung Krapyak, Parangtritis Beach — is no geographical accident. It is a cosmological mandala planned by Sultan HB I."
+        "id": "Sumbu filosofi Yogyakarta — Gunung Merapi, Tugu, Keraton, Panggung Krapyak, Pantai Parangtritis — bukan kebetulan geografis. Ini adalah mandala kosmologis yang direncanakan Sultan HB I sejak 1755: poros 33 kilometer yang menyatakan bahwa kota ini bukan sekadar permukiman, melainkan pernyataan tentang hubungan manusia dengan alam semesta. Desain yang lahir bukan dari kenyamanan, tapi dari keyakinan.",
+        "en": "Yogyakarta's philosophical axis — Mount Merapi, Tugu, Keraton, Panggung Krapyak, Parangtritis Beach — is no geographical accident. It is a cosmological mandala planned by Sultan HB I since 1755: a 33-kilometer axis declaring that this city is not merely a settlement, but a statement about the relationship between humanity and the universe. A design born not from convenience, but from conviction."
       },
       "highlights": {
         "id": [
-          "Sumbu Filosofis 33 km",
-          "Bangsal Kencana & Siti Hinggil",
-          "Konsep Hamemayu Hayuning Bawana"
+          "Sumbu Filosofis 33 km: Dari Api Merapi ke Keabadian Samudera",
+          "Bangsal Kencana & Siti Hinggil: Hierarki Ruang yang Tertulis dalam Arsitektur",
+          "Hamemayu Hayuning Bawana: Memperindah Keindahan Dunia"
         ],
         "en": [
-          "33 km Philosophical Axis",
-          "Golden Pavilion & Siti Hinggil",
-          "Hamemayu Hayuning Bawana Concept"
+          "33 km Philosophical Axis: From Merapi's Fire to the Ocean's Eternity",
+          "Golden Pavilion & Siti Hinggil: Spatial Hierarchy Written in Architecture",
+          "Hamemayu Hayuning Bawana: Beautifying the Beauty of the World"
         ]
       },
       "reverse": true
@@ -126,23 +126,23 @@
         "en": "Ngayogyakarta Traditional Attire"
       },
       "subtitle": {
-        "id": "Manifestasi Tata Krama dan Stratifikasi Sosial",
-        "en": "Manifestation of Etiquette and Social Stratification"
+        "id": "Bahasa Visual yang Bercerita tentang Siapa Anda",
+        "en": "A Visual Language That Tells You Who Someone Is"
       },
       "description": {
-        "id": "Baju adat Jogja bukan sekadar penutup tubuh. Surjan, kebaya, hingga wiron jarik adalah bahasa visual yang meneriakkan status, sopan santun, dan kepatuhan kosmik.",
-        "en": "Jogja's traditional attire is not merely clothing. Surjan, kebaya, and jarik pleats are a visual language screaming status, manners, and cosmic obedience."
+        "id": "Surjan, kebaya, blangkon, dan wiron jarik bukan sekadar penutup tubuh — mereka adalah sistem komunikasi visual yang lebih tua dari bahasa tulisan Jawa modern. Cara melipat jarik, arah corak batik, dan warna selendang semuanya menyampaikan informasi tentang status, kesempatan, dan kepatuhan kosmik pemakainya. Di Keraton, berbusana adalah tindakan politik.",
+        "en": "Surjan, kebaya, blangkon, and jarik pleats are not merely clothing — they are a visual communication system older than modern Javanese written language. How the jarik is folded, the direction of the batik motif, the color of the sash all communicate information about the wearer's status, occasion, and cosmic obedience. In the Keraton, dressing is a political act."
       },
       "highlights": {
         "id": [
-          "Filosofi Surjan & Blangkon",
-          "Pakem Wiron Engkol",
-          "Simbolisme Kebaya Kuthubaru"
+          "Filosofi Surjan & Blangkon: Identitas yang Dipakai di Kepala",
+          "Pakem Wiron Engkol: Cara Melipat yang Membedakan Derajat",
+          "Simbolisme Kebaya Kuthubaru: Keanggunan yang Bercerita"
         ],
         "en": [
-          "Surjan & Blangkon Philosophy",
-          "Engkol Pleating Rules",
-          "Kuthubaru Kebaya Symbolism"
+          "Surjan & Blangkon Philosophy: Identity Worn on the Head",
+          "Engkol Pleating Rules: A Folding Technique That Distinguishes Rank",
+          "Kuthubaru Kebaya Symbolism: Elegance That Speaks"
         ]
       },
       "reverse": false
@@ -157,8 +157,8 @@
         "en": "Mawlid (Rabi' al-Awwal)"
       },
       "desc": {
-        "id": "Perayaan kelahiran Nabi Muhammad SAW yang ditandai dengan dibunyikannya gamelan pusaka selama 7 hari penuh di halaman Masjid Gedhe Kauman.",
-        "en": "A celebration of the Prophet Muhammad's birth marked by the playing of heirloom gamelan for 7 full days in the courtyard of the Great Kauman Mosque."
+        "id": "Selama tujuh hari penuh, gamelan pusaka Kyai Gunturmadu dan Kyai Nagawilaga berbunyi di halaman Masjid Gedhe Kauman — satu-satunya momen dalam setahun ketika instrumen sakral itu dimainkan. Sekaten bukan festival tontonan; ia adalah undangan untuk mendengar bunyi yang sebagian besar orang tidak pernah dengar.",
+        "en": "For seven full days, the heirloom gamelan Kyai Gunturmadu and Kyai Nagawilaga sound in the courtyard of the Great Kauman Mosque — the only moment in the year these sacred instruments are played. Sekaten is not a spectator festival; it is an invitation to hear a sound most people will never hear."
       }
     },
     {
@@ -166,17 +166,44 @@
       "name": { "id": "Grebeg Syawal & Besar", "en": "Grebeg Syawal & Besar" },
       "month": { "id": "Syawal & Dzulhijjah", "en": "Shawwal & Dhu al-Hijjah" },
       "desc": {
-        "id": "Sultan membagikan sedekah bumi berupa 'Gunungan' hasil panen yang diarak oleh prajurit keraton untuk diperebutkan rakyat.",
-        "en": "The Sultan distributes earth's alms in the form of a 'Gunungan' of harvest yields, paraded by palace guards for the people."
+        "id": "Sultan membagikan sedekah bumi berupa 'Gunungan' — tumpeng raksasa dari hasil panen yang diarak prajurit keraton berbusana lengkap. Ketika Gunungan tiba di Masjid Gedhe, ribuan orang berebut mengambil bagian darinya, karena dipercaya membawa berkah. Di sini, kekuasaan monarki dan iman rakyat bertemu dalam satu gerakan.",
+        "en": "The Sultan distributes earth's alms as a 'Gunungan' — a massive tumpeng of harvest yields, paraded by fully-dressed palace guards. When the Gunungan arrives at the Great Mosque, thousands rush to claim a piece of it, believed to carry blessings. Here, monarchical power and people's faith meet in a single movement."
       }
     },
     {
       "id": "labuhan",
       "name": { "id": "Labuhan Alit & Ageng", "en": "Labuhan Alit & Ageng" },
-      "month": { "id": "Rajab", "en": "Rajab" },
+      "month": {
+        "id": "Rajab & Hari Ulang Tahun Sultan",
+        "en": "Rajab & Sultan's Anniversary"
+      },
       "desc": {
-        "id": "Upacara persembahan Kraton di Pantai Parangtritis, Gunung Merapi, dan Gunung Lawu untuk menjaga keseimbangan spiritual antara manusia, alam, dan Tuhan.",
-        "en": "A Kraton offering ceremony at Parangtritis Beach, Mount Merapi, and Mount Lawu to maintain spiritual balance between humans, nature, and God."
+        "id": "Upacara persembahan Keraton di tiga titik kosmologis: Pantai Parangtritis, lereng Gunung Merapi, dan Gunung Lawu. Abdi dalem membawa sesaji — termasuk potongan kuku dan rambut Sultan — sebagai penghormatan kepada kekuatan alam yang lebih besar. Ini adalah momen di mana monarki mengakui keterbatasannya di hadapan semesta.",
+        "en": "A Keraton offering ceremony at three cosmological points: Parangtritis Beach, Mount Merapi's slopes, and Mount Lawu. Palace servants carry offerings — including the Sultan's nail clippings and hair — as homage to forces greater than any human power. This is the moment when monarchy acknowledges its limits before the universe."
+      }
+    },
+    {
+      "id": "artjog",
+      "name": { "id": "ArtJog", "en": "ArtJog" },
+      "month": {
+        "id": "Mei – Agustus",
+        "en": "May – August"
+      },
+      "desc": {
+        "id": "Festival seni kontemporer internasional yang lahir dari denyut komunitas seniman Yogyakarta. Digelar setiap tahun di Jogja National Museum, ArtJog menghadirkan ratusan seniman dari puluhan negara dan menjadi salah satu barometer perkembangan seni rupa kontemporer Asia Tenggara. Di kota dengan tradisi berusia seribu tahun, ArtJog membuktikan bahwa warisan tidak menutup pintu bagi eksperimen.",
+        "en": "An international contemporary art festival born from Yogyakarta's artist community. Held annually at the Jogja National Museum, ArtJog gathers hundreds of artists from dozens of countries and serves as one of Southeast Asia's barometers for contemporary art development. In a city with a thousand-year tradition, ArtJog proves that heritage does not close the door to experimentation."
+      }
+    },
+    {
+      "id": "biennale",
+      "name": { "id": "Biennale Jogja", "en": "Jogja Biennial" },
+      "month": {
+        "id": "Oktober – Desember (Tahun Genap)",
+        "en": "October – December (Even Years)"
+      },
+      "desc": {
+        "id": "Biennale tertua di Indonesia, berdiri sejak 1988. Setiap edisinya menegosiasikan identitas lokal dengan perkembangan seni rupa global melalui tema yang berbeda. Yogyakarta adalah salah satu dari sedikit kota Asia yang memiliki biennale yang diakui oleh kurator internasional — bukti bahwa Jogja bukan hanya menyimpan budaya, tapi juga aktif mendefinisikan ulang artinya.",
+        "en": "Indonesia's oldest biennial, established in 1988. Each edition negotiates local identity with global art developments through a distinct theme. Yogyakarta is one of few Asian cities with a biennial recognized by international curators — proof that Jogja does not merely preserve culture, but actively redefines what it means."
       }
     }
   ],
@@ -184,102 +211,162 @@
     {
       "script": "ꦲ",
       "latin": "Ha",
-      "philosophy": { "id": "Utusan hidup", "en": "Messenger of life" }
+      "philosophy": {
+        "id": "Nafas pertama yang menandai kehadiran",
+        "en": "The first breath marking one's arrival"
+      }
     },
     {
       "script": "ꦤ",
       "latin": "Na",
-      "philosophy": { "id": "Tanda keberadaan", "en": "Sign of existence" }
+      "philosophy": {
+        "id": "Bekas yang kita tinggalkan di dunia",
+        "en": "The mark we leave upon the world"
+      }
     },
     {
       "script": "ꦕ",
       "latin": "Ca",
-      "philosophy": { "id": "Utusan rahasia", "en": "Secret messenger" }
+      "philosophy": {
+        "id": "Kata-kata yang hanya dimengerti jiwa",
+        "en": "Words understood only by the soul"
+      }
     },
     {
       "script": "ꦫ",
       "latin": "Ra",
-      "philosophy": { "id": "Sesuatu yang agung", "en": "Something noble" }
+      "philosophy": {
+        "id": "Cahaya yang tidak pernah benar-benar padam",
+        "en": "The light that never truly extinguishes"
+      }
     },
     {
       "script": "ꦏ",
       "latin": "Ka",
-      "philosophy": { "id": "Kekuatan mutlak", "en": "Absolute power" }
+      "philosophy": {
+        "id": "Akar yang menahan ketika badai datang",
+        "en": "Roots that hold when storms arrive"
+      }
     },
     {
       "script": "ꦢ",
       "latin": "Da",
-      "philosophy": { "id": "Zat yang suci", "en": "Sacred essence" }
+      "philosophy": {
+        "id": "Inti yang tidak bisa dinodai",
+        "en": "The core that cannot be defiled"
+      }
     },
     {
       "script": "ꦠ",
       "latin": "Ta",
-      "philosophy": { "id": "Kehendak ilahi", "en": "Divine will" }
+      "philosophy": {
+        "id": "Jalan yang telah dipetakan sebelum lahir",
+        "en": "The path mapped before birth"
+      }
     },
     {
       "script": "ꦱ",
       "latin": "Sa",
-      "philosophy": { "id": "Satu tujuan", "en": "Single purpose" }
+      "philosophy": {
+        "id": "Simpul di mana semua arah bertemu",
+        "en": "The knot where all directions converge"
+      }
     },
     {
       "script": "ꦮ",
       "latin": "Wa",
-      "philosophy": { "id": "Wujud nyata", "en": "Physical form" }
+      "philosophy": {
+        "id": "Tubuh yang dipinjamkan untuk sementara",
+        "en": "The body temporarily borrowed"
+      }
     },
     {
       "script": "ꦭ",
       "latin": "La",
-      "philosophy": { "id": "Langkah hidup", "en": "Path of life" }
+      "philosophy": {
+        "id": "Jejak yang tidak bisa dihapus waktu",
+        "en": "Footprints that time cannot erase"
+      }
     },
     {
       "script": "ꦥ",
       "latin": "Pa",
-      "philosophy": { "id": "Pilar jiwa", "en": "Soul pillar" }
+      "philosophy": {
+        "id": "Tiang yang berdiri meski tanah berguncang",
+        "en": "A pillar standing even as the earth shakes"
+      }
     },
     {
       "script": "ꦝ",
       "latin": "Dha",
-      "philosophy": { "id": "Dasar kebenaran", "en": "Foundation of truth" }
+      "philosophy": {
+        "id": "Tanah paling dalam di bawah segala lapisan",
+        "en": "The deepest ground beneath all layers"
+      }
     },
     {
       "script": "ꦗ",
       "latin": "Ja",
-      "philosophy": { "id": "Jalan cahaya", "en": "Path of light" }
+      "philosophy": {
+        "id": "Celah di antara kegelapan yang selalu ada",
+        "en": "The gap in darkness that always exists"
+      }
     },
     {
       "script": "ꦪ",
       "latin": "Ya",
-      "philosophy": { "id": "Yakin akan asal", "en": "Faith in origin" }
+      "philosophy": {
+        "id": "Kenangan tentang rumah yang belum pernah kita lihat",
+        "en": "Memory of a home we have never seen"
+      }
     },
     {
       "script": "ꦚ",
       "latin": "Nya",
-      "philosophy": { "id": "Nyata adanya", "en": "Truly exists" }
+      "philosophy": {
+        "id": "Keyakinan yang bertahan tanpa bukti",
+        "en": "Conviction that survives without proof"
+      }
     },
     {
       "script": "ꦩ",
       "latin": "Ma",
-      "philosophy": { "id": "Menerima takdir", "en": "Accepting destiny" }
+      "philosophy": {
+        "id": "Tangan yang terbuka, bukan mengepal",
+        "en": "Open hands, not clenched fists"
+      }
     },
     {
       "script": "ꦒ",
       "latin": "Ga",
-      "philosophy": { "id": "Garis hidup", "en": "Lifeline" }
+      "philosophy": {
+        "id": "Garis yang ditarik sejak dalam kandungan",
+        "en": "The line drawn since the womb"
+      }
     },
     {
       "script": "ꦧ",
       "latin": "Ba",
-      "philosophy": { "id": "Bekal abadi", "en": "Eternal provision" }
+      "philosophy": {
+        "id": "Yang kita bawa ketika semua yang lain tertinggal",
+        "en": "What we carry when all else is left behind"
+      }
     },
     {
       "script": "ꦛ",
       "latin": "Tha",
-      "philosophy": { "id": "Titik temu", "en": "Meeting point" }
+      "philosophy": {
+        "id": "Momen ketika dua dunia saling menyentuh",
+        "en": "The moment two worlds touch each other"
+      }
     },
     {
       "script": "ꦔ",
       "latin": "Nga",
-      "philosophy": { "id": "Ngalap berkah", "en": "Seeking blessing" }
+      "philosophy": {
+        "id": "Kerendahan hati yang membuka langit",
+        "en": "Humility that opens the sky"
+      }
     }
   ]
 }

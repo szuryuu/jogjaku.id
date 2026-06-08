@@ -6,8 +6,8 @@
     "category": { "id": "Sejarah", "en": "History" },
     "title": { "id": "Prasasti Canggal", "en": "Canggal Inscription" },
     "desc": {
-      "id": "Dokumen tertua keberadaan peradaban Hindu di dataran Kedu (732 M).",
-      "en": "The oldest document of Hindu civilization in the Kedu plain (732 AD)."
+      "id": "Titik nol sejarah tertulis Yogyakarta — deklarasi peradaban kepada kekekalan (732 M).",
+      "en": "Yogyakarta's written history point zero — a civilization's declaration to eternity (732 AD)."
     }
   },
   {
@@ -17,8 +17,8 @@
     "category": { "id": "Sejarah", "en": "History" },
     "title": { "id": "Perang Diponegoro", "en": "Java War" },
     "desc": {
-      "id": "Perlawanan terpanjang dan termahal yang pernah dihadapi VOC di Jawa.",
-      "en": "The longest and most expensive resistance the VOC ever faced in Java."
+      "id": "Perlawanan gerilya lima tahun yang menguras kas Hindia Belanda hingga 20 juta Gulden.",
+      "en": "Five years of guerrilla resistance that drained 20 million guilders from the Dutch East Indies treasury."
     }
   },
   {
@@ -31,8 +31,30 @@
       "en": "March 1st General Attack"
     },
     "desc": {
-      "id": "Pembuktian eksistensi militer Republik Indonesia kepada dunia.",
-      "en": "Proof of the military existence of the Republic of Indonesia to the world."
+      "id": "Enam jam yang membuktikan kepada PBB bahwa Republik Indonesia belum mati.",
+      "en": "Six hours proving to the UN that the Republic of Indonesia was not dead."
+    }
+  },
+  {
+    "id": "s4",
+    "url": "/sejarah",
+    "iconType": "landmark",
+    "category": { "id": "Sejarah", "en": "History" },
+    "title": { "id": "Kongres Boedi Oetomo", "en": "Boedi Oetomo Congress" },
+    "desc": {
+      "id": "Kongres pertama organisasi modern Indonesia digelar di Yogyakarta, Oktober 1908.",
+      "en": "The first congress of Indonesia's first modern organization held in Yogyakarta, October 1908."
+    }
+  },
+  {
+    "id": "s5",
+    "url": "/sejarah",
+    "iconType": "landmark",
+    "category": { "id": "Sejarah", "en": "History" },
+    "title": { "id": "Berdirinya UGM", "en": "UGM Founded" },
+    "desc": {
+      "id": "Universitas negeri pertama Indonesia didirikan di Yogyakarta, Desember 1949.",
+      "en": "Indonesia's first national university founded in Yogyakarta, December 1949."
     }
   },
   {
@@ -42,8 +64,8 @@
     "category": { "id": "Budaya", "en": "Culture" },
     "title": { "id": "Wayang Kulit Purwa", "en": "Purwa Shadow Puppets" },
     "desc": {
-      "id": "Seni pertunjukan bayangan semalam suntuk dengan 200 karakter.",
-      "en": "All-night shadow performance art with 200 characters."
+      "id": "Seni pertunjukan delapan jam semalam suntuk dengan dalang sebagai sutradara 200 karakter.",
+      "en": "Eight-hour all-night performance art with the Dalang directing 200 characters."
     }
   },
   {
@@ -53,8 +75,8 @@
     "category": { "id": "Budaya", "en": "Culture" },
     "title": { "id": "Batik Kraton", "en": "Kraton Batik" },
     "desc": {
-      "id": "Filosofi motif larangan seperti Parang Rusak dan pewarna soga alami.",
-      "en": "Philosophy of forbidden motifs like Parang Rusak and natural soga dye."
+      "id": "Motif larangan seperti Parang Rusak dan sistem kosmologi Jawa yang diukir di kain.",
+      "en": "Forbidden motifs like Parang Rusak and Javanese cosmology carved into cloth."
     }
   },
   {
@@ -62,10 +84,32 @@
     "url": "/budaya",
     "iconType": "landmark",
     "category": { "id": "Budaya", "en": "Culture" },
-    "title": { "id": "Gamelan Kraton", "en": "Kraton Gamelan" },
+    "title": { "id": "Gamelan Keraton", "en": "Keraton Gamelan" },
     "desc": {
-      "id": "Demokrasi suara berusia sepuluh abad tanpa instrumen prima donna.",
-      "en": "Ten-century-old democracy of sound with no prima donna instrument."
+      "id": "Demokrasi suara berusia sepuluh abad: Kyai Gunturmadu berbunyi hanya sekali setahun.",
+      "en": "Ten-century democracy of sound: Kyai Gunturmadu plays only once a year."
+    }
+  },
+  {
+    "id": "b4",
+    "url": "/budaya",
+    "iconType": "landmark",
+    "category": { "id": "Budaya", "en": "Culture" },
+    "title": { "id": "ArtJog", "en": "ArtJog" },
+    "desc": {
+      "id": "Festival seni kontemporer internasional tahunan dari komunitas seniman Yogyakarta.",
+      "en": "Annual international contemporary art festival from Yogyakarta's artist community."
+    }
+  },
+  {
+    "id": "b5",
+    "url": "/budaya",
+    "iconType": "landmark",
+    "category": { "id": "Budaya", "en": "Culture" },
+    "title": { "id": "Biennale Jogja", "en": "Jogja Biennial" },
+    "desc": {
+      "id": "Biennale tertua di Indonesia sejak 1988, diakui kurator seni internasional.",
+      "en": "Indonesia's oldest biennial since 1988, recognized by international art curators."
     }
   },
   {
@@ -73,10 +117,10 @@
     "url": "/kuliner",
     "iconType": "utensils",
     "category": { "id": "Kuliner", "en": "Culinary" },
-    "title": { "id": "Gudeg Kraton", "en": "Royal Gudeg" },
+    "title": { "id": "Gudeg Kraton", "en": "Kraton Gudeg" },
     "desc": {
-      "id": "Nangka muda direbus 12 jam dengan santan dan gula aren.",
-      "en": "Young jackfruit boiled for 12 hours with coconut milk and palm sugar."
+      "id": "Nangka muda direbus dua belas jam di atas bara. Resep abdi dalem tidak berubah sejak 1755.",
+      "en": "Young jackfruit slow-cooked twelve hours over embers. A royal palace recipe unchanged since 1755."
     }
   },
   {
@@ -84,10 +128,10 @@
     "url": "/kuliner",
     "iconType": "utensils",
     "category": { "id": "Kuliner", "en": "Culinary" },
-    "title": { "id": "Oseng Mercon", "en": "Firecracker Stir-fry" },
+    "title": { "id": "Oseng Mercon", "en": "Firecracker Stir-Fry" },
     "desc": {
-      "id": "Kikil sapi ditumis dengan cabai rawit industrial. Perlawanan pedas.",
-      "en": "Beef tendon stir-fried with industrial bird's eye chili. Spicy resistance."
+      "id": "Kikil sapi ditumis dengan dua genggam cabai rawit. Pedasnya membuka lapisan rasa tersembunyi.",
+      "en": "Beef tendon stir-fried with two fistfuls of bird's-eye chili. Heat that unlocks hidden flavors."
     }
   },
   {
@@ -97,8 +141,77 @@
     "category": { "id": "Kuliner", "en": "Culinary" },
     "title": { "id": "Sate Klathak", "en": "Klathak Satay" },
     "desc": {
-      "id": "Daging kambing matang merata di atas jeruji besi sepeda.",
-      "en": "Mutton cooked evenly on bicycle iron spokes."
+      "id": "Daging kambing di atas jeruji sepeda besi. Hanya garam. Kepercayaan pada bahan baku.",
+      "en": "Mutton on iron bicycle spokes. Only salt. Total confidence in the raw ingredient."
+    }
+  },
+  {
+    "id": "k4",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": { "id": "Bakmi Jawa Arang", "en": "Javanese Charcoal Noodles" },
+    "desc": {
+      "id": "Satu porsi, satu wajan, satu arang. Buka setelah pukul delapan malam. Tutup saat bumbu habis.",
+      "en": "One portion, one wok, one coal. Opens after eight in the evening. Closes when the spices run out."
+    }
+  },
+  {
+    "id": "k5",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": { "id": "Nasi Kucing Angkringan", "en": "Angkringan Night Cart" },
+    "desc": {
+      "id": "Nasi sebesar kepalan tangan, seribu rupiah. Bangku panjang yang menyamakan semua orang.",
+      "en": "Rice the size of a fist, seven cents. A long bench where everyone is equal."
+    }
+  },
+  {
+    "id": "k6",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": {
+      "id": "Jadah Tempe Mbah Carik",
+      "en": "Mbah Carik's Jadah Tempe"
+    },
+    "desc": {
+      "id": "Ketan bakar di kaki Merapi, 700 meter dpl. Empat dekade resep yang tidak berubah.",
+      "en": "Grilled glutinous rice at Merapi's foothills, 700m elevation. Four decades, one unchanged recipe."
+    }
+  },
+  {
+    "id": "k7",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": { "id": "Mie Lethek", "en": "Lethek Noodles" },
+    "desc": {
+      "id": "Mie singkong dari Bantul, digiling mesin enam puluh tahun. 'Lethek' berarti tidak ada yang disembunyikan.",
+      "en": "Cassava noodles from Bantul, rolled through a sixty-year-old machine. 'Lethek' means nothing is hidden."
+    }
+  },
+  {
+    "id": "k8",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": { "id": "Soto Kadipiro", "en": "Soto Kadipiro" },
+    "desc": {
+      "id": "Berdiri 1921. Kaldu bening ayam kampung semalam tanpa MSG. Seratus tahun tanpa mengubah resep.",
+      "en": "Established 1921. Clear free-range chicken broth, overnight, no MSG. A century without changing the recipe."
+    }
+  },
+  {
+    "id": "k9",
+    "url": "/kuliner",
+    "iconType": "utensils",
+    "category": { "id": "Kuliner", "en": "Culinary" },
+    "title": { "id": "Tiwul Gunungkidul", "en": "Gunungkidul Tiwul" },
+    "desc": {
+      "id": "Tepung singkong kukus dari tanah berbatu. Bukan makanan kemiskinan — kecerdasan adaptasi manusia.",
+      "en": "Steamed cassava flour from rocky land. Not poverty food — the intelligent adaptation of a people."
     }
   },
   {
@@ -108,8 +221,8 @@
     "category": { "id": "Wisata", "en": "Tourism" },
     "title": { "id": "Candi Prambanan", "en": "Prambanan Temple" },
     "desc": {
-      "id": "Trilogi candi Trimurti setinggi 47 meter dari wangsa Sanjaya.",
-      "en": "47-meter high Trimurti temple trilogy from the Sanjaya dynasty."
+      "id": "Tiga menara 47 meter tanpa semen. Dibangun 856 M, masih berdiri lebih dari seribu tahun kemudian.",
+      "en": "Three 47-meter towers built without cement in 856 AD, still standing over a thousand years later."
     }
   },
   {
@@ -119,8 +232,8 @@
     "category": { "id": "Wisata", "en": "Tourism" },
     "title": { "id": "Jalan Malioboro", "en": "Malioboro Street" },
     "desc": {
-      "id": "Koridor 2 kilometer yang merupakan sumbu filosofis kota.",
-      "en": "2-kilometer corridor that is the city's philosophical axis."
+      "id": "Garis kosmologis dua kilometer yang menghubungkan api Merapi ke selatan laut.",
+      "en": "A two-kilometer cosmological line connecting Merapi's fire to the southern sea."
     }
   },
   {
@@ -130,8 +243,8 @@
     "category": { "id": "Wisata", "en": "Tourism" },
     "title": { "id": "Gunung Merapi", "en": "Mount Merapi" },
     "desc": {
-      "id": "Stratovolcano paling aktif di Indonesia.",
-      "en": "The most active stratovolcano in Indonesia."
+      "id": "Stratovolcano paling aktif Indonesia. Bagi warga Jogja, bukan ancaman — melainkan leluhur.",
+      "en": "Indonesia's most active stratovolcano. For Yogyanese, not a threat — but an ancestor."
     }
   },
   {
@@ -141,8 +254,55 @@
     "category": { "id": "Wisata", "en": "Tourism" },
     "title": { "id": "Kawasan Kaliurang", "en": "Kaliurang Area" },
     "desc": {
-      "id": "Resor pegunungan bersejarah di lereng selatan Merapi.",
-      "en": "Historic mountain resort on the southern slopes of Merapi."
+      "id": "Resor pegunungan bersejarah di lereng selatan Merapi. Titik start pendakian dan sarapan jadah tempe.",
+      "en": "Historic mountain resort on Merapi's southern slopes. Starting point for hikes and jadah tempe breakfast."
+    }
+  },
+  {
+    "id": "w5",
+    "url": "/wisata",
+    "iconType": "mappin",
+    "category": { "id": "Wisata", "en": "Tourism" },
+    "title": {
+      "id": "Kotagede Heritage District",
+      "en": "Kotagede Heritage District"
+    },
+    "desc": {
+      "id": "Makam Panembahan Senopati, Masjid Mataram 1640, dan pengrajin perak empat generasi di gang sempit.",
+      "en": "Tomb of Panembahan Senopati, 1640 Mataram Mosque, and four-generation silver craftsmen in narrow lanes."
+    }
+  },
+  {
+    "id": "w6",
+    "url": "/wisata",
+    "iconType": "mappin",
+    "category": { "id": "Wisata", "en": "Tourism" },
+    "title": { "id": "Museum Ullen Sentalu", "en": "Ullen Sentalu Museum" },
+    "desc": {
+      "id": "Museum terbaik di Jawa. Menyimpan sejarah perempuan bangsawan Mataram yang tidak masuk buku sejarah.",
+      "en": "Java's finest museum. Holding the history of Mataram royal women who never made it into history books."
+    }
+  },
+  {
+    "id": "w7",
+    "url": "/wisata",
+    "iconType": "mappin",
+    "category": { "id": "Wisata", "en": "Tourism" },
+    "title": { "id": "Tebing Breksi", "en": "Tebing Breksi" },
+    "desc": {
+      "id": "Tebing tambang yang berubah menjadi panggung. Relief mitologi Jawa dipahat seniman lokal 2015–2020.",
+      "en": "A quarry cliff transformed into a stage. Javanese mythological reliefs carved by local artists 2015–2020."
+    }
+  },
+  {
+    "id": "w8",
+    "url": "/wisata",
+    "iconType": "mappin",
+    "category": { "id": "Wisata", "en": "Tourism" },
+    "title": { "id": "Pasar Beringharjo", "en": "Beringharjo Market" },
+    "desc": {
+      "id": "Pasar sejak Mataram pertama berdiri. Bukan objek wisata — ini kota yang sedang bekerja.",
+      "en": "A market since Mataram was first built. Not a tourist attraction — this is a city at work."
     }
   },
   {
@@ -152,8 +312,8 @@
     "category": { "id": "Teknologi", "en": "Technology" },
     "title": { "id": "Silicon Wali", "en": "Silicon Wali" },
     "desc": {
-      "id": "Koridor ekosistem startup di Ringroad Utara.",
-      "en": "Startup ecosystem corridor in North Ringroad."
+      "id": "300+ startup aktif di koridor Ringroad Utara. Efisiensi modal yang tidak bisa ditandingi Jakarta.",
+      "en": "300+ active startups along the North Ringroad corridor. Capital efficiency Jakarta cannot match."
     }
   },
   {
@@ -163,8 +323,22 @@
     "category": { "id": "Teknologi", "en": "Technology" },
     "title": { "id": "Jogja Smart Province", "en": "Jogja Smart Province" },
     "desc": {
-      "id": "Cetak biru digitalisasi layanan publik dan sensor IoT mitigasi bencana.",
-      "en": "Blueprint for public service digitalization and disaster mitigation IoT sensors."
+      "id": "200+ layanan publik digital, sensor IoT mitigasi Merapi, dan tata kelola data presisi.",
+      "en": "200+ digitized public services, Merapi IoT mitigation sensors, and precision data governance."
+    }
+  },
+  {
+    "id": "t3",
+    "url": "/teknologi",
+    "iconType": "monitor",
+    "category": { "id": "Teknologi", "en": "Technology" },
+    "title": {
+      "id": "Digitalisasi UMKM Jogja",
+      "en": "Jogja SME Digitalization"
+    },
+    "desc": {
+      "id": "60% UMKM Yogyakarta kini di platform digital. Pengrajin Kotagede menjual ke Eropa dari ponsel.",
+      "en": "60% of Yogyakarta SMEs now on digital platforms. Kotagede craftsmen selling to Europe from their phones."
     }
   },
   {
@@ -174,8 +348,8 @@
     "category": { "id": "Pendidikan", "en": "Education" },
     "title": { "id": "Kota Pelajar", "en": "City of Students" },
     "desc": {
-      "id": "Budaya akademik, kampus unggulan, dan kehidupan mahasiswa Yogyakarta.",
-      "en": "Academic culture, leading campuses, and student life in Yogyakarta."
+      "id": "21 perguruan tinggi, puluhan ribu lulusan STEM per tahun, 24/7 ritme akademik dan komunitas.",
+      "en": "21 universities, tens of thousands of STEM graduates per year, 24/7 academic and community rhythm."
     }
   },
   {
@@ -188,8 +362,8 @@
       "en": "Universities in Yogyakarta"
     },
     "desc": {
-      "id": "UGM, UNY, UII, UMY, Sanata Dharma, dan Atma Jaya Yogyakarta.",
-      "en": "UGM, UNY, UII, UMY, Sanata Dharma, and Atma Jaya Yogyakarta."
+      "id": "UGM (top 300 dunia), UNY, UII, UMY, Sanata Dharma, dan Atma Jaya Yogyakarta.",
+      "en": "UGM (world top 300), UNY, UII, UMY, Sanata Dharma, and Atma Jaya Yogyakarta."
     }
   },
   {
@@ -197,10 +371,10 @@
     "url": "/pendidikan#study-spots",
     "iconType": "mappin",
     "category": { "id": "Pendidikan", "en": "Education" },
-    "title": { "id": "Tempat Belajar", "en": "Study Spots" },
+    "title": { "id": "Tempat Belajar Terbaik", "en": "Top Study Spots" },
     "desc": {
-      "id": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, dan Ruang JAKA.",
-      "en": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, and Ruang JAKA."
+      "id": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, dan Ruang JAKA — fokus tanpa kompromi.",
+      "en": "Rambat Coffee, Grhatama Pustaka, Internet Learning Cafe, and Ruang JAKA — focus without compromise."
     }
   }
 ]
