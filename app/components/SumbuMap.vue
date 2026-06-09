@@ -19,7 +19,7 @@ const pinImages = [
   "/images/wisata/merapi.jpg",
   "/images/sejarah/tugu.jpg",
   "/images/sejarah/keraton.jpg",
-  "krapyak.jpg",
+  "/images/wisata/krapyak.jpg",
   "/images/home/parangtritis.jpg",
 ];
 
