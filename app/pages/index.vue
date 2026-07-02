@@ -2,6 +2,8 @@
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import gsap from "gsap";
 
+definePageMeta({ layout: "story" });
+
 setPageSeo({
   title: "JogjaKu — Panduan Wisata, Budaya, Kuliner, dan Sejarah Yogyakarta",
   description:
