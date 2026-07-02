@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, nextTick, watch } from "vue";
 import { useLocaleToggle } from "~/composables/useLocaleToggle";
 
 const { locale, toggleLanguage } = useLocaleToggle();
 
 const isNavOpen = ref(false);
+const firstNavLink = ref<InstanceType<typeof NuxtLink> | null>(null);
 
 const navLinks = [
   { to: "/sejarah", key: "nav.sejarah" },
@@ -26,6 +27,14 @@ const closeNav = () => {
 const toggleNav = () => {
   isNavOpen.value = !isNavOpen.value;
 };
+
+// Auto-focus first link when nav opens, return focus when closed
+watch(isNavOpen, async (open) => {
+  if (open) {
+    await nextTick();
+    (firstNavLink.value?.$el as HTMLElement)?.focus();
+  }
+});
 
 const onKeydown = (e: KeyboardEvent) => {
   if (e.key === "Escape" && isNavOpen.value) closeNav();
@@ -101,8 +110,9 @@ onUnmounted(() => {
           Jelajahi JogjaKu
         </p>
         <NuxtLink
-          v-for="link in navLinks"
+          v-for="(link, idx) in navLinks"
           :key="link.to"
+          :ref="idx === 0 ? (el: any) => firstNavLink = el : undefined"
           :to="link.to"
           class="block font-libre text-[1.6rem] py-2.5 no-underline opacity-85 border-b border-white/8 transition-all duration-200 hover:opacity-100 hover:pl-2 hover:text-terra focus-visible:opacity-100 focus-visible:pl-2 focus-visible:text-terra"
           @click="closeNav"
