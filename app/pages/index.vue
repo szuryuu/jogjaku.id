@@ -93,13 +93,20 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <main
-    class="min-h-screen bg-parchment relative w-full overflow-hidden flex flex-col"
-  >
-    <HomeHero />
-    <HomeIntro />
-    <HomePhilosophy />
-    <HomeEditorial />
+  <div class="min-h-screen bg-parchment relative w-full overflow-hidden flex flex-col">
+    <HomeStoryContainer>
+      <ChapterHero />
+      <ChapterSejarah />
+      <ChapterBudaya />
+      <ChapterFilosofi />
+      <ChapterWisata />
+      <ChapterKuliner />
+      <ChapterPendidikan />
+      <ChapterTeknologi />
+      <ChapterPeta />
+      <ChapterClosing />
+    </HomeStoryContainer>
+  </div>
 
     <Teleport to="body" v-if="isMounted && hasFinePointer">
       <div
@@ -110,7 +117,6 @@ onUnmounted(() => {
         <span class="mt-[2px]">J</span>
       </div>
     </Teleport>
-  </main>
 </template>
 
 <style>

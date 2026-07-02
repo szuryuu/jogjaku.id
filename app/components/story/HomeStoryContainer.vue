@@ -80,6 +80,18 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <slot />
+    <slot>
+      <!-- ponytail: chapters can be slotted from parent, or use default order -->
+      <ChapterHero />
+      <ChapterSejarah />
+      <ChapterBudaya />
+      <ChapterFilosofi />
+      <ChapterWisata />
+      <ChapterKuliner />
+      <ChapterPendidikan />
+      <ChapterTeknologi />
+      <ChapterPeta />
+      <ChapterClosing />
+    </slot>
   </div>
 </template>
