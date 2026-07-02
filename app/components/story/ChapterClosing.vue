@@ -2,7 +2,8 @@
 import StoryChapter from "./StoryChapter.vue";
 import { useLocaleToggle } from "~/composables/useLocaleToggle";
 
-const { t, locale, toggleLanguage } = useLocaleToggle();
+const { t } = useI18n();
+const { locale, toggleLanguage } = useLocaleToggle();
 
 const links = [
   { to: "/sejarah", key: "nav.sejarah" },

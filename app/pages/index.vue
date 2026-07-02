@@ -94,18 +94,18 @@ onUnmounted(() => {
 
 <template>
   <div class="min-h-screen bg-parchment relative w-full overflow-hidden flex flex-col">
-    <HomeStoryContainer>
-      <ChapterHero />
-      <ChapterSejarah />
-      <ChapterBudaya />
-      <ChapterFilosofi />
-      <ChapterWisata />
-      <ChapterKuliner />
-      <ChapterPendidikan />
-      <ChapterTeknologi />
-      <ChapterPeta />
-      <ChapterClosing />
-    </HomeStoryContainer>
+    <StoryHomeStoryContainer>
+      <StoryChapterHero />
+      <StoryChapterSejarah />
+      <StoryChapterBudaya />
+      <StoryChapterFilosofi />
+      <StoryChapterWisata />
+      <StoryChapterKuliner />
+      <StoryChapterPendidikan />
+      <StoryChapterTeknologi />
+      <StoryChapterPeta />
+      <StoryChapterClosing />
+    </StoryHomeStoryContainer>
   </div>
 
     <Teleport to="body" v-if="isMounted && hasFinePointer">
