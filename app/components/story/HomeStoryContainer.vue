@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
 
-const railDots = ref<HTMLElement[]>([]);
 let revealObserver: IntersectionObserver | null = null;
 let chapterObserver: IntersectionObserver | null = null;
 let ticking = false;
 let parallaxEls: HTMLElement[] = [];
+let railDots: HTMLElement[] = [];
 let reducedMotion = true;
-
-const setRailDots = (els: HTMLElement[]) => {
-  railDots.value = els;
-};
 
 const updateParallax = () => {
   const vh = window.innerHeight;
@@ -24,6 +20,7 @@ const updateParallax = () => {
 
 onMounted(() => {
   reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  railDots = Array.from(document.querySelectorAll(".progress-rail .dot"));
 
   if (!reducedMotion && "IntersectionObserver" in window) {
     revealObserver = new IntersectionObserver(
@@ -44,7 +41,7 @@ onMounted(() => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
             const idx = Number((entry.target as HTMLElement).dataset.chapter);
-            for (const dot of railDots.value) {
+            for (const dot of railDots) {
               dot.dataset.active =
                 Number(dot.dataset.index) === idx ? "" : undefined;
             }

@@ -133,14 +133,11 @@ onUnmounted(() => {
     </nav>
 
     <!-- Progress rail -->
-    <div
-      class="progress-rail fixed right-7 top-1/2 -translate-y-1/2 z-[9995] flex flex-col gap-[0.9rem] max-md:hidden"
-      aria-hidden="true"
-    >
+    <div class="progress-rail fixed right-7 top-1/2 -translate-y-1/2 z-[9995] flex flex-col gap-[0.9rem] max-md:hidden" aria-hidden="true">
       <div
         v-for="i in 10"
         :key="i"
-        class="w-[7px] h-[7px] rounded-full bg-ink/20 transition-all duration-300 data-[active]:bg-terra data-[active]:scale-140"
+        class="dot w-[7px] h-[7px] rounded-full bg-ink/20 transition-all duration-300 data-[active]:bg-terra data-[active]:scale-140"
         :data-index="i - 1"
         :data-active="i === 1 ? '' : undefined"
       ></div>

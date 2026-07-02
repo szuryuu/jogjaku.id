@@ -6,19 +6,17 @@ const props = defineProps<{
   chapterLabel: string;
   variant: "center" | "staggered" | "focus" | "typographic";
   isDark?: boolean;
+  reverse?: boolean;
 }>();
 
 const variantClass = computed(() => {
-  switch (props.variant) {
-    case "center":
-      return "flex-col text-center";
-    case "staggered":
-      return "gap-[5vw] max-w-[1200px] mx-auto w-full max-md:flex-col max-md:text-center";
-    case "focus":
-      return "flex-col";
-    case "typographic":
-      return "flex-col text-center";
-  }
+  const base: Record<string, string> = {
+    center: "flex-col text-center",
+    staggered: `gap-[5vw] max-w-[1200px] mx-auto w-full max-md:flex-col max-md:text-center${props.reverse ? " flex-row-reverse" : ""}`,
+    focus: "flex-col",
+    typographic: "flex-col text-center",
+  };
+  return base[props.variant];
 });
 </script>
 
