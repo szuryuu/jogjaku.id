@@ -22,9 +22,17 @@ const { t } = useI18n();
         class="w-full h-full object-cover"
       />
     </div>
-    <!-- ponytail: concentric diamond motif behind text box -->
-    <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none opacity-10" aria-hidden="true">
-      <div class="h-full w-full rounded-full" style="background: repeating-radial-gradient(circle at center, #b8491f 0, #b8491f 1px, transparent 1px, transparent 16px)" />
+    <!-- ponytail: Kawung-inspired circles from prototype -->
+    <div class="absolute inset-0 pointer-events-none opacity-40" aria-hidden="true">
+      <div
+        class="h-full w-full"
+        style="
+          background:
+            radial-gradient(circle at 0 0, rgba(184, 73, 31, 0.03) 25px, transparent 26px),
+            radial-gradient(circle at 100% 100%, rgba(184, 73, 31, 0.03) 25px, transparent 26px);
+          background-size: 80px 80px;
+        "
+      />
     </div>
     <div class="text-box reveal-up delay-100 relative z-2 bg-parchment p-10 max-w-[420px] text-center shadow-[0_30px_60px_rgba(0,0,0,0.12)] -mt-8">
       <h3 class="font-libre text-[1.6rem] mb-3">
@@ -37,7 +45,7 @@ const { t } = useI18n();
         to="/budaya"
         class="cta-link inline-flex items-center gap-[0.6rem] font-josefin text-xs tracking-[0.15em] uppercase text-terra mt-6 pb-[0.3rem] border-b border-terra transition-all duration-300 hover:gap-4 focus-visible:gap-4"
       >
-        Jelajahi Budaya →
+        {{ t('home.story.budaya.cta') }} →
       </NuxtLink>
     </div>
   </StoryChapter>

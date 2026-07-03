@@ -56,6 +56,24 @@
         "desc": "Perjalanan kosmologis 33 kilometer dari api ke samudra.",
         "badge": "Fitur Interaktif"
       }
+    },
+    "story": {
+      "sejarah": {
+        "cta": "Jelajahi Sejarah"
+      },
+      "budaya": {
+        "cta": "Jelajahi Budaya"
+      },
+      "pendidikan": {
+        "title": "Kota Pelajar Indonesia",
+        "subtitle": "Ribuan mahasiswa dari seluruh Nusantara menemukan semangat belajar, berdiskusi, dan berkarya di kota ini.",
+        "cta": "Lihat Ekosistem Pendidikan"
+      },
+      "closing": {
+        "heading": "Cerita ini baru permulaan.",
+        "lede": "Pilih babak yang ingin kamu jelajahi lebih dulu.",
+        "aria_label": "Semua halaman JogjaKu"
+      }
     }
   },
   "footer": {

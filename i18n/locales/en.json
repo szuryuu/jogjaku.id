@@ -56,6 +56,24 @@
         "desc": "A 33-kilometer cosmological journey from fire to ocean.",
         "badge": "Interactive Feature"
       }
+    },
+    "story": {
+      "sejarah": {
+        "cta": "Explore History"
+      },
+      "budaya": {
+        "cta": "Explore Culture"
+      },
+      "pendidikan": {
+        "title": "Indonesia's City of Students",
+        "subtitle": "Thousands of students from across the archipelago find the spirit of learning, discussion, and creation in this city.",
+        "cta": "Explore Education Ecosystem"
+      },
+      "closing": {
+        "heading": "This story is just the beginning.",
+        "lede": "Choose the chapter you'd like to explore first.",
+        "aria_label": "All JogjaKu pages"
+      }
     }
   },
   "footer": {

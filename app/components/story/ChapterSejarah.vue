@@ -12,9 +12,20 @@ const { t } = useI18n();
     :data-chapter="1"
     class="!pt-0"
   >
-    <!-- ponytail: vertical stripe motif behind text -->
-    <div class="absolute left-0 top-0 bottom-0 w-[55vw] pointer-events-none opacity-10" aria-hidden="true">
-      <div class="h-full w-full" style="background-image: repeating-linear-gradient(90deg, #b8491f 0, #b8491f 1px, transparent 1px, transparent 24px), repeating-linear-gradient(90deg, #b8491f 0, #b8491f 0.5px, transparent 0.5px, transparent 6px)" />
+    <!-- ponytail: vertical timeline threads -->
+    <div class="absolute inset-0 pointer-events-none opacity-100" aria-hidden="true">
+      <div
+        class="h-full w-full"
+        style="
+          background: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 39px,
+            rgba(184, 73, 31, 0.1) 39px,
+            rgba(184, 73, 31, 0.1) 40px
+          );
+        "
+      />
     </div>
     <div class="stagger-text max-w-[480px] reveal-up">
       <h2 class="font-libre text-[clamp(1.8rem,4.2vw,3.4rem)] max-w-[18ch] leading-[1.15]">
@@ -24,7 +35,7 @@ const { t } = useI18n();
         to="/sejarah"
         class="cta-link inline-flex items-center gap-[0.6rem] font-josefin text-xs tracking-[0.15em] uppercase text-terra mt-6 pb-[0.3rem] border-b border-terra transition-all duration-300 hover:gap-4 focus-visible:gap-4"
       >
-        Jelajahi Sejarah →
+        {{ t('home.story.sejarah.cta') }} →
       </NuxtLink>
     </div>
     <div class="parallax-img reveal-up delay-100 w-[40%] max-w-[480px] h-[50vh] shrink-0 max-md:w-full max-md:max-w-full max-md:h-[40vh]">
