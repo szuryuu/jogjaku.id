@@ -69,9 +69,14 @@ onUnmounted(() => {
     <!-- Floating logo -->
     <NuxtLink
       to="/"
-      class="fixed top-6 left-6 z-[9998] font-libre font-bold italic text-[1.4rem] text-terra no-underline"
+      class="fixed top-6 left-6 z-[9998] w-9 h-9 text-terra no-underline"
+      aria-label="JogjaKu — Beranda"
     >
-      J
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-full h-full" aria-hidden="true">
+        <path d="M18 52 L46 52 L38 40 L26 40 Z" fill="currentColor" />
+        <path d="M28 40 L36 40 L34 22 L30 22 Z" fill="currentColor" />
+        <circle cx="32" cy="14" r="6" fill="currentColor" />
+      </svg>
     </NuxtLink>
 
     <!-- Hamburger toggle -->
