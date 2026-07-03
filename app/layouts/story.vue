@@ -7,6 +7,12 @@ const { locale, toggleLanguage } = useLocaleToggle();
 const isNavOpen = ref(false);
 const firstNavLink = ref<InstanceType<typeof NuxtLink> | null>(null);
 
+const chapterLabels = ['Mulai', 'Sejarah', 'Budaya', 'Sumbu Filosofi', 'Wisata', 'Kuliner', 'Pendidikan', 'Teknologi', 'Peta', 'Penutup'];
+
+const scrollToChapter = (idx: number) => {
+  document.querySelector(`.chapter[data-chapter="${idx}"]`)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 const navLinks = [
   { to: "/sejarah", key: "nav.sejarah" },
   { to: "/budaya", key: "nav.budaya" },
@@ -144,13 +150,19 @@ onUnmounted(() => {
 
     <!-- Progress rail -->
     <div class="progress-rail fixed right-7 top-1/2 -translate-y-1/2 z-[9995] flex flex-col gap-[0.9rem] max-md:hidden" aria-hidden="true">
-      <div
+      <button
         v-for="i in 10"
         :key="i"
-        class="dot w-[7px] h-[7px] rounded-full bg-ink/20 transition-all duration-300 data-[active]:bg-terra data-[active]:scale-140"
+        class="dot group relative w-[12px] h-[12px] rounded-full bg-ink/20 transition-all duration-300 data-[active]:bg-terra data-[active]:scale-125 cursor-pointer border-0 p-0 hover:bg-ink/50 hover:scale-110"
         :data-index="i - 1"
         :data-active="i === 1 ? '' : undefined"
-      ></div>
+        :aria-label="`Langsung ke ${chapterLabels[i - 1]}`"
+        @click="scrollToChapter(i - 1)"
+      >
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 font-josefin text-[10px] tracking-[0.15em] uppercase text-ink whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+          {{ chapterLabels[i - 1] }}
+        </span>
+      </button>
     </div>
 
     <main id="main-content" class="w-full">

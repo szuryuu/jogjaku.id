@@ -11,6 +11,17 @@ const { t } = useI18n();
     variant="typographic"
     :data-chapter="7"
   >
+    <div class="parallax-img absolute inset-0 z-0 opacity-35 blur-[3px]">
+      <img
+        src="/images/home/Stasiun_Tugu_Yogyakarta.jpg"
+        alt="Stasiun Tugu Yogyakarta"
+        width="1920"
+        height="1080"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
     <h2 class="reveal-up font-josefin font-semibold text-[clamp(2rem,6vw,4.5rem)] leading-[1.15] tracking-[-0.01em]">
       {{ t("home.editorial.teknologi.title").toUpperCase() }}
     </h2>

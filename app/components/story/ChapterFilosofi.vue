@@ -9,10 +9,9 @@ const { t } = useI18n();
     chapter-number="III"
     chapter-label="SUMBU FILOSOFI"
     variant="center"
-    is-dark
     :data-chapter="3"
   >
-    <div class="parallax-img absolute inset-0 z-0 opacity-15">
+    <div class="parallax-img absolute inset-0 z-0 opacity-35 blur-[3px]">
       <img
         src="/images/home/parangtritis.jpg"
         alt="Garis imajiner Kraton–Tugu–Parangtritis"
