@@ -52,16 +52,16 @@ const links = [
       />
     </div>
     <h2 class="reveal-up font-libre italic text-[clamp(1.8rem,4.2vw,3.4rem)]">
-      Cerita ini baru permulaan.
+      {{ t('home.story.closing.heading') }}
     </h2>
     <p
       class="reveal-up delay-100 font-lato text-[0.95rem] leading-relaxed opacity-75 max-w-[34ch] mt-4"
     >
-      Pilih babak yang ingin kamu jelajahi lebih dulu.
+      {{ t('home.story.closing.lede') }}
     </p>
     <nav
       class="reveal-up delay-200 closing-links grid grid-cols-4 max-md:grid-cols-2 gap-px bg-white/10 mt-12 w-[min(70vw,800px)]"
-      aria-label="Semua halaman JogjaKu"
+      :aria-label="t('home.story.closing.aria_label')"
     >
       <NuxtLink
         v-for="link in links"

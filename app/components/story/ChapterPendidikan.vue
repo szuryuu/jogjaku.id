@@ -1,44 +1,41 @@
 <script setup lang="ts">
 import StoryChapter from "./StoryChapter.vue";
 
-/* ponytail: education chapter pulls heroTitle/heroSubtitle from pendidikan.vue's
-   pageCopy object instead of i18n, since no home.editorial.pendidikan key exists. */
-
-const pageCopy = {
-  heroTitle: "Yogyakarta — Kota Pelajar Indonesia",
-  heroSubtitle:
-    "Ribuan mahasiswa dari seluruh Nusantara menemukan semangat belajar, berdiskusi, dan berkarya di kota ini.",
-};
+const { t } = useI18n();
 </script>
 
 <template>
   <StoryChapter
     chapter-number="VI"
-    chapter-label="PENDIDIKAN"
-    variant="center"
+    :chapter-label="t('nav.pendidikan')"
+    variant="typographic"
     :data-chapter="6"
   >
-    <div class="parallax-img absolute inset-0 z-0 opacity-35 blur-[3px]">
-      <img
-        src="/images/teknologi/ugm.jpg"
-        alt="Kampus UGM Yogyakarta"
-        width="1920"
-        height="1080"
-        loading="lazy"
-        decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-    <div class="reveal-up relative z-1 flex flex-col items-center">
-      <h2 class="font-libre text-[clamp(1.8rem,4.2vw,3.4rem)] max-w-[22ch] leading-[1.35]">
-        {{ pageCopy.heroSubtitle }}
-      </h2>
-      <NuxtLink
-        to="/pendidikan"
-        class="cta-link inline-flex items-center gap-[0.6rem] font-josefin text-xs tracking-[0.15em] uppercase text-terra mt-6 pb-[0.3rem] border-b border-terra transition-all duration-300 hover:gap-4 focus-visible:gap-4"
-      >
-        Lihat Ekosistem Pendidikan →
-      </NuxtLink>
-    </div>
+    <!-- ponytail: cinematic vignette fade from prototype -->
+    <div
+      class="absolute inset-0 pointer-events-none"
+      aria-hidden="true"
+      style="
+        background: radial-gradient(
+          circle at center,
+          transparent 30%,
+          rgba(26, 18, 8, 0.5) 100%
+        );
+      "
+    />
+    <h2
+      class="reveal-up font-josefin font-semibold text-[clamp(2rem,6vw,4.5rem)] leading-[1.15] tracking-[-0.01em]"
+    >
+      {{ t('home.story.pendidikan.title') }}
+    </h2>
+    <p class="reveal-up delay-100 lede mt-6 max-w-[42ch] mx-auto">
+      {{ t('home.story.pendidikan.subtitle') }}
+    </p>
+    <NuxtLink
+      to="/pendidikan"
+      class="cta-link reveal-up delay-200 inline-flex items-center gap-[0.6rem] font-josefin text-xs tracking-[0.15em] uppercase text-terra mt-6 pb-[0.3rem] border-b border-terra transition-all duration-300 hover:gap-4 focus-visible:gap-4"
+    >
+      {{ t('home.story.pendidikan.cta') }} →
+    </NuxtLink>
   </StoryChapter>
 </template>
