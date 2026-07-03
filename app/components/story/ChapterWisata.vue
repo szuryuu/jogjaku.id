@@ -12,6 +12,13 @@ const { t } = useI18n();
     reverse
     :data-chapter="4"
   >
+    <!-- ponytail: compass / waypoint motif — exploration -->
+    <div class="absolute right-[20vw] top-1/2 -translate-y-1/2 w-[50vmin] h-[50vmin] pointer-events-none opacity-10" aria-hidden="true">
+      <div class="h-full w-full" style="background:
+        radial-gradient(circle, #b8491f 1px, transparent 1px) 50% 50% / 40px 40px,
+        repeating-conic-gradient(#b8491f 0% 0.5deg, transparent 0.5deg 90deg) 50% 50% / 200px 200px no-repeat
+      " />
+    </div>
     <div class="stagger-text max-w-[480px] reveal-up text-right">
       <h2 class="font-libre text-[clamp(1.8rem,4.2vw,3.4rem)] max-w-[18ch] leading-[1.15]">
         {{ t("home.editorial.wisata.desc") }}

@@ -42,8 +42,11 @@ onMounted(() => {
           if (entry.isIntersecting) {
             const idx = Number((entry.target as HTMLElement).dataset.chapter);
             for (const dot of railDots) {
-              dot.dataset.active =
-                Number(dot.dataset.index) === idx ? "" : undefined;
+              if (Number(dot.dataset.index) === idx) {
+                dot.setAttribute("data-active", "");
+              } else {
+                dot.removeAttribute("data-active");
+              }
             }
           }
         }

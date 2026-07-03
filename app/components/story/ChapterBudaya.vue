@@ -22,6 +22,10 @@ const { t } = useI18n();
         class="w-full h-full object-cover"
       />
     </div>
+    <!-- ponytail: concentric diamond motif behind text box -->
+    <div class="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none opacity-10" aria-hidden="true">
+      <div class="h-full w-full rounded-full" style="background: repeating-radial-gradient(circle at center, #b8491f 0, #b8491f 1px, transparent 1px, transparent 16px)" />
+    </div>
     <div class="text-box reveal-up delay-100 relative z-2 bg-parchment p-10 max-w-[420px] text-center shadow-[0_30px_60px_rgba(0,0,0,0.12)] -mt-8">
       <h3 class="font-libre text-[1.6rem] mb-3">
         {{ t("home.editorial.budaya.title") }}

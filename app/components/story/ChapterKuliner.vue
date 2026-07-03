@@ -11,6 +11,13 @@ const { t } = useI18n();
     variant="focus"
     :data-chapter="5"
   >
+    <!-- ponytail: spice / grain dots — culinary texture -->
+    <div class="absolute left-[18vw] top-[20%] w-[48vmin] h-[48vmin] pointer-events-none opacity-10" aria-hidden="true">
+      <div class="h-full w-full" style="background:
+        radial-gradient(circle at 25% 50%, #b8491f 3px, transparent 3px) 0 0 / 28px 28px,
+        radial-gradient(circle at 75% 50%, #b8491f 2px, transparent 2px) 14px 14px / 28px 28px
+      " />
+    </div>
     <div class="flex gap-6 items-center">
       <div class="parallax-img reveal-up delay-100 w-[24vh] h-[24vh] rounded-full overflow-hidden mb-4">
         <img

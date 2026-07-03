@@ -11,6 +11,26 @@ const { t } = useI18n();
     variant="staggered"
     :data-chapter="8"
   >
+    <!-- ponytail: Jogja map motif — grid + scattered landmark dots -->
+    <div class="absolute inset-y-0 right-0 w-[55vw] pointer-events-none opacity-10" aria-hidden="true">
+      <div class="h-full w-full" style="background:
+        /* street grid */
+        linear-gradient(#b8491f 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(90deg, #b8491f 1px, transparent 1px) 0 0 / 40px 40px,
+        /* organic alley (diagonal path) */
+        repeating-linear-gradient(22deg, transparent 0, transparent 79px, #b8491f 79px, #b8491f 80px, transparent 80px, transparent 160px),
+        /* landmarks (larger dots in a loose cluster) */
+        radial-gradient(circle at 60% 30%, #b8491f 4px, transparent 4px),
+        radial-gradient(circle at 52% 45%, #b8491f 4px, transparent 4px),
+        radial-gradient(circle at 68% 42%, #b8491f 5px, transparent 5px),
+        radial-gradient(circle at 55% 58%, #b8491f 3px, transparent 3px),
+        radial-gradient(circle at 72% 65%, #b8491f 4px, transparent 4px),
+        radial-gradient(circle at 42% 72%, #b8491f 4px, transparent 4px),
+        radial-gradient(circle at 64% 78%, #b8491f 5px, transparent 5px),
+        radial-gradient(circle at 78% 55%, #b8491f 3px, transparent 3px),
+        radial-gradient(circle at 35% 50%, #b8491f 4px, transparent 4px)
+      " />
+    </div>
     <div class="stagger-text max-w-[480px] reveal-up">
       <h2 class="font-libre text-[clamp(1.8rem,4.2vw,3.4rem)] max-w-[18ch] leading-[1.15]">
         {{ t("home.editorial.peta.desc") }}

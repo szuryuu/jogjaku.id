@@ -25,10 +25,38 @@ const links = [
     is-dark
     :data-chapter="9"
   >
+    <!-- ponytail: diagonal crosshatch motif, CSS-only -->
+    <div
+      class="absolute inset-0 pointer-events-none opacity-10"
+      aria-hidden="true"
+    >
+      <div
+        class="h-full w-full"
+        style="
+          background-image:
+            repeating-linear-gradient(
+              45deg,
+              #b8491f 0,
+              #b8491f 1px,
+              transparent 1px,
+              transparent 32px
+            ),
+            repeating-linear-gradient(
+              -45deg,
+              #b8491f 0,
+              #b8491f 1px,
+              transparent 1px,
+              transparent 32px
+            );
+        "
+      />
+    </div>
     <h2 class="reveal-up font-libre italic text-[clamp(1.8rem,4.2vw,3.4rem)]">
       Cerita ini baru permulaan.
     </h2>
-    <p class="reveal-up delay-100 font-lato text-[0.95rem] leading-relaxed opacity-75 max-w-[34ch] mt-4">
+    <p
+      class="reveal-up delay-100 font-lato text-[0.95rem] leading-relaxed opacity-75 max-w-[34ch] mt-4"
+    >
       Pilih babak yang ingin kamu jelajahi lebih dulu.
     </p>
     <nav

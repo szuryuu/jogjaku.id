@@ -10,6 +10,7 @@ const { t } = useI18n();
     chapter-label="MULAI"
     variant="center"
     :data-chapter="0"
+    class="!h-dvh !min-h-0"
   >
     <picture class="parallax-img absolute inset-0 z-0 opacity-35 blur-[3px]">
       <source
