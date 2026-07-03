@@ -11,15 +11,11 @@ const { t } = useI18n();
     variant="focus"
     :data-chapter="5"
   >
-    <!-- ponytail: spice / grain dots — culinary texture -->
-    <div class="absolute left-[18vw] top-[20%] w-[48vmin] h-[48vmin] pointer-events-none opacity-10" aria-hidden="true">
-      <div class="h-full w-full" style="background:
-        radial-gradient(circle at 25% 50%, #b8491f 3px, transparent 3px) 0 0 / 28px 28px,
-        radial-gradient(circle at 75% 50%, #b8491f 2px, transparent 2px) 14px 14px / 28px 28px
-      " />
-    </div>
-    <div class="flex gap-6 items-center">
-      <div class="parallax-img reveal-up delay-100 w-[24vh] h-[24vh] rounded-full overflow-hidden mb-4">
+    <div class="relative mx-auto w-[32vh] h-[32vh]" style="margin-bottom: -3.2vh">
+      <div
+        class="parallax-img reveal-up delay-100 absolute z-0 w-[24vh] h-[24vh] rounded-full overflow-hidden"
+        style="left: -13.2vh; top: calc(50% - 12vh)"
+      >
         <img
           src="/images/kuliner/bakpia.jpg"
           alt="Bakpia — jajanan khas Yogyakarta"
@@ -30,7 +26,9 @@ const { t } = useI18n();
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="parallax-img reveal-up w-[32vh] h-[32vh] rounded-full overflow-hidden">
+      <div
+        class="parallax-img reveal-up absolute z-10 w-full h-full rounded-full overflow-hidden"
+      >
         <img
           src="/images/kuliner/gudeg.jpg"
           alt="Gudeg — kuliner khas Yogyakarta"
@@ -41,7 +39,10 @@ const { t } = useI18n();
           class="w-full h-full object-cover"
         />
       </div>
-      <div class="parallax-img reveal-up delay-200 w-[24vh] h-[24vh] rounded-full overflow-hidden mt-8">
+      <div
+        class="parallax-img reveal-up delay-200 absolute z-0 w-[24vh] h-[24vh] rounded-full overflow-hidden"
+        style="right: -13.2vh; top: calc(50% - 12vh)"
+      >
         <img
           src="/images/kuliner/kopi-joss.jpg"
           alt="Kopi Joss — kopi arang khas Yogyakarta"
@@ -53,11 +54,15 @@ const { t } = useI18n();
         />
       </div>
     </div>
-    <div class="text-box reveal-up delay-100 relative z-2 bg-parchment p-10 max-w-[420px] text-center shadow-[0_30px_60px_rgba(0,0,0,0.12)] -mt-8">
+    <div
+      class="text-box reveal-up delay-100 relative z-20 bg-parchment p-10 max-w-[420px] text-center shadow-[0_30px_60px_rgba(0,0,0,0.12)] -mt-8"
+    >
       <h3 class="font-libre text-[1.6rem] mb-3">
         {{ t("home.editorial.kuliner.title") }}
       </h3>
-      <p class="font-lato text-[0.95rem] leading-relaxed opacity-75 max-w-[34ch] mx-auto">
+      <p
+        class="font-lato text-[0.95rem] leading-relaxed opacity-75 max-w-[34ch] mx-auto"
+      >
         {{ t("home.editorial.kuliner.desc") }}
       </p>
       <NuxtLink
