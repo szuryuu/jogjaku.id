@@ -5,10 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// ponytail: unified motion tokens — single source of truth for all chapter animations
-const EASE = "power2.out";
-const DURATION = 0.45;
-const IMG_DURATION = 0.55;
+
 
 let ctx: gsap.Context | null = null;
 let observer: IntersectionObserver | null = null;
@@ -74,7 +71,7 @@ onMounted(() => {
     { threshold: 0.01, rootMargin: "0px 0px 30% 0px" },
   );
 
-  document.querySelectorAll(".reveal-up, .reveal-img").forEach((el) => observer!.observe(el));
+  document.querySelectorAll(".reveal-up").forEach((el) => observer!.observe(el));
 });
 
 function getDelay(el: HTMLElement): number {
@@ -87,50 +84,55 @@ function getDelay(el: HTMLElement): number {
 
 // ponytail: minimal per-variant config — shared easing/duration, variant
 // only swaps the initial Y offset and whether images get a gentle scale-in
+// ponytail: each chapter gets its own motion signature — no more uniform fade-up
 function animateEntry(el: HTMLElement) {
   const chapter = el.closest(".chapter") as HTMLElement | null;
-  const variant = chapter?.dataset.variant || "center";
+  const chIdx = Number(chapter?.dataset.chapter ?? -1);
   const delay = getDelay(el);
   const isParallax = el.classList.contains("parallax-img");
-  const isImg = el.classList.contains("reveal-img");
 
-  // ponytail: parallax elements get their Y from the scrub — reveal animates opacity + optional scale only
+  // Parallax images: Y is scrubbed, only animate opacity + gentle scale
   if (isParallax) {
-    gsap.fromTo(
-      el,
+    gsap.fromTo(el,
       { opacity: 0, scale: 0.96 },
-      { opacity: 1, scale: 1, duration: IMG_DURATION, ease: EASE, delay },
+      { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out", delay },
     );
     return;
   }
 
-  // Standalone image reveal
-  if (isImg) {
-    gsap.fromTo(
-      el,
-      { opacity: 0, scale: 0.94, y: 24 },
-      { opacity: 1, scale: 1, y: 0, duration: IMG_DURATION, ease: EASE, delay },
-    );
-    return;
-  }
-
-  // Text / typographic / generic reveal — variant controls Y offset flavor
-  const yFrom = variantY(variant, el);
-  gsap.fromTo(
-    el,
-    { opacity: 0, y: yFrom },
-    { opacity: 1, y: 0, duration: DURATION, ease: EASE, delay },
-  );
-}
-
-// ponytail: each variant gets a distinct, subtle motion character
-function variantY(variant: string, _el: HTMLElement): number {
-  switch (variant) {
-    case "center":    return 40;  // cinematic — Hero, Filosofi, Closing
-    case "staggered": return 28;  // side-text reveal — Sejarah, Wisata, Peta
-    case "focus":     return 36;  // image-first — Budaya, Kuliner
-    case "typographic": return 24; // clean, tight — Pendidikan, Teknologi
-    default:          return 32;
+  switch (chIdx) {
+    case 0: // Hero — cinematic zoom-in
+      gsap.fromTo(el, { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out", delay });
+      break;
+    case 1: // Sejarah — text slides from left
+      gsap.fromTo(el, { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out", delay });
+      break;
+    case 2: // Budaya — drop in from above with slight bounce
+      gsap.fromTo(el, { opacity: 0, y: -40, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.4)", delay });
+      break;
+    case 3: // Filosofi — gentle rotate + scale
+      gsap.fromTo(el, { opacity: 0, rotate: -1.5, scale: 0.95 }, { opacity: 1, rotate: 0, scale: 1, duration: 0.55, ease: "power2.out", delay });
+      break;
+    case 4: // Wisata — text slides from right (reverse layout)
+      gsap.fromTo(el, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out", delay });
+      break;
+    case 5: // Kuliner — pop-in with elastic bounce
+      gsap.fromTo(el, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)", delay });
+      break;
+    case 6: // Pendidikan — subtle upward lift
+      gsap.fromTo(el, { opacity: 0, y: -18, scale: 0.98 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "power2.out", delay });
+      break;
+    case 7: // Teknologi — slight horizontal nudge
+      gsap.fromTo(el, { opacity: 0, x: 12, skewX: 1.5 }, { opacity: 1, x: 0, skewX: 0, duration: 0.45, ease: "power2.out", delay });
+      break;
+    case 8: // Peta — slide in from right
+      gsap.fromTo(el, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.45, ease: "power2.out", delay });
+      break;
+    case 9: // Closing — staggered scale with gentle bounce
+      gsap.fromTo(el, { opacity: 0, scale: 0.88 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.4)", delay });
+      break;
+    default:
+      gsap.fromTo(el, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out", delay });
   }
 }
 
