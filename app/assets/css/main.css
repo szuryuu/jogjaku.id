@@ -79,6 +79,21 @@
     transform: translateY(0);
   }
 
+  /* ponytail: dedicated image reveal — GSAP handles transform, CSS only visibility */
+  .reveal-img {
+    opacity: 0;
+  }
+
+  .reveal-img.in-view {
+    opacity: 1;
+  }
+
+  /* ponytail: when GSAP is active on homepage, strip CSS transforms so they don't fight */
+  .gsap-ready .reveal-up {
+    opacity: 0;
+    transform: none;
+  }
+
   .delay-100 {
     transition-delay: 100ms;
   }

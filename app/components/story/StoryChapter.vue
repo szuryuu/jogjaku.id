@@ -24,6 +24,7 @@ const variantClass = computed(() => {
   <section
     class="chapter relative min-h-screen w-full flex items-center justify-center px-[8vw] py-32 overflow-hidden"
     :class="[variantClass, isDark ? 'bg-ink text-parchment' : '']"
+    :data-variant="variant"
   >
     <div
       class="absolute top-12 left-[6vw] z-5 font-josefin text-[11px] tracking-[0.3em] uppercase opacity-55"
