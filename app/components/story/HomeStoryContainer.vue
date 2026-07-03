@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // ponytail: unified motion tokens — single source of truth for all chapter animations
-const EASE = "power3.out";
-const DURATION = 0.9;
-const IMG_DURATION = 1.05;
+const EASE = "power2.out";
+const DURATION = 0.45;
+const IMG_DURATION = 0.55;
 
 let ctx: gsap.Context | null = null;
 let observer: IntersectionObserver | null = null;
@@ -60,6 +60,9 @@ onMounted(() => {
   });
 
   // ── Reveal animations (outside context — one-shot tweens, no ScrollTrigger) ──
+  // ponytail: expand bottom margin so animations fire ~15vh before the
+  // element enters the viewport — the 0.9s tweens finish before the user
+  // scrolls there. Add a tiny threshold to avoid firing on layout paint.
   observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -68,17 +71,17 @@ onMounted(() => {
         observer!.unobserve(entry.target);
       }
     },
-    { threshold: 0.12, rootMargin: "0px 0px -5% 0px" },
+    { threshold: 0.01, rootMargin: "0px 0px 30% 0px" },
   );
 
   document.querySelectorAll(".reveal-up, .reveal-img").forEach((el) => observer!.observe(el));
 });
 
 function getDelay(el: HTMLElement): number {
-  if (el.classList.contains("delay-100")) return 0.1;
-  if (el.classList.contains("delay-200")) return 0.2;
-  if (el.classList.contains("delay-300")) return 0.3;
-  if (el.classList.contains("delay-400")) return 0.4;
+  if (el.classList.contains("delay-100")) return 0.05;
+  if (el.classList.contains("delay-200")) return 0.1;
+  if (el.classList.contains("delay-300")) return 0.15;
+  if (el.classList.contains("delay-400")) return 0.2;
   return 0;
 }
 
@@ -123,11 +126,11 @@ function animateEntry(el: HTMLElement) {
 // ponytail: each variant gets a distinct, subtle motion character
 function variantY(variant: string, _el: HTMLElement): number {
   switch (variant) {
-    case "center":    return 56;  // cinematic — Hero, Filosofi, Closing
-    case "staggered": return 40;  // side-text reveal — Sejarah, Wisata, Peta
-    case "focus":     return 52;  // image-first — Budaya, Kuliner
-    case "typographic": return 36; // clean, tight — Pendidikan, Teknologi
-    default:          return 48;
+    case "center":    return 40;  // cinematic — Hero, Filosofi, Closing
+    case "staggered": return 28;  // side-text reveal — Sejarah, Wisata, Peta
+    case "focus":     return 36;  // image-first — Budaya, Kuliner
+    case "typographic": return 24; // clean, tight — Pendidikan, Teknologi
+    default:          return 32;
   }
 }
 
