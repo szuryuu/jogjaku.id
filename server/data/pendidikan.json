@@ -220,7 +220,7 @@
       "value": "150+",
       "label": {
         "id": "kampus dan sekolah tinggi",
-        "en": "campuses and higher education institutions"
+        "en": "campuses and higher\neducation institutions"
       },
       "icon": "Landmark"
     },
@@ -228,7 +228,7 @@
       "value": "Rp10k",
       "label": {
         "id": "makanan harian terjangkau",
-        "en": "affordable daily meals"
+        "en": "affordable\ndaily meals"
       },
       "icon": "Coffee"
     },
@@ -236,7 +236,7 @@
       "value": "24/7",
       "label": {
         "id": "ritme belajar dan komunitas",
-        "en": "learning and community rhythm"
+        "en": "learning and\ncommunity rhythm"
       },
       "icon": "BookOpen"
     },
@@ -244,7 +244,7 @@
       "value": "lintas",
       "label": {
         "id": "budaya mahasiswa Nusantara",
-        "en": "student cultures across Indonesia"
+        "en": "student cultures\nacross Indonesia"
       },
       "icon": "Users"
     }

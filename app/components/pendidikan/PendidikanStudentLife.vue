@@ -50,7 +50,7 @@ defineProps<{
           {{ stat.value }}
         </div>
         <div
-          class="font-josefin text-[10px] tracking-[0.18em] uppercase text-[#faf7f2]/75"
+          class="font-josefin text-[10px] tracking-[0.18em] uppercase text-[#faf7f2]/75 max-w-[180px] mx-auto whitespace-pre-line"
         >
           {{ stat.displayLabel }}
         </div>
