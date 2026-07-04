@@ -32,21 +32,25 @@ const { t, locale } = useI18n();
       <div
         v-for="char in items"
         :key="char.latin"
-        class="group relative aspect-[1/1.1] bg-warm-white border border-line flex flex-col items-center justify-center transition-all duration-300 hover:border-terra overflow-hidden shadow-sm"
+        class="group relative aspect-[1/1.1] bg-parchment border border-line/60 flex flex-col items-center justify-center transition-all duration-300 hover:border-terra overflow-hidden shadow-[inset_0_2px_6px_rgba(0,0,0,0.06)] rounded-[2px]"
       >
+        <!-- ponytail: inner frame to suggest stamp impression edge -->
         <div
-          class="text-[32px] lg:text-[42px] text-ink transition-all duration-500 group-hover:-translate-y-3"
-          style="font-family: &quot;Noto Sans Javanese&quot;, sans-serif"
+          class="absolute inset-[5px] border border-line/25 rounded-[1px] pointer-events-none transition-colors duration-300 group-hover:border-terra/20"
+        ></div>
+        <div
+          class="relative z-10 text-[32px] lg:text-[42px] text-ink/85 transition-all duration-500 group-hover:-translate-y-3"
+          style="font-family: &quot;Noto Sans Javanese&quot;, sans-serif; text-shadow: 0 1px 1px rgba(0,0,0,0.08)"
         >
           {{ char.script }}
         </div>
         <div
-          class="font-josefin text-[10px] uppercase tracking-widest text-muted transition-opacity duration-300 group-hover:opacity-0"
+          class="relative z-10 font-josefin text-[10px] uppercase tracking-widest text-muted transition-opacity duration-300 group-hover:opacity-0"
         >
           {{ char.latin }}
         </div>
         <div
-          class="absolute inset-0 p-3 flex flex-col items-center justify-end pb-4 text-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+          class="absolute inset-0 z-20 p-3 flex flex-col items-center justify-end pb-4 text-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
         >
           <div
             class="font-josefin text-[9px] text-terra uppercase tracking-[0.2em] mb-1"
