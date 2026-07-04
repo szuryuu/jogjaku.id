@@ -20,13 +20,13 @@ const filterOptions = [
 </script>
 
 <template>
-  <div class="flex flex-col items-start xl:items-end gap-4">
+  <div class="flex flex-col items-start xl:items-end gap-2">
     <div
-      class="flex bg-warm-white/50 p-1 border border-line rounded-lg w-fit backdrop-blur-md"
+      class="flex bg-warm-white/50 p-0.5 border border-line rounded-md w-fit backdrop-blur-md"
     >
       <button
         @click="emit('update:mode', 'poi')"
-        class="px-4 py-2 font-josefin text-[10px] uppercase tracking-widest rounded-md transition-all cursor-pointer"
+        class="px-2.5 py-1 font-josefin text-[10px] uppercase tracking-widest rounded-sm transition-all cursor-pointer"
         :class="
           mode === 'poi'
             ? 'bg-ink text-warm-white shadow-md'
@@ -37,7 +37,7 @@ const filterOptions = [
       </button>
       <button
         @click="emit('update:mode', 'internet')"
-        class="px-4 py-2 font-josefin text-[10px] uppercase tracking-widest rounded-md transition-all cursor-pointer"
+        class="px-2.5 py-1 font-josefin text-[10px] uppercase tracking-widest rounded-sm transition-all cursor-pointer"
         :class="
           mode === 'internet'
             ? 'bg-terra text-warm-white shadow-md'
@@ -50,18 +50,18 @@ const filterOptions = [
     <transition name="filter-slide-fade" mode="out-in">
       <div
         v-if="mode === 'poi'"
-        class="grid grid-cols-3 sm:grid-cols-5 gap-1 bg-warm-white/50 p-1 border border-line rounded-lg w-full sm:w-auto backdrop-blur-md"
+        class="grid grid-cols-3 sm:grid-cols-5 gap-1 bg-warm-white/50 p-0.5 border border-line rounded-md w-full sm:w-auto backdrop-blur-md"
       >
         <button
           v-for="filter in filterOptions"
           :key="filter.id"
           @click="emit('update:category', filter.id)"
-          class="w-full px-2 sm:px-3 py-2 font-josefin text-[8px] sm:text-[9px] text-center uppercase tracking-widest rounded-md transition-all cursor-pointer"
+          class="w-full px-2 py-1 font-josefin text-[9px] text-center uppercase tracking-widest rounded-sm transition-all cursor-pointer"
           :class="
             category === filter.id
               ? 'bg-parchment text-ink border border-line shadow-sm'
               : 'text-ink/50 hover:text-ink'
-          "
+        "
         >
           {{ locale === "en" ? filter.label.en : filter.label.id }}
         </button>
