@@ -6,20 +6,30 @@
     <AppImage
       src="/images/teknologi/ugm.jpg"
       alt="Pusat Pendidikan UGM"
-      class="w-full h-full object-cover grayscale-[20%] opacity-90 transition-none"
+      class="w-full h-full object-cover grayscale-[60%] opacity-85 transition-none"
       loading="lazy"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-t from-[#1a1208]/80 to-transparent transition-none z-10"
+      class="absolute inset-0 bg-gradient-to-t from-[#1a1208]/85 via-[#1a1208]/25 to-transparent transition-none z-10"
     ></div>
-    <div class="absolute bottom-6 left-6 z-20 transition-none">
-      <div
-        class="font-josefin text-[9px] tracking-[0.2em] text-[#faf7f2] uppercase mb-2"
-      >
-        {{ $t("teknologi.ecosystem_node") }}
-      </div>
-      <div class="font-libre text-[20px] text-[#faf7f2]">
-        Universitas Gadjah Mada
+    <!-- ponytail: blueprint grid overlay — CSS repeating-linear-gradient, no canvas/SVG -->
+    <div
+      class="absolute inset-0 z-[15] pointer-events-none"
+      style="background-image: repeating-linear-gradient(0deg, rgba(250,247,242,0.07) 0px, rgba(250,247,242,0.07) 1px, transparent 1px, transparent 40px), repeating-linear-gradient(90deg, rgba(250,247,242,0.07) 0px, rgba(250,247,242,0.07) 1px, transparent 1px, transparent 40px);"
+    ></div>
+    <!-- Technical diagram label -->
+    <div class="absolute bottom-6 left-6 z-20 transition-none flex items-end gap-3">
+      <!-- ponytail: leader bracket → blueprint reference line aesthetic -->
+      <div class="shrink-0 w-8 border-t border-[#faf7f2]/55 mb-[7px]"></div>
+      <div>
+        <div
+          class="font-josefin text-[9px] tracking-[0.22em] text-[#faf7f2]/65 uppercase font-light mb-1.5"
+        >
+          {{ $t("teknologi.ecosystem_node") }}
+        </div>
+        <div class="font-libre text-[20px] text-[#faf7f2] font-bold">
+          Universitas Gadjah Mada
+        </div>
       </div>
     </div>
   </div>
