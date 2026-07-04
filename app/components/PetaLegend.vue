@@ -16,10 +16,10 @@ const setHighlight = (tier: string | null) => {
 
 <template>
   <div
-    class="bg-warm-white/90 backdrop-blur-md border border-line p-5 rounded-xl shadow-xl min-w-[200px]"
+    class="bg-warm-white/90 backdrop-blur-md border border-line p-3 rounded-xl shadow-xl min-w-[180px]"
   >
     <div
-      class="font-josefin text-[10px] font-bold uppercase tracking-widest text-ink flex items-center gap-2 mb-4"
+      class="font-josefin text-[9px] font-bold uppercase tracking-widest text-ink flex items-center gap-2 mb-2"
     >
       <span
         class="w-2 h-2 rounded-full animate-pulse"
@@ -28,18 +28,18 @@ const setHighlight = (tier: string | null) => {
       {{ t("peta.legend_title") }}
     </div>
 
-    <div v-if="mode === 'poi'" class="flex flex-col gap-3">
-      <div class="flex items-center gap-3">
-        <div class="w-3 h-[1px] bg-terra border-dashed border-t"></div>
+    <div v-if="mode === 'poi'" class="flex flex-col gap-2">
+      <div class="flex items-center gap-2">
+        <div class="w-4 h-px bg-terra border-dashed border-t border-terra"></div>
         <span
           class="text-[10px] text-brown font-light uppercase tracking-tighter"
           >{{ t("peta.legend_axis") }}</span
         >
       </div>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2">
         <svg
-          width="12"
-          height="12"
+          width="14"
+          height="14"
           viewBox="0 0 24 24"
           fill="#c84b31"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,44 +57,44 @@ const setHighlight = (tier: string | null) => {
       </div>
     </div>
 
-    <div v-else class="flex flex-col gap-3">
+    <div v-else class="flex flex-col gap-2">
       <div
         @mouseenter="setHighlight('high')"
         @mouseleave="setHighlight(null)"
-        class="flex items-center gap-3 cursor-pointer group transition-all"
+        class="flex items-center gap-2 cursor-pointer group transition-all"
       >
         <div
-          class="w-3 h-3 bg-ink rounded-full opacity-60 group-hover:scale-125 transition-transform"
+          class="w-5 h-5 bg-ink rounded-full group-hover:scale-125 transition-transform"
         ></div>
         <span
-          class="text-[10px] text-brown font-light uppercase tracking-tighter transition-colors group-hover:text-ink group-hover:font-bold"
-          >> 90% Penetrasi</span
+          class="text-[11px] text-brown font-medium uppercase tracking-tighter transition-colors group-hover:text-ink"
+          >&gt;90%</span
         >
       </div>
       <div
         @mouseenter="setHighlight('mid')"
         @mouseleave="setHighlight(null)"
-        class="flex items-center gap-3 cursor-pointer group transition-all"
+        class="flex items-center gap-2 cursor-pointer group transition-all"
       >
         <div
-          class="w-3 h-3 bg-terra rounded-full opacity-60 group-hover:scale-125 transition-transform"
+          class="w-5 h-5 bg-terra rounded-full group-hover:scale-125 transition-transform"
         ></div>
         <span
-          class="text-[10px] text-brown font-light uppercase tracking-tighter transition-colors group-hover:text-terra group-hover:font-bold"
-          >80% - 89% Penetrasi</span
+          class="text-[11px] text-brown font-medium uppercase tracking-tighter transition-colors group-hover:text-terra"
+          >80&ndash;89%</span
         >
       </div>
       <div
         @mouseenter="setHighlight('low')"
         @mouseleave="setHighlight(null)"
-        class="flex items-center gap-3 cursor-pointer group transition-all"
+        class="flex items-center gap-2 cursor-pointer group transition-all"
       >
         <div
-          class="w-3 h-3 bg-[#a38b72] rounded-full opacity-60 group-hover:scale-125 transition-transform"
+          class="w-5 h-5 bg-[#a38b72] rounded-full group-hover:scale-125 transition-transform"
         ></div>
         <span
-          class="text-[10px] text-brown font-light uppercase tracking-tighter transition-colors group-hover:text-muted group-hover:font-bold"
-          >< 80% Penetrasi</span
+          class="text-[11px] text-brown font-medium uppercase tracking-tighter transition-colors group-hover:text-muted"
+          >&lt;80%</span
         >
       </div>
     </div>
