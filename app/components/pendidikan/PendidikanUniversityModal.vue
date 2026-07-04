@@ -113,7 +113,7 @@ onBeforeUnmount(() => {
         <button
           ref="closeBtnRef"
           type="button"
-          class="absolute top-4 right-4 w-8 h-8 rounded-full border border-line flex items-center justify-center text-ink hover:bg-ink hover:text-warm-white transition-colors"
+          class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-warm-white/90 border border-line flex items-center justify-center text-ink hover:bg-ink hover:text-warm-white transition-colors"
           :aria-label="closeLabel || 'Close'"
           @click="close"
         >

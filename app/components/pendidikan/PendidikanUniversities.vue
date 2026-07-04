@@ -75,13 +75,13 @@ const scroll = (direction: "left" | "right") => {
 
       <div
         ref="rowRef"
-        class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth px-0.5"
+        class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth px-0.5 max-w-[948px] mx-auto"
       >
         <button
           v-for="university in universities"
           :key="university.name"
           type="button"
-          class="uni-card flex-none w-[300px] snap-start text-left bg-warm-white border border-line rounded-md overflow-hidden transition-transform duration-250 ease-out hover:-translate-y-1 hover:shadow-xl"
+          class="uni-card flex-none w-[300px] snap-start text-left bg-warm-white border border-line rounded-md overflow-hidden transition-transform duration-250 ease-out hover:-translate-y-1 hover:shadow-xl flex flex-col"
           @click="emit('select', university)"
         >
           <div class="h-40 bg-[#1a1208] overflow-hidden">
@@ -92,7 +92,7 @@ const scroll = (direction: "left" | "right") => {
               loading="lazy"
             />
           </div>
-          <div class="p-5">
+          <div class="p-5 flex flex-col flex-1">
             <h3 class="font-libre text-lg font-bold text-ink mb-1.5">
               {{ university.name }}
             </h3>
@@ -103,7 +103,7 @@ const scroll = (direction: "left" | "right") => {
               {{ university.displayAtmosphere }}
             </p>
             <span
-              class="font-josefin text-[0.7rem] tracking-[0.1em] uppercase text-terra"
+              class="font-josefin text-[0.7rem] tracking-[0.1em] uppercase text-terra mt-auto"
             >
               {{ detailLabel }} &rarr;
             </span>
