@@ -242,6 +242,8 @@ setPageSeo({
     <PendidikanUniversityModal
       :university="selectedUniversity"
       :open="!!selectedUniversity"
+      :closeLabel="pageCopy.close"
+      :openMapsLabel="pageCopy.openMaps"
       @close="closeUniversityDetail"
     />
   </main>

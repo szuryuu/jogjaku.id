@@ -15,6 +15,8 @@ interface University {
 const props = defineProps<{
   university: University | null;
   open: boolean;
+  closeLabel?: string;
+  openMapsLabel?: string;
 }>();
 
 const emit = defineEmits<{
@@ -112,7 +114,7 @@ onBeforeUnmount(() => {
           ref="closeBtnRef"
           type="button"
           class="absolute top-4 right-4 w-8 h-8 rounded-full border border-line flex items-center justify-center text-ink hover:bg-ink hover:text-warm-white transition-colors"
-          aria-label="Tutup"
+          :aria-label="closeLabel || 'Close'"
           @click="close"
         >
           <X class="w-4 h-4" />
@@ -148,7 +150,7 @@ onBeforeUnmount(() => {
           class="inline-flex w-full items-center justify-center gap-2 bg-terra text-[#faf7f2] px-6 py-4 font-josefin text-[10px] font-semibold tracking-[0.18em] uppercase hover:bg-ink transition-colors duration-300"
         >
           <MapPin class="w-4 h-4" />
-          Buka Maps
+          {{ openMapsLabel || 'Open Maps' }}
         </a>
       </div>
     </div>
