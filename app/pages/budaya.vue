@@ -55,11 +55,11 @@ setPageSeo({
 
     <BudayaHeritage :items="culturalHeritage" />
 
-    <BudayaTranslator />
-
     <BudayaFestivals :items="festivals" />
 
     <BudayaHanacaraka :items="hanacaraka" />
+
+    <BudayaTranslator />
   </main>
 </template>
 
