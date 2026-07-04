@@ -10,17 +10,17 @@ defineEmits(["update:modelValue"]);
 <template>
   <div
     v-observe
-    class="mb-12 flex flex-wrap gap-4 border-b border-line pb-8 reveal-up delay-200 print:hidden"
+    class="mb-12 flex flex-wrap gap-0 border-b border-line reveal-up delay-200 print:hidden"
   >
     <button
       v-for="cat in categories"
       :key="cat.key"
       @click="$emit('update:modelValue', cat.key)"
-      class="font-josefin text-[10px] font-semibold tracking-[0.2em] uppercase transition-all duration-300 px-5 py-3 border border-transparent cursor-pointer"
+      class="font-josefin text-[10px] font-semibold tracking-[0.2em] uppercase transition-all duration-300 cursor-pointer px-5 pb-3 pt-1 border-b-2"
       :class="
         modelValue === cat.key
-          ? 'bg-terra text-warm-white shadow-md'
-          : 'text-muted hover:border-line hover:text-ink'
+          ? 'border-terra text-terra'
+          : 'border-transparent text-muted hover:text-ink'
       "
     >
       {{ cat.label }}
