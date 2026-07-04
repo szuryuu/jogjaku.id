@@ -46,7 +46,7 @@ defineProps<{
         >
           <component :is="stat.icon" class="w-5 h-5 text-[#faf7f2]" />
         </div>
-        <div class="font-libre text-[38px] font-bold leading-none mb-2">
+        <div class="font-libre text-[22px] sm:text-[26px] font-bold leading-none mb-1.5">
           {{ stat.value }}
         </div>
         <div
