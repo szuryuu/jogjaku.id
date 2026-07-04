@@ -23,34 +23,45 @@ const { t } = useI18n();
         {{ t("budaya.time_cycle_desc") }}
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
-      <article
+    <div class="space-y-0">
+      <div
         v-for="(fest, index) in items"
         :key="fest.id"
         v-observe
-        class="bg-warm-white border border-line p-8 lg:p-10 reveal-up group hover:border-terra transition-colors duration-300 relative overflow-hidden"
-        :style="`transition-delay: ${(index % 3) * 100}ms`"
+        class="reveal-up flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12 py-8 lg:py-10 border-b border-line last:border-b-0 group"
+        :style="`transition-delay: ${index * 100}ms`"
       >
+        <!-- month lane marker -->
         <div
-          class="absolute top-0 right-0 p-4 font-josefin text-[40px] font-light text-ink/5 group-hover:text-terra/10 transition-colors duration-300"
+          class="md:w-[180px] lg:w-[240px] shrink-0 flex md:flex-col items-center md:items-start gap-3 md:gap-4"
         >
-          0{{ index + 1 }}
+          <span class="w-2 h-2 rounded-full bg-terra shrink-0"></span>
+          <div
+            class="font-josefin text-[10px] font-semibold tracking-[0.2em] uppercase text-terra md:mt-0"
+          >
+            {{ t("budaya.month_of") }} {{ fest.displayMonth }}
+          </div>
         </div>
+
+        <!-- festival card -->
         <div
-          class="font-josefin text-[10px] font-semibold tracking-[0.2em] uppercase text-terra mb-4 flex items-center gap-3"
+          class="flex-1 bg-warm-white border border-line p-8 lg:p-10 relative overflow-hidden group-hover:border-terra transition-colors duration-300"
         >
-          <span class="w-2 h-2 rounded-full bg-terra"></span>
-          {{ t("budaya.month_of") }} {{ fest.displayMonth }}
+          <div
+            class="absolute top-0 right-0 p-4 font-josefin text-[40px] font-light text-ink/5 group-hover:text-terra/10 transition-colors duration-300"
+          >
+            0{{ index + 1 }}
+          </div>
+          <h3
+            class="font-libre text-[22px] lg:text-[26px] font-bold text-ink mb-4"
+          >
+            {{ fest.displayName }}
+          </h3>
+          <p class="text-[14px] font-light text-brown leading-[1.8]">
+            {{ fest.displayDesc }}
+          </p>
         </div>
-        <h3
-          class="font-libre text-[22px] lg:text-[26px] font-bold text-ink mb-4"
-        >
-          {{ fest.displayName }}
-        </h3>
-        <p class="text-[14px] font-light text-brown leading-[1.8]">
-          {{ fest.displayDesc }}
-        </p>
-      </article>
+      </div>
     </div>
   </section>
 </template>
