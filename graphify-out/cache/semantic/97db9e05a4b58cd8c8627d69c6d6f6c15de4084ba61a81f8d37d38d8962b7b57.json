@@ -1,0 +1,1 @@
+{"nodes": [{"id": "images_placeholder", "label": "Placeholder Image", "file_type": "image", "source_file": "public/images/placeholder.jpg", "metadata": {"category": "Placeholder", "description": "Generic placeholder image used when a specific image is unavailable."}, "_origin": "chunk_05_image"}], "edges": [], "hyperedges": []}

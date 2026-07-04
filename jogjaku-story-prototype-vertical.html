@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JogjaKu — Jiwa Nusantara (GSAP Swipe + Horizontal Prototype)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;600&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-parchment: #f6f0e5;
+        --text-ink: #1a1208;
+        --accent-terra: #b8491f;
+        --bg-dark: #1a1208;
+        --text-dark: #f5f5f5;
+        --font-libre: "Libre Baskerville", serif;
+        --font-josefin: "Josefin Sans", sans-serif;
+        --font-lato: "Lato", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--bg-parchment);
+        color: var(--text-ink);
+        font-family: var(--font-lato);
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-libre);
+        font-weight: 400;
+      }
+      a {
+        color: inherit;
+      }
+
+      /* ============ NAV (disederhanakan dari versi asli) ============ */
+      .story-logo {
+        position: fixed;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 9998;
+        font-family: var(--font-libre);
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.4rem;
+        color: var(--accent-terra);
+        text-decoration: none;
+      }
+      .mode-badge {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 9998;
+        font-family: var(--font-josefin);
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        background: var(--bg-dark);
+        color: var(--text-dark);
+        padding: 0.6rem 1rem;
+        border-radius: 999px;
+        opacity: 0.85;
+        transition:
+          opacity 0.3s,
+          background 0.3s;
+      }
+
+      /* ============ CHAPTER (vertical normal) ============ */
+      .chapter {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8rem 8vw;
+        overflow: hidden;
+      }
+      .chapter.is-dark {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+      }
+      .chapter-num {
+        position: absolute;
+        top: 3rem;
+        left: 6vw;
+        z-index: 5;
+        font-family: var(--font-josefin);
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        opacity: 0.55;
+      }
+      .placeholder-img {
+        background: repeating-linear-gradient(
+          135deg,
+          rgba(184, 73, 31, 0.06),
+          rgba(184, 73, 31, 0.06) 10px,
+          rgba(26, 18, 8, 0.03) 10px,
+          rgba(26, 18, 8, 0.03) 20px
+        );
+        border: 1px dashed rgba(26, 18, 8, 0.25);
+        border-radius: 4px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 1rem;
+      }
+      .chapter.is-dark .placeholder-img {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      .placeholder-img .img-label {
+        font-family: var(--font-josefin);
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+      .cta-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: var(--font-josefin);
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--accent-terra);
+        margin-top: 1.5rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid var(--accent-terra);
+      }
+      p.lede {
+        font-family: var(--font-lato);
+        font-size: 0.95rem;
+        line-height: 1.8;
+        opacity: 0.75;
+        max-width: 34ch;
+      }
+
+      .chapter-center {
+        flex-direction: column;
+        text-align: center;
+      }
+      .chapter-center h1 {
+        font-size: clamp(2.5rem, 8vw, 6.5rem);
+        font-style: italic;
+        margin-bottom: 1.5rem;
+      }
+      .chapter-center .placeholder-img {
+        width: min(32vw, 380px);
+        height: 40vh;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.35;
+        filter: blur(3px);
+      }
+
+      .chapter-staggered {
+        gap: 5vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .chapter-staggered h2 {
+        font-size: clamp(1.8rem, 4.2vw, 3.4rem);
+        max-width: 18ch;
+        line-height: 1.15;
+      }
+      .chapter-staggered .stagger-text {
+        max-width: 480px;
+      }
+      .chapter-staggered .placeholder-img {
+        width: 40%;
+        max-width: 480px;
+        height: 50vh;
+        flex-shrink: 0;
+      }
+      @media (max-width: 800px) {
+        .chapter-staggered {
+          flex-direction: column;
+          text-align: center;
+        }
+        .chapter-staggered .stagger-text {
+          max-width: 100%;
+        }
+        .chapter-staggered .placeholder-img {
+          width: 100%;
+          max-width: 100%;
+          height: 40vh;
+        }
+      }
+
+      .chapter-typographic {
+        flex-direction: column;
+        text-align: center;
+      }
+      .chapter-typographic h2 {
+        font-family: var(--font-josefin);
+        font-weight: 600;
+        font-size: clamp(2rem, 6vw, 4.5rem);
+        line-height: 1.15;
+      }
+      .chapter-typographic .lede {
+        margin: 1.5rem auto 0;
+      }
+
+      .closing-links {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(140px, 1fr));
+        gap: 1px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 3rem;
+        width: min(70vw, 800px);
+      }
+      .closing-links a {
+        background: var(--bg-dark);
+        padding: 1.2rem 1rem;
+        text-decoration: none;
+        font-family: var(--font-josefin);
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+      .closing-links a:hover {
+        background: var(--accent-terra);
+        color: #fff;
+      }
+      @media (max-width: 700px) {
+        .closing-links {
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+        }
+      }
+
+      /* ============ SWIPE SECTION (Observer, full-panel snap) ============ */
+      .swipe-wrap {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      .swipe-panel {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 8vw;
+        visibility: hidden;
+      }
+      .swipe-panel.is-active {
+        visibility: visible;
+      }
+      .swipe-panel h2 {
+        font-size: clamp(2rem, 5vw, 4rem);
+        font-style: italic;
+        margin-bottom: 1rem;
+      }
+      .swipe-progress {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.6rem;
+        z-index: 5;
+      }
+      .swipe-progress .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.25);
+        transition:
+          background 0.3s,
+          transform 0.3s;
+      }
+      .swipe-progress .dot.active {
+        background: var(--accent-terra);
+        transform: scale(1.3);
+      }
+      .swipe-hint {
+        position: absolute;
+        top: 2.5rem;
+        right: 6vw;
+        z-index: 5;
+        font-family: var(--font-josefin);
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+
+      /* ============ HORIZONTAL SECTION (pinned, scrub) ============ */
+      .horizontal-wrap {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      .horizontal-track {
+        display: flex;
+        height: 100%;
+        width: 200%; /* 2 panel x 100vw */
+      }
+      .h-panel {
+        width: 50%; /* 100vw per panel karena track = 200% */
+        height: 100%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        padding: 6rem 8vw;
+      }
+      .h-panel .stagger-text {
+        max-width: 480px;
+      }
+      .h-panel .placeholder-img {
+        width: 40%;
+        max-width: 480px;
+        height: 55vh;
+      }
+      .h-progress {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        width: min(60vw, 400px);
+        height: 2px;
+        background: rgba(26, 18, 8, 0.15);
+      }
+      .h-progress-bar {
+        height: 100%;
+        width: 0%;
+        background: var(--accent-terra);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/" class="story-logo">J</a>
+    <div class="mode-badge" id="modeBadge">Scroll · Normal</div>
+
+    <main>
+      <!-- 0. HERO (normal) -->
+      <section
+        class="chapter chapter-center"
+        id="chapter-hero"
+        data-chapter="0"
+      >
+        <div class="chapter-num">MULAI</div>
+        <div class="placeholder-img">
+          <span class="img-label">Foto: Tugu Jogja</span>
+        </div>
+        <h1 style="font-style: italic; color: var(--accent-terra)">
+          Yogyakarta
+        </h1>
+        <p class="lede">
+          Jiwa Nusantara — kota yang bernapas lewat sejarah, budaya, dan cerita
+          yang belum selesai.
+        </p>
+      </section>
+
+      <!-- I. SEJARAH (normal) -->
+      <section class="chapter chapter-staggered" data-chapter="1">
+        <div class="chapter-num">I. SEJARAH</div>
+        <div class="stagger-text">
+          <h2>
+            Menelusuri linimasa dari pendirian Kraton hingga revolusi
+            kemerdekaan.
+          </h2>
+          <a class="cta-link" href="/sejarah">Baca Sejarah Lengkap →</a>
+        </div>
+        <div class="placeholder-img">
+          <span class="img-label">Foto: Kraton Yogyakarta</span>
+        </div>
+      </section>
+
+      <!-- ===================== SWIPE SECTION: II Budaya → V Kuliner → VI Pendidikan ===================== -->
+      <div class="swipe-wrap" id="swipeWrap">
+        <div class="swipe-hint">Scroll untuk swipe →</div>
+        <section
+          class="swipe-panel is-active"
+          data-chapter="2"
+          style="background: var(--bg-parchment); color: var(--text-ink)"
+        >
+          <div class="chapter-num">II. BUDAYA</div>
+          <h2>Filosofi, Gerak, Bunyi</h2>
+          <p class="lede" style="margin: 0 auto">
+            Jejak peradaban yang tertulis dalam setiap tarian, ukiran, dan
+            gamelan di tanah Yogyakarta.
+          </p>
+          <a class="cta-link" href="/budaya">Jelajahi Budaya →</a>
+        </section>
+        <section
+          class="swipe-panel"
+          data-chapter="5"
+          style="background: var(--bg-dark); color: var(--text-dark)"
+        >
+          <div class="chapter-num">V. KULINER</div>
+          <h2>Cerita Kesabaran</h2>
+          <p class="lede" style="margin: 0 auto">
+            Jackfruit yang disimmer berjam-jam — rasa yang lahir dari waktu.
+          </p>
+          <a class="cta-link" href="/kuliner">Eksplorasi Gastronomi →</a>
+        </section>
+        <section
+          class="swipe-panel"
+          data-chapter="6"
+          style="background: var(--accent-terra); color: #fff"
+        >
+          <div class="chapter-num" style="opacity: 0.8">VI. PENDIDIKAN</div>
+          <h2>Generasi Berikutnya</h2>
+          <p class="lede" style="margin: 0 auto; opacity: 0.9">
+            Kampus, riset, dan anak muda yang menulis babak selanjutnya untuk
+            kota ini.
+          </p>
+          <a
+            class="cta-link"
+            href="/pendidikan"
+            style="color: #fff; border-color: #fff"
+            >Lihat Ekosistem Pendidikan →</a
+          >
+        </section>
+        <div class="swipe-progress" id="swipeProgress"></div>
+      </div>
+      <!-- ===================== /SWIPE SECTION ===================== -->
+
+      <!-- III. FILOSOFI (normal) -->
+      <section class="chapter chapter-center is-dark" data-chapter="3">
+        <div class="chapter-num">III. SUMBU FILOSOFI</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 3rem); max-width: 20ch">
+          Garis imajiner yang mengikat Kraton, Tugu, dan Laut Selatan.
+        </h2>
+        <a class="cta-link" href="/filosofi">Pahami Sumbu Filosofi →</a>
+      </section>
+
+      <!-- ===================== HORIZONTAL SECTION: IV Wisata → VIII Peta ===================== -->
+      <div class="horizontal-wrap" id="horizontalWrap">
+        <div class="horizontal-track" id="horizontalTrack">
+          <section class="h-panel" data-chapter="4">
+            <div class="stagger-text">
+              <div
+                class="chapter-num"
+                style="position: static; margin-bottom: 1rem"
+              >
+                IV. WISATA
+              </div>
+              <h2>Candi, kraton, dan destinasi ikonik menanti dijelajahi.</h2>
+              <a class="cta-link" href="/wisata">Buka Peta Wisata →</a>
+            </div>
+            <div class="placeholder-img">
+              <span class="img-label">Foto: Candi Prambanan</span>
+            </div>
+          </section>
+          <section class="h-panel" data-chapter="8">
+            <div class="stagger-text">
+              <div
+                class="chapter-num"
+                style="position: static; margin-bottom: 1rem"
+              >
+                VIII. PETA
+              </div>
+              <h2>Titik-titik krusial yang membentuk denyut nadi kota.</h2>
+              <a class="cta-link" href="/peta">Buka Peta Interaktif →</a>
+            </div>
+            <div class="placeholder-img">
+              <span class="img-label">Foto: Malioboro</span>
+            </div>
+          </section>
+        </div>
+        <div class="h-progress">
+          <div class="h-progress-bar" id="hProgressBar"></div>
+        </div>
+      </div>
+      <!-- ===================== /HORIZONTAL SECTION ===================== -->
+
+      <!-- VII. TEKNOLOGI (normal) -->
+      <section class="chapter chapter-typographic" data-chapter="7">
+        <div class="chapter-num">VII. TEKNOLOGI</div>
+        <h2>SILICON WALI,<br />DAN KOTA YANG<br />BELAJAR CERDAS.</h2>
+        <p class="lede">
+          Infrastruktur pendidikan tinggi dan cetak biru tata kota masa depan.
+        </p>
+        <a class="cta-link" href="/teknologi">Baca Selengkapnya →</a>
+      </section>
+
+      <!-- IX. CLOSING (normal) -->
+      <section class="chapter chapter-center is-dark" data-chapter="9">
+        <div class="chapter-num">MATUR NUWUN</div>
+        <h2 style="font-style: italic">Cerita ini baru permulaan.</h2>
+        <p class="lede">Pilih babak yang ingin kamu jelajahi lebih dulu.</p>
+        <nav class="closing-links" aria-label="Semua halaman JogjaKu">
+          <a href="/sejarah">Sejarah</a>
+          <a href="/budaya">Budaya</a>
+          <a href="/filosofi">Filosofi</a>
+          <a href="/wisata">Wisata</a>
+          <a href="/kuliner">Kuliner</a>
+          <a href="/pendidikan">Pendidikan</a>
+          <a href="/teknologi">Teknologi</a>
+          <a href="/peta">Peta</a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+    <script>
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      const modeBadge = document.getElementById("modeBadge");
+
+      if (
+        !reducedMotion &&
+        window.gsap &&
+        window.ScrollTrigger &&
+        window.Observer
+      ) {
+        gsap.registerPlugin(ScrollTrigger, Observer);
+
+        /* ================= SWIPE SECTION ================= */
+        (function initSwipe() {
+          const wrap = document.getElementById("swipeWrap");
+          const panels = gsap.utils.toArray(".swipe-panel");
+          const progressWrap = document.getElementById("swipeProgress");
+          let currentIndex = 0;
+          let animating = false;
+
+          panels.forEach((_, i) => {
+            const dot = document.createElement("div");
+            dot.className = "dot" + (i === 0 ? " active" : "");
+            progressWrap.appendChild(dot);
+          });
+          const dots = Array.from(progressWrap.children);
+
+          function setActive(i) {
+            panels.forEach((p, idx) =>
+              p.classList.toggle("is-active", idx === i),
+            );
+            dots.forEach((d, idx) => d.classList.toggle("active", idx === i));
+          }
+
+          function gotoPanel(index, direction) {
+            if (
+              animating ||
+              index < 0 ||
+              index > panels.length - 1 ||
+              index === currentIndex
+            )
+              return;
+            animating = true;
+            const current = panels[currentIndex];
+            const next = panels[index];
+            next.classList.add("is-active");
+            gsap
+              .timeline({
+                defaults: { duration: 0.75, ease: "power2.inOut" },
+                onComplete: () => {
+                  current.classList.remove("is-active");
+                  currentIndex = index;
+                  setActive(currentIndex);
+                  animating = false;
+                },
+              })
+              .fromTo(
+                next,
+                { yPercent: 100 * direction, autoAlpha: 0 },
+                { yPercent: 0, autoAlpha: 1 },
+                0,
+              )
+              .to(current, { yPercent: -100 * direction, autoAlpha: 0 }, 0);
+          }
+
+          // Pin section selama panjang setara jumlah panel
+          ScrollTrigger.create({
+            trigger: wrap,
+            start: "top top",
+            end: () => "+=" + window.innerHeight * panels.length,
+            pin: true,
+            pinSpacing: true,
+            onEnter: () => (modeBadge.textContent = "Scroll · Swipe Panel"),
+            onEnterBack: () => (modeBadge.textContent = "Scroll · Swipe Panel"),
+          });
+
+          Observer.create({
+            target: wrap,
+            type: "wheel,touch,pointer",
+            wheelSpeed: -1,
+            tolerance: 10,
+            preventDefault: true,
+            onDown: () => {
+              if (currentIndex === 0) return; // biarkan scroll normal keluar section ke atas
+              gotoPanel(currentIndex - 1, -1);
+            },
+            onUp: () => {
+              if (currentIndex === panels.length - 1) return; // biarkan scroll normal keluar section ke bawah
+              gotoPanel(currentIndex + 1, 1);
+            },
+          });
+        })();
+
+        /* ================= HORIZONTAL SECTION ================= */
+        (function initHorizontal() {
+          const wrap = document.getElementById("horizontalWrap");
+          const track = document.getElementById("horizontalTrack");
+          const bar = document.getElementById("hProgressBar");
+          const panelCount = document.querySelectorAll(".h-panel").length;
+
+          const tween = gsap.to(track, {
+            xPercent: -100 * (panelCount - 1),
+            ease: "none",
+            scrollTrigger: {
+              trigger: wrap,
+              start: "top top",
+              end: () => "+=" + wrap.offsetWidth * (panelCount - 1),
+              pin: true,
+              scrub: 1,
+              onUpdate: (self) => {
+                bar.style.width = self.progress * 100 + "%";
+              },
+              onEnter: () => (modeBadge.textContent = "Scroll · Horizontal"),
+              onEnterBack: () =>
+                (modeBadge.textContent = "Scroll · Horizontal"),
+            },
+          });
+        })();
+
+        /* ================= BADGE RESET ================= */
+        ScrollTrigger.create({
+          trigger: "#chapter-hero",
+          start: "top top",
+          end: "bottom top",
+          onEnter: () => (modeBadge.textContent = "Scroll · Normal"),
+          onEnterBack: () => (modeBadge.textContent = "Scroll · Normal"),
+        });
+      } else {
+        modeBadge.style.display = "none";
+        document
+          .querySelectorAll(".swipe-panel")
+          .forEach((p) => (p.style.visibility = "visible"));
+        document.querySelector(".swipe-wrap").style.height = "auto";
+        document
+          .querySelectorAll(".swipe-panel")
+          .forEach((p) => (p.style.position = "relative"));
+        document.querySelector(".horizontal-track").style.flexDirection =
+          "column";
+        document.querySelector(".horizontal-track").style.width = "100%";
+        document.querySelector(".h-panel").style.width = "100%";
+      }
+    </script>
+  </body>
+</html>
