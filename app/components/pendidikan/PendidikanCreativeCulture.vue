@@ -17,6 +17,7 @@ defineProps<{
 
 <template>
   <section
+    id="budaya-kreatif"
     class="px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32 bg-[#1a1208] text-[#faf7f2]"
   >
     <div v-observe class="reveal-up max-w-[760px] mb-14">

@@ -15,6 +15,7 @@ defineProps<{
 
 <template>
   <section
+    id="sejarah"
     class="px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32 border-b border-line"
   >
     <div v-observe class="reveal-up max-w-[640px] mb-12">

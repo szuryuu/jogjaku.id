@@ -48,7 +48,7 @@ defineProps<{
           {{ exploreCity }}
         </NuxtLink>
         <a
-          href="#study-spots"
+          href="#belajar"
           class="inline-flex items-center justify-center border border-[#faf7f2]/35 text-[#faf7f2] px-7 py-4 font-josefin text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-[#faf7f2] hover:text-ink transition-colors duration-300"
         >
           {{ studentGuide }}

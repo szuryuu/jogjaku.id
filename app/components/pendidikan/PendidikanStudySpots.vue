@@ -23,7 +23,7 @@ defineProps<{
 
 <template>
   <section
-    id="study-spots"
+    id="belajar"
     class="px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32 bg-warm-white border-y border-line"
   >
     <div

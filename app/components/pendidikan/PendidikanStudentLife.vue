@@ -14,7 +14,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="bg-[#1a1208] text-[#faf7f2] px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32">
+  <section id="kehidupan" class="bg-[#1a1208] text-[#faf7f2] px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32">
     <div v-observe class="reveal-up max-w-[760px] mb-14">
       <div
         class="font-josefin text-[10px] font-semibold tracking-[0.25em] uppercase text-terra mb-5"

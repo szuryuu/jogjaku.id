@@ -78,7 +78,7 @@ const handleHeroImageLoad = (event: Event) => {
         class="reveal-up delay-300 flex flex-col sm:flex-row gap-4"
       >
         <a
-          href="#universities"
+          href="#universitas"
           class="group inline-flex items-center justify-center gap-3 bg-terra text-[#faf7f2] px-5 sm:px-7 py-4 font-josefin text-[10px] sm:text-[11px] font-semibold tracking-[0.18em] sm:tracking-[0.2em] uppercase hover:bg-[#1a1208] transition-colors duration-300"
         >
           {{ exploreUniversities }}
