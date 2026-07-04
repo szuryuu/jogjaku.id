@@ -48,7 +48,7 @@ const shareDestination = async (item: any) => {
       Yogyakarta Tourist Guide
     </h1>
     <button
-      v-for="item in destinations"
+      v-for="(item, index) in destinations"
       :key="item.id"
       @click="emit('update:activeDestination', item.id)"
       :aria-label="`Tampilkan info destinasi ${item.title}`"
@@ -63,8 +63,19 @@ const shareDestination = async (item: any) => {
             : 'scale-y-0 group-hover:scale-y-100'
         "
       ></div>
-      <div class="flex justify-between items-start w-full">
-        <div>
+      <div class="flex justify-between items-start w-full gap-4">
+        <!-- stop number -->
+        <div
+          class="w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 flex items-center justify-center font-josefin text-xs lg:text-sm font-bold flex-shrink-0 transition-colors duration-300 print:border-black print:text-black"
+          :class="
+            activeDestination === item.id
+              ? 'bg-terra text-warm-white border-terra'
+              : 'border-terra/30 text-terra/60'
+          "
+        >
+          {{ String(index + 1).padStart(2, '0') }}
+        </div>
+        <div class="flex-1 min-w-0">
           <div
             class="font-josefin text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 transition-colors duration-300 flex items-center gap-2 print:text-black"
             :class="
