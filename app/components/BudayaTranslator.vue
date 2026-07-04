@@ -53,7 +53,7 @@ const handleTranslate = async () => {
             <button
               @click="handleTranslate"
               :disabled="isTranslating || !sourceText.trim()"
-              class="bg-ink text-warm-white py-3 font-josefin text-[10px] uppercase tracking-[0.2em] hover:bg-terra transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+              class="bg-ink text-warm-white py-3 px-6 font-josefin text-[10px] uppercase tracking-[0.2em] hover:bg-terra transition-all disabled:opacity-50 flex items-center justify-center gap-2 rounded-full shadow-md hover:shadow-lg active:shadow-sm active:translate-y-px"
             >
               <span
                 v-if="isTranslating"
@@ -68,10 +68,15 @@ const handleTranslate = async () => {
               >Nexus AI Output</label
             >
             <div
-              class="w-full h-28 bg-warm-white/50 border border-line p-4 text-[13px] font-light italic text-brown overflow-y-auto"
+              class="seal-impression w-full h-48 lg:h-56 flex items-center justify-center p-6 text-center overflow-hidden"
               style="font-family: &quot;Noto Sans Javanese&quot;, sans-serif"
             >
-              {{ translatedText || t("budaya.translator_waiting") }}
+              <span
+                :class="translatedText ? 'text-xl lg:text-2xl text-brown' : 'text-sm italic text-muted'"
+                class="leading-relaxed transition-all duration-500"
+              >
+                {{ translatedText || t("budaya.translator_waiting") }}
+              </span>
             </div>
           </div>
         </div>
@@ -89,5 +94,15 @@ const handleTranslate = async () => {
 .reveal-up.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+.seal-impression {
+  border-radius: 40px;
+  background: var(--bg-warm-white);
+  /* ponytail: two-concentric-ring seal border — the visual language, not a perfect wax sim */
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.08),
+    0 0 0 3px var(--border-line),
+    0 0 0 7px rgba(26, 18, 8, 0.04);
 }
 </style>
