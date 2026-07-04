@@ -125,6 +125,27 @@
         "en": "Atma Jaya Yogyakarta brings an urban campus atmosphere close to business, technology, communication, architecture, and youth creativity."
       },
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universitas+Atma+Jaya+Yogyakarta"
+    },
+    {
+      "name": "UPN Veteran Yogyakarta",
+      "image": "/images/pendidikan/upnyk.jpg",
+      "description": {
+        "id": "Kampus bela negara dengan fokus teknik, mineral, dan energi yang relevan dengan industri.",
+        "en": "A national defense campus focused on engineering, minerals, and energy relevant to industry."
+      },
+      "strength": {
+        "id": "Teknik Perminyakan, Geologi, Pertanian",
+        "en": "Petroleum Engineering, Geology, Agriculture"
+      },
+      "atmosphere": {
+        "id": "Disiplin, terapan, berorientasi industri",
+        "en": "Disciplined, applied, industry-oriented"
+      },
+      "detail": {
+        "id": "UPN Veteran Yogyakarta dikenal sebagai kampus bela negara dengan keunggulan di bidang teknik perminyakan, geologi, dan pertanian yang dekat dengan dunia industri.",
+        "en": "UPN Veteran Yogyakarta is known as a national defense campus with strengths in petroleum engineering, geology, and agriculture closely tied to industry."
+      },
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=UPN+Veteran+Yogyakarta"
     }
   ],
   "studySpots": [
