@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { ChevronLeft, ChevronRight } from "lucide-vue-next";
 
 interface University {
@@ -9,7 +9,7 @@ interface University {
   displayAtmosphere?: string;
 }
 
-defineProps<{
+const props = defineProps<{
   universities: University[];
   universitiesCategory: string;
   universitiesTitle: string;
@@ -22,12 +22,60 @@ const emit = defineEmits<{
 }>();
 
 const rowRef = ref<HTMLElement | null>(null);
+const activeIndex = ref(0);
+
+// ponytail: 300px card + 24px gap
+const CARD_STEP = 324;
+const AUTO_INTERVAL_MS = 4000;
+
+let autoTimer: ReturnType<typeof setInterval> | null = null;
+let paused = false;
+
+const goTo = (index: number) => {
+  if (!rowRef.value) return;
+  const wrapped = ((index % props.universities.length) + props.universities.length) % props.universities.length;
+  activeIndex.value = wrapped;
+  // ponytail: instant jump when wrapping around; smooth otherwise
+  const needsWrap = index >= props.universities.length || index < 0;
+  rowRef.value.scrollTo({ left: wrapped * CARD_STEP, behavior: needsWrap ? "auto" : "smooth" });
+};
+
+const advance = () => {
+  if (!rowRef.value || paused) return;
+  goTo(activeIndex.value + 1);
+};
+
+const startAuto = () => {
+  if (autoTimer) return;
+  autoTimer = setInterval(advance, AUTO_INTERVAL_MS);
+};
+
+const stopAuto = () => {
+  if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+};
+
+const pause = () => { paused = true; stopAuto(); };
+const resume = () => { paused = false; startAuto(); };
 
 const scroll = (direction: "left" | "right") => {
-  if (!rowRef.value) return;
-  const delta = direction === "left" ? -320 : 320;
-  rowRef.value.scrollBy({ left: delta, behavior: "smooth" });
+  goTo(direction === "left" ? activeIndex.value - 1 : activeIndex.value + 1);
+  stopAuto();
+  startAuto();
 };
+
+onMounted(() => {
+  startAuto();
+  rowRef.value?.addEventListener("pointerenter", pause);
+  rowRef.value?.addEventListener("pointerleave", resume);
+  rowRef.value?.addEventListener("touchstart", pause, { passive: true });
+  rowRef.value?.addEventListener("touchend", () => setTimeout(resume, 2000));
+});
+
+onUnmounted(() => {
+  stopAuto();
+  rowRef.value?.removeEventListener("pointerenter", pause);
+  rowRef.value?.removeEventListener("pointerleave", resume);
+});
 </script>
 
 <template>
@@ -56,18 +104,18 @@ const scroll = (direction: "left" | "right") => {
       </p>
     </div>
 
-    <div class="relative">
+    <div class="relative max-w-[948px] mx-auto">
       <!-- scroll arrows -->
       <button
         type="button"
-        class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-warm-white/90 border border-line flex items-center justify-center text-ink hover:bg-terra hover:text-white hover:border-terra transition-colors shadow-md -ml-1"
+        class="absolute -left-30 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-warm-white/90 border border-line flex items-center justify-center text-ink hover:bg-terra hover:text-white hover:border-terra transition-colors shadow-md"
         @click="scroll('left')"
       >
         <ChevronLeft class="w-4 h-4" />
       </button>
       <button
         type="button"
-        class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-warm-white/90 border border-line flex items-center justify-center text-ink hover:bg-terra hover:text-white hover:border-terra transition-colors shadow-md -mr-1"
+        class="absolute -right-30 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-warm-white/90 border border-line flex items-center justify-center text-ink hover:bg-terra hover:text-white hover:border-terra transition-colors shadow-md"
         @click="scroll('right')"
       >
         <ChevronRight class="w-4 h-4" />
@@ -75,7 +123,8 @@ const scroll = (direction: "left" | "right") => {
 
       <div
         ref="rowRef"
-        class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth px-0.5 max-w-[948px] mx-auto"
+        class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar px-10"
+        style="-ms-overflow-style: none; scrollbar-width: none"
       >
         <button
           v-for="university in universities"
@@ -113,3 +162,9 @@ const scroll = (direction: "left" | "right") => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>
