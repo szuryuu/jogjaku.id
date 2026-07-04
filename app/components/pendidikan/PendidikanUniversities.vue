@@ -33,11 +33,16 @@ let paused = false;
 
 const goTo = (index: number) => {
   if (!rowRef.value) return;
-  const wrapped = ((index % props.universities.length) + props.universities.length) % props.universities.length;
+  const wrapped =
+    ((index % props.universities.length) + props.universities.length) %
+    props.universities.length;
   activeIndex.value = wrapped;
   // ponytail: instant jump when wrapping around; smooth otherwise
   const needsWrap = index >= props.universities.length || index < 0;
-  rowRef.value.scrollTo({ left: wrapped * CARD_STEP, behavior: needsWrap ? "auto" : "smooth" });
+  rowRef.value.scrollTo({
+    left: wrapped * CARD_STEP,
+    behavior: needsWrap ? "auto" : "smooth",
+  });
 };
 
 const advance = () => {
@@ -51,11 +56,20 @@ const startAuto = () => {
 };
 
 const stopAuto = () => {
-  if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  if (autoTimer) {
+    clearInterval(autoTimer);
+    autoTimer = null;
+  }
 };
 
-const pause = () => { paused = true; stopAuto(); };
-const resume = () => { paused = false; startAuto(); };
+const pause = () => {
+  paused = true;
+  stopAuto();
+};
+const resume = () => {
+  paused = false;
+  startAuto();
+};
 
 const scroll = (direction: "left" | "right") => {
   goTo(direction === "left" ? activeIndex.value - 1 : activeIndex.value + 1);
