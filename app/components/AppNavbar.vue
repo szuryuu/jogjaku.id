@@ -50,10 +50,15 @@ const toggleLanguage = () => {
     >
       <NuxtLink
         to="/"
-        class="font-libre text-[18px] lg:text-[20px] font-normal text-ink tracking-[0.04em]"
+        class="shrink-0"
         @click="isMenuOpen = false"
       >
-        <em class="italic text-terra">Jogja</em>Ku
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-7 h-7 lg:w-8 lg:h-8">
+          <rect width="64" height="64" rx="14" fill="#1a1208" />
+          <path d="M18 52 L46 52 L38 40 L26 40 Z" fill="#f6f0e5" />
+          <path d="M28 40 L36 40 L34 22 L30 22 Z" fill="#f6f0e5" />
+          <circle cx="32" cy="14" r="6" fill="#c84b31" />
+        </svg>
       </NuxtLink>
       <ul class="hidden lg:flex gap-9">
         <li v-for="item in routes" :key="item">
