@@ -27,23 +27,25 @@ defineProps<{
       {{ item.displayCategory }} <span class="text-line">|</span>
       {{ item.displayMeta }}
     </div>
-    <h3
-      class="font-libre text-[22px] font-bold text-ink mb-3 group-hover:text-terra transition-colors duration-300"
-    >
-      {{ item.displayTitle }}
-    </h3>
-    <p class="text-[14px] font-light text-brown leading-[1.8] flex-grow mb-6">
+    <div class="flex items-baseline justify-between gap-4 mb-3">
+      <h3
+        class="font-libre text-[22px] font-bold text-ink group-hover:text-terra transition-colors duration-300"
+      >
+        {{ item.displayTitle }}
+      </h3>
+      <span
+        class="font-josefin text-[16px] font-bold text-terra shrink-0 whitespace-nowrap flex items-center gap-1.5"
+      >
+        <Banknote class="w-3.5 h-3.5" /> {{ item.displayPrice }}
+      </span>
+    </div>
+    <p class="font-libre text-[14px] italic text-brown leading-[1.8] flex-grow mb-6">
       {{ item.displayStory }}
     </p>
     <div
-      class="pt-4 border-t border-line flex flex-col gap-3 font-josefin text-[9px] tracking-[0.15em] text-muted transition-colors duration-300"
+      class="pt-4 border-t border-line flex items-center gap-2.5 font-josefin text-[10px] tracking-[0.15em] text-muted"
     >
-      <div class="flex items-center gap-3">
-        <MapPin class="w-3 h-3 text-terra" /> {{ item.displayAddress }}
-      </div>
-      <div class="flex items-center gap-3">
-        <Banknote class="w-3 h-3 text-terra" /> {{ item.displayPrice }}
-      </div>
+      <MapPin class="w-3 h-3 text-terra shrink-0" /> {{ item.displayAddress }}
     </div>
   </article>
 </template>
