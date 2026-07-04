@@ -18,7 +18,7 @@ defineProps<{
     id="sejarah"
     class="px-5 md:px-6 lg:px-[60px] py-16 md:py-24 lg:py-32 border-b border-line"
   >
-    <div v-observe class="reveal-up max-w-[640px] mb-12">
+    <div v-observe class="reveal-up max-w-[640px] mx-auto text-center mb-12">
       <div
         class="font-josefin text-[10px] font-semibold tracking-[0.25em] uppercase text-terra mb-5"
       >
@@ -30,7 +30,7 @@ defineProps<{
         {{ historyTitle }}
       </h2>
       <p
-        class="font-libre text-[16px] lg:text-[18px] italic leading-[1.8] text-muted border-l-[3px] border-terra pl-5"
+        class="font-libre text-[16px] lg:text-[18px] italic leading-[1.8] text-muted"
       >
         {{ historyIntro }}
       </p>
@@ -38,7 +38,7 @@ defineProps<{
 
     <div
       v-observe
-      class="reveal-up flex gap-8 overflow-x-auto pb-4 snap-x snap-proximity"
+      class="reveal-up flex gap-8 overflow-x-auto pb-4 snap-x snap-proximity justify-center"
     >
       <article
         v-for="(item, index) in historyBlocks"
