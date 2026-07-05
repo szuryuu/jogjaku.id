@@ -78,7 +78,11 @@
   },
   "footer": {
     "portal_tagline": "Yogyakarta Digital Portal",
-    "description": "Exploration of Yogyakarta city dimensions through the 2026 interactive digital portal."
+    "description": "Exploration of Yogyakarta city dimensions through the 2026 interactive digital portal.",
+    "col_heritage": "Heritage",
+    "col_discover": "Discover",
+    "col_future": "Future",
+    "col_axis": "Axis"
   },
   "search": {
     "placeholder": "Search destinations, culinary, or history...",

@@ -106,4 +106,43 @@
   .delay-400 {
     transition-delay: 400ms;
   }
+
+  .reveal-mega {
+    opacity: 0;
+    translate: 0 64px;
+    scale: 0.985;
+    transition:
+      opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+      translate 900ms cubic-bezier(0.22, 1, 0.36, 1),
+      scale 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal-mega.in-view {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-mega {
+      opacity: 1 !important;
+      translate: 0 0 !important;
+      scale: 1 !important;
+      transition: none !important;
+    }
+  }
+
+  .pulse-dot {
+    animation: pulse-dot-fade 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot-fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pulse-dot {
+      animation: none;
+    }
+  }
 }

@@ -78,7 +78,11 @@
   },
   "footer": {
     "portal_tagline": "Portal Digital Yogyakarta",
-    "description": "Eksplorasi dimensi kota Yogyakarta melalui portal digital interaktif 2026."
+    "description": "Eksplorasi dimensi kota Yogyakarta melalui portal digital interaktif 2026.",
+    "col_heritage": "Warisan",
+    "col_discover": "Jelajah",
+    "col_future": "Masa Depan",
+    "col_axis": "Sumbu"
   },
   "search": {
     "placeholder": "Cari destinasi, kuliner, atau sejarah...",
