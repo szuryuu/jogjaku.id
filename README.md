@@ -1,75 +1,66 @@
-# Nuxt Minimal Starter
+# JogjaKu
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Panduan lengkap Yogyakarta — wisata, sejarah, budaya, kuliner, pendidikan, teknologi, peta interaktif, dan Sumbu Filosofi.
+
+## Tech Stack
+
+- **Framework:** Nuxt 4 + Vue 3
+- **Styling:** Tailwind CSS 4
+- **i18n:** @nuxtjs/i18n (ID ↔ EN)
+- **Maps:** Leaflet + MapLibre GL
+- **Animation:** GSAP
+- **Search:** Fuse.js
+- **AI:** Gemini + Groq (chat & planner)
+- **PWA:** @vite-pwa/nuxt
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
 bun run dev
 ```
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
 bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Routes
+
+| Route         | EN                 | ID              |
+| ------------- | ------------------ | --------------- |
+| `/`           | Home               | Beranda         |
+| `/sejarah`    | History            | Sejarah         |
+| `/budaya`     | Culture            | Budaya          |
+| `/kuliner`    | Culinary           | Kuliner         |
+| `/wisata`     | Tourism            | Wisata          |
+| `/pendidikan` | Education          | Pendidikan      |
+| `/teknologi`  | Technology         | Teknologi       |
+| `/peta`       | Interactive Map    | Peta Interaktif |
+| `/filosofi`   | Philosophical Axis | Sumbu Filosofi  |
+
+## Project Structure
+
+```
+app/
+├── components/   # Vue components grouped by domain
+├── composables/  # useToast, useScrollProgress, useJsonLd, useLocaleToggle
+├── layouts/      # default.vue, story.vue
+├── pages/        # Route pages
+├── plugins/      # observe.ts (scroll reveal), seo.ts
+└── utils/        # page-seo.ts
+server/
+├── api/          # chat, planner, weather, data endpoints
+└── data/         # Static JSON data per domain
+i18n/locales/     # en.json, id.json
+public/
+├── images/       # Hero, budaya, kuliner, wisata, etc.
+└── audio/        # sejarah & sumbu narration mp3s
+```
